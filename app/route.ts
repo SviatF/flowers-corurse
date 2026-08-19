@@ -31,6 +31,7 @@ export async function GET(request: NextRequest) {
     `<script src="${origin}/floral-copy-core.js"></script>`,
     `<script src="${origin}/floral-copy-results.js"></script>`,
     `<script src="${origin}/floral-copy-footer.js"></script>`,
+    `<script src="${origin}/floral-image-overrides.js"></script>`,
   ].join("");
 
   html = html.includes("</body>")
@@ -48,7 +49,7 @@ export async function GET(request: NextRequest) {
       "content-type": "text/html; charset=utf-8",
       "cache-control": "no-store, max-age=0",
       "x-reference-source": "danmall.com",
-      "x-project-copy": "floral-runtime-v3",
+      "x-project-copy": "floral-runtime-v4",
     },
   });
 }
