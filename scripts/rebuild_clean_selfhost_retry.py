@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import mimetypes
 import time
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -17,9 +18,8 @@ def clean_url(value: str) -> str:
     p = urlsplit(url)
     query = p.query.rstrip("&")
 
-    # Framer image/font query strings only request resized variants. Mirroring
-    # the canonical local file avoids dozens of duplicate downloads and makes
-    # the final site independent of the CDN image transformer.
+    # Resized Framer image/font variants can safely reuse the canonical local
+    # file. This avoids duplicate CDN requests while preserving the same asset.
     suffix = Path(p.path).suffix.lower()
     if p.netloc.lower() == "framerusercontent.com" and suffix in {
         ".png", ".jpg", ".jpeg", ".webp", ".svg", ".avif", ".gif",
@@ -30,9 +30,26 @@ def clean_url(value: str) -> str:
     return urlunsplit((p.scheme, p.netloc, p.path, query, ""))
 
 
+def cached_file(url: str) -> Path | None:
+    build_path, _ = build.local_target(url)
+    try:
+        rel = build_path.relative_to(build.VENDOR_BUILD)
+    except ValueError:
+        return None
+    candidate = build.VENDOR_FINAL / rel
+    if candidate.is_file() and candidate.stat().st_size > 0:
+        return candidate
+    return None
+
+
 def download(url: str) -> tuple[bytes, str]:
+    cached = cached_file(url)
+    if cached is not None:
+        content_type = mimetypes.guess_type(cached.name)[0] or "application/octet-stream"
+        return cached.read_bytes(), content_type
+
     last_error: Exception | None = None
-    for attempt in range(8):
+    for attempt in range(5):
         req = Request(
             url,
             headers={
@@ -43,18 +60,17 @@ def download(url: str) -> tuple[bytes, str]:
             },
         )
         try:
-            with urlopen(req, timeout=90) as response:
+            with urlopen(req, timeout=75) as response:
                 data = response.read()
                 content_type = response.headers.get("content-type", "")
                 if not data:
                     raise RuntimeError("empty response")
-                time.sleep(0.08)
                 return data, content_type
         except (HTTPError, URLError, TimeoutError, ConnectionError, OSError, RuntimeError) as exc:
             last_error = exc
-            if attempt == 7:
+            if attempt == 4:
                 break
-            time.sleep(min(20, 1.5 * (2 ** attempt)))
+            time.sleep(1.25 * (attempt + 1))
 
     raise RuntimeError(f"download failed after retries: {last_error}")
 
