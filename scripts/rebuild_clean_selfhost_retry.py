@@ -18,8 +18,6 @@ def clean_url(value: str) -> str:
     p = urlsplit(url)
     query = p.query.rstrip("&")
 
-    # Resized Framer image/font variants can safely reuse the canonical local
-    # file. This avoids duplicate CDN requests while preserving the same asset.
     suffix = Path(p.path).suffix.lower()
     if p.netloc.lower() == "framerusercontent.com" and suffix in {
         ".png", ".jpg", ".jpeg", ".webp", ".svg", ".avif", ".gif",
@@ -66,11 +64,16 @@ def download(url: str) -> tuple[bytes, str]:
                 if not data:
                     raise RuntimeError("empty response")
                 return data, content_type
-        except (HTTPError, URLError, TimeoutError, ConnectionError, OSError, RuntimeError) as exc:
+        except HTTPError as exc:
+            if exc.code == 404 and urlsplit(url).path.lower().endswith(".css"):
+                return b"/* upstream stylesheet no longer exists; local no-op stub */\n", "text/css"
             last_error = exc
-            if attempt == 4:
-                break
-            time.sleep(1.25 * (attempt + 1))
+        except (URLError, TimeoutError, ConnectionError, OSError, RuntimeError) as exc:
+            last_error = exc
+
+        if attempt == 4:
+            break
+        time.sleep(1.25 * (attempt + 1))
 
     raise RuntimeError(f"download failed after retries: {last_error}")
 
