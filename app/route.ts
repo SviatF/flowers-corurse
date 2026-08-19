@@ -30,12 +30,12 @@ export async function GET(request: NextRequest) {
   let html = injectBase(await upstream.text());
   const origin = request.nextUrl.origin;
 
-  // Remove the Dan Mall hero portrait from every HTML/CSS/srcset occurrence
-  // before Framer reaches the browser. A transparent data URI keeps image
-  // attributes/styles valid while making the portrait invisible.
-  const transparentPixel =
-    "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
-  html = html.replace(DAN_HERO_ASSET_PATTERN, transparentPixel);
+  // Replace the original Dan Mall hero portrait with our local florist hero
+  // before Framer reaches the browser, including query-string/srcset variants.
+  html = html.replace(
+    DAN_HERO_ASSET_PATTERN,
+    `${origin}/assets/florist-hero.webp`,
+  );
 
   const runtime = [
     `<script src="${origin}/floral-copy-core.js"></script>`,
@@ -58,7 +58,7 @@ export async function GET(request: NextRequest) {
       "content-type": "text/html; charset=utf-8",
       "cache-control": "no-store, max-age=0",
       "x-reference-source": "danmall.com",
-      "x-project-copy": "floral-runtime-v6-no-dan-hero",
+      "x-project-copy": "floral-runtime-v7-new-hero",
     },
   });
 }
