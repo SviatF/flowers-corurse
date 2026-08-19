@@ -1,8 +1,15 @@
 import "./hero.css";
 import "./courses.css";
 import HeroParallax from "./HeroParallax";
+import heroPart1 from "./hero-image/part1";
+import heroPart2 from "./hero-image/part2";
+import heroPart3 from "./hero-image/part3";
+import heroPart4 from "./hero-image/part4";
+import heroPart5 from "./hero-image/part5";
 
 export const dynamic = "force-dynamic";
+
+const HERO_WOMAN_SRC = `data:image/webp;base64,${heroPart1}${heroPart2}${heroPart3}${heroPart4}${heroPart5}`;
 
 const programs = [
   {
@@ -62,7 +69,7 @@ export default function Page() {
         </nav>
 
         <div className="pts-hero__stage" id="top">
-          <img className="pts-hero__portrait" src="/site/images/95e2e4fcdce83e14.jpg" alt="" width="2000" height="1333" loading="eager" decoding="async" fetchPriority="high" />
+          <img className="pts-hero__portrait" src={HERO_WOMAN_SRC} alt="" width="960" height="640" loading="eager" decoding="async" fetchPriority="high" />
           <div className="pts-hero__veil" aria-hidden="true" />
           <img className="pts-hero__pink" src="/site/images/25a19fcf83a07670.webp" alt="" aria-hidden="true" loading="eager" decoding="async" />
           <img className="pts-hero__magnolia" src="/site/images/3f61b04bf5f0c093.webp" alt="" aria-hidden="true" loading="eager" decoding="async" />
