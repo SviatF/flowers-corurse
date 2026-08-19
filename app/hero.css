@@ -1,12 +1,17 @@
-/* Custom local hero: no external runtime, no fetch. */
+/* Local hero only: all visual assets are served from this project. */
 
 .pts-hero {
+  --portrait-y: 0px;
+  --title-y: 0px;
+  --pink-y: 0px;
+  --magnolia-y: 0px;
+  --subtitle-y: 0px;
+
   position: relative;
   width: 100%;
-  height: 118svh;
-  min-height: 780px;
+  height: 138svh;
+  min-height: 900px;
   background: #000;
-  overflow: clip;
   isolation: isolate;
 }
 
@@ -20,216 +25,208 @@
   background: #000;
 }
 
-.pts-hero__portrait,
-.pts-hero__pink,
-.pts-hero__magnolia {
+.pts-hero__portrait {
   position: absolute;
   inset: 0;
+  z-index: 1;
   display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center 27%;
+  transform: translate3d(0, var(--portrait-y), 0) scale(1.035);
+  transform-origin: center center;
+  filter: brightness(.82) saturate(.92);
   pointer-events: none;
   user-select: none;
   will-change: transform;
-}
-
-.pts-hero__portrait {
-  z-index: 1;
-  object-fit: cover;
-  object-position: center 34%;
-  transform: scale(1.045);
-  filter: brightness(.78) saturate(.9);
 }
 
 .pts-hero__veil {
   position: absolute;
   inset: 0;
   z-index: 2;
-  background: linear-gradient(180deg, rgba(0,0,0,.23) 0%, rgba(0,0,0,.02) 38%, rgba(0,0,0,.18) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,.17) 0%,
+    rgba(0,0,0,.025) 42%,
+    rgba(0,0,0,.16) 100%
+  );
   pointer-events: none;
 }
 
-/* Pink flowers stay full-bleed, but sit lower so the portrait remains readable. */
+/* Floral layers are deliberately restricted to the bottom quarter of the hero. */
 .pts-hero__pink {
+  position: absolute;
+  left: 50%;
+  bottom: -3vh;
   z-index: 3;
+  display: block;
+  width: 104vw;
+  height: 27vh;
   object-fit: cover;
-  object-position: center 62%;
-  transform: scale(1.06) translate3d(0, 15%, 0);
-  opacity: .92;
+  object-position: center 52%;
+  transform: translate3d(-50%, var(--pink-y), 0) scale(1.015);
+  transform-origin: center bottom;
+  opacity: .96;
+  pointer-events: none;
+  user-select: none;
+  will-change: transform;
 }
 
+.pts-hero__magnolia {
+  position: absolute;
+  left: 50%;
+  bottom: -6vh;
+  z-index: 4;
+  display: block;
+  width: 100vw;
+  height: 30vh;
+  object-fit: cover;
+  object-position: center 50%;
+  transform: translate3d(-50%, var(--magnolia-y), 0);
+  transform-origin: center bottom;
+  pointer-events: none;
+  user-select: none;
+  will-change: transform;
+}
+
+/* Title is always above both flower layers. */
 .pts-hero__title {
   position: absolute;
-  z-index: 4;
-  top: 57%;
+  top: 50%;
   left: 50%;
-  width: min(92vw, 1580px);
+  z-index: 6;
+  width: min(94vw, 1560px);
   margin: 0;
-  transform: translate(-50%, -50%);
+  transform: translate3d(-50%, calc(-50% + var(--title-y)), 0);
   color: #fff;
   text-align: center;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(68px, 9.15vw, 176px);
+  font-size: clamp(64px, 7.6vw, 146px);
   font-weight: 950;
-  line-height: .76;
-  letter-spacing: -.075em;
+  line-height: .82;
+  letter-spacing: -.068em;
   white-space: nowrap;
+  text-shadow: 0 2px 24px rgba(0,0,0,.16);
   pointer-events: none;
   will-change: transform;
 }
 
 .pts-hero__title span {
   display: block;
-  transform: scaleX(.79);
+  transform: scaleX(.82);
   transform-origin: center;
-}
-
-/* Keep the entire supplied magnolia artwork visible instead of filling/cropping it. */
-.pts-hero__magnolia {
-  z-index: 5;
-  object-fit: contain;
-  object-position: center center;
-  transform: scale(.94) translate3d(0, 2%, 0);
 }
 
 .pts-hero__subtitle {
   position: absolute;
-  z-index: 6;
   left: 50%;
-  bottom: clamp(46px, 7.2vh, 88px);
+  bottom: clamp(24px, 4.3vh, 52px);
+  z-index: 7;
   width: min(82vw, 790px);
   margin: 0;
-  transform: translateX(-50%);
+  transform: translate3d(-50%, var(--subtitle-y), 0);
   color: #fff;
   text-align: center;
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: clamp(24px, 2.15vw, 42px);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(22px, 2vw, 38px);
   font-style: italic;
   line-height: 1.12;
-  text-shadow: 0 2px 18px rgba(0,0,0,.4);
+  text-shadow: 0 2px 18px rgba(0,0,0,.48);
   pointer-events: none;
-}
-
-/* Native scroll-driven parallax. No JavaScript/runtime required. */
-@supports (animation-timeline: view()) {
-  .pts-hero__portrait {
-    animation: ptsPortraitParallax linear both;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 100%;
-  }
-
-  .pts-hero__pink {
-    animation: ptsPinkParallax linear both;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 100%;
-  }
-
-  .pts-hero__title {
-    animation: ptsTitleParallax linear both;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 100%;
-  }
-
-  .pts-hero__magnolia {
-    animation: ptsMagnoliaParallax linear both;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 100%;
-  }
-
-  .pts-hero__subtitle {
-    animation: ptsSubtitleParallax linear both;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 100%;
-  }
-}
-
-@keyframes ptsPortraitParallax {
-  from { transform: scale(1.045) translate3d(0, -2%, 0); }
-  to   { transform: scale(1.085) translate3d(0, 10%, 0); }
-}
-
-@keyframes ptsPinkParallax {
-  from { transform: scale(1.06) translate3d(0, 11%, 0); }
-  to   { transform: scale(1.09) translate3d(0, 22%, 0); }
-}
-
-@keyframes ptsTitleParallax {
-  from { transform: translate(-50%, -52%); }
-  to   { transform: translate(-50%, -43%); }
-}
-
-@keyframes ptsMagnoliaParallax {
-  from { transform: scale(.94) translate3d(0, 0%, 0); }
-  to   { transform: scale(.94) translate3d(0, 3%, 0); }
-}
-
-@keyframes ptsSubtitleParallax {
-  from { transform: translate(-50%, -8px); }
-  to   { transform: translate(-50%, 26px); }
+  will-change: transform;
 }
 
 @media (max-width: 1199px) {
-  .pts-hero { min-height: 700px; height: 112svh; }
-  .pts-hero__stage { min-height: 680px; }
-  .pts-hero__title {
-    top: 58%;
-    width: 98vw;
-    font-size: clamp(62px, 10.5vw, 126px);
-    line-height: .79;
+  .pts-hero {
+    height: 132svh;
+    min-height: 820px;
   }
-  .pts-hero__magnolia {
-    object-fit: contain;
-    object-position: center center;
-    transform: scale(.96) translate3d(0, 2%, 0);
+
+  .pts-hero__stage {
+    min-height: 680px;
   }
+
+  .pts-hero__portrait {
+    object-position: center 25%;
+  }
+
   .pts-hero__pink {
-    object-position: center 64%;
-    transform: scale(1.10) translate3d(0, 16%, 0);
+    bottom: -2.5vh;
+    width: 108vw;
+    height: 25vh;
+  }
+
+  .pts-hero__magnolia {
+    bottom: -5vh;
+    width: 105vw;
+    height: 28vh;
+  }
+
+  .pts-hero__title {
+    top: 50%;
+    width: 98vw;
+    font-size: clamp(58px, 9vw, 118px);
+    line-height: .83;
   }
 }
 
 @media (max-width: 809px) {
   .pts-hero {
-    height: 105svh;
+    height: 126svh;
+    min-height: 720px;
+  }
+
+  .pts-hero__stage {
     min-height: 650px;
   }
-  .pts-hero__stage { min-height: 640px; }
+
   .pts-hero__portrait {
-    object-position: 50% 30%;
-    transform: scale(1.16);
+    object-position: 51% 24%;
+    transform: translate3d(0, var(--portrait-y), 0) scale(1.08);
   }
+
   .pts-hero__pink {
-    object-fit: cover;
-    object-position: center 66%;
-    transform: scale(1.34) translate3d(0, 20%, 0);
+    bottom: -2vh;
+    width: 116vw;
+    height: 23vh;
+    object-position: center 50%;
   }
-  .pts-hero__title {
-    top: 58%;
-    width: 110vw;
-    font-size: clamp(48px, 14vw, 92px);
-    line-height: .82;
-    letter-spacing: -.065em;
-  }
-  .pts-hero__title span { transform: scaleX(.73); }
+
   .pts-hero__magnolia {
-    object-fit: cover;
-    object-position: center 70%;
-    transform: scale(1.34) translate3d(0, 28%, 0);
+    bottom: -4vh;
+    width: 112vw;
+    height: 25vh;
+    object-position: center 50%;
   }
+
+  .pts-hero__title {
+    top: 49%;
+    width: 108vw;
+    font-size: clamp(42px, 11.7vw, 76px);
+    line-height: .84;
+    letter-spacing: -.055em;
+  }
+
+  .pts-hero__title span {
+    transform: scaleX(.78);
+  }
+
   .pts-hero__subtitle {
-    width: 88vw;
-    bottom: 42px;
-    font-size: clamp(20px, 5.8vw, 31px);
+    bottom: 18px;
+    width: 90vw;
+    font-size: clamp(18px, 4.8vw, 27px);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .pts-hero__portrait,
-  .pts-hero__pink,
-  .pts-hero__title,
-  .pts-hero__magnolia,
-  .pts-hero__subtitle {
-    animation: none !important;
+  .pts-hero {
+    --portrait-y: 0px !important;
+    --title-y: 0px !important;
+    --pink-y: 0px !important;
+    --magnolia-y: 0px !important;
+    --subtitle-y: 0px !important;
   }
 }
