@@ -6,8 +6,18 @@ export const dynamic = "force-dynamic";
 
 export async function GET() {
   try {
-    const filePath = path.join(process.cwd(), "public", "assets", "hero-current.webp");
-    const image = await readFile(filePath);
+    const assetsDir = path.join(process.cwd(), "public", "assets");
+    const parts = await Promise.all(
+      [1, 2, 3, 4, 5, 6, 7].map((n) =>
+        readFile(
+          path.join(assetsDir, `hero-live.b64.${String(n).padStart(2, "0")}`),
+          "utf8",
+        ),
+      ),
+    );
+
+    const base64 = parts.join("").replace(/\s+/g, "");
+    const image = Buffer.from(base64, "base64");
 
     return new Response(image, {
       status: 200,
