@@ -2,8 +2,8 @@ import type { NextRequest } from "next/server";
 
 const SOURCE_URL = "https://danmall.com/?ref=lapaninja";
 const SOURCE_ORIGIN = "https://danmall.com/";
-const DAN_HERO_ASSET =
-  "https://framerusercontent.com/images/hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg";
+const DAN_HERO_ASSET_PATTERN =
+  /https:\/\/framerusercontent\.com\/images\/hIvMq00Eiq5eJzxlzt69EooL6Cg\.jpg(?:\?[^\s\"'<>)]*)?/gi;
 
 function injectBase(html: string) {
   if (html.includes("<base ")) return html;
@@ -30,9 +30,12 @@ export async function GET(request: NextRequest) {
   let html = injectBase(await upstream.text());
   const origin = request.nextUrl.origin;
 
-  // Replace the Dan Mall hero portrait BEFORE the HTML reaches the browser.
-  // Keeping any original query string is harmless; our local image route ignores it.
-  html = html.replaceAll(DAN_HERO_ASSET, `${origin}/florist-hero`);
+  // Remove the Dan Mall hero portrait from every HTML/CSS/srcset occurrence
+  // before Framer reaches the browser. A transparent data URI keeps image
+  // attributes/styles valid while making the portrait invisible.
+  const transparentPixel =
+    "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
+  html = html.replace(DAN_HERO_ASSET_PATTERN, transparentPixel);
 
   const runtime = [
     `<script src="${origin}/floral-copy-core.js"></script>`,
@@ -55,7 +58,7 @@ export async function GET(request: NextRequest) {
       "content-type": "text/html; charset=utf-8",
       "cache-control": "no-store, max-age=0",
       "x-reference-source": "danmall.com",
-      "x-project-copy": "floral-runtime-v5",
+      "x-project-copy": "floral-runtime-v6-no-dan-hero",
     },
   });
 }
