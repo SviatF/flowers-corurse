@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/rebuild_clean_selfhost_retry.py", line 126, in <module>
-    build.main()
-  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/rebuild_clean_selfhost.py", line 409, in main
-    verify(localized)
-  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/rebuild_clean_selfhost.py", line 389, in verify
-    raise RuntimeError("Forbidden HTML references remain: " + ", ".join(hits))
-RuntimeError: Forbidden HTML references remain: danmall.com, framerusercontent.com, fonts.gstatic.com

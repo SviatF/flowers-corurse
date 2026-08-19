@@ -1,0 +1,2 @@
+import{t as e}from"./rolldown-runtime.Dh6celcD.mjs";function t(e,t){return{description:`I help designers make more money and get their flowers through better pricing, leadership, and a career you love. 28 years of lessons. Join 70k+ readers.`,favicon:`/vendor/framer/assets/9bxYxYRHZdrr0I2fK5ByFugfv4M.png`,robots:`max-image-preview:large`,socialImage:`/vendor/framer/assets/5iNlQ9vWy985rE7DxnOJd0vSGik.png`,title:`Dan Mall Helps Designers Make More Money & Get Their Flowers`}}var n=e((()=>{}));export{t as n,n as t};
+//# sourceMappingURL=siteMetadata.BuiuVxXA.mjs.map

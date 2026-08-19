@@ -1,0 +1,7 @@
+// @ts-nocheck
+/**
+ * This file is generated inside FramerStudio. To update it run "make build"
+ * inside "./src/codeblock-dependencies" and copy the file from "./modules".
+ */// ../../node_modules/@codemirror/lang-rust/dist/index.js
+import{parser}from"/vendor/framer/modules/GdpLl5650m5agtwGYbcm/HGmhuBWmZOVK79BjFtZL/lezer_rust.js";import{LRLanguage,indentNodeProp,continuedIndent,foldNodeProp,foldInside,LanguageSupport}from"/vendor/framer/modules/aJsTBlWNkIaM900KNIXT/O6D7zESNv8FU9mcfHZ5S/codemirror_language.js";var rustLanguage=/* @__PURE__ */LRLanguage.define({name:"rust",parser:/* @__PURE__ */parser.configure({props:[/* @__PURE__ */indentNodeProp.add({IfExpression:/* @__PURE__ */continuedIndent({except:/^\s*({|else\b)/}),"String BlockComment":()=>null,AttributeItem:cx=>cx.continue(),"Statement MatchArm":/* @__PURE__ */continuedIndent()}),/* @__PURE__ */foldNodeProp.add(type=>{if(/(Block|edTokens|List)$/.test(type.name))return foldInside;if(type.name=="BlockComment")return tree=>({from:tree.from+2,to:tree.to-2});return void 0;})]}),languageData:{commentTokens:{line:"//",block:{open:"/*",close:"*/"}},indentOnInput:/^\s*(?:\{|\})$/,closeBrackets:{stringPrefixes:["b","r","br"]}}});function rust(){return new LanguageSupport(rustLanguage);}export{rust,rustLanguage};
+export const __FramerMetadata__ = {"exports":{"rust":{"type":"function","annotations":{"framerContractVersion":"1"}},"rustLanguage":{"type":"variable","annotations":{"framerContractVersion":"1"}},"__FramerMetadata__":{"type":"variable"}}}
