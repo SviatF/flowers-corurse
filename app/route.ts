@@ -12,9 +12,8 @@ function injectBase(html: string) {
 
 function injectHeroOverrideCss(html: string, origin: string) {
   const css = `<style id="floral-hero-hard-override">
-/* Target the exact Dan Mall 2000x1333 hero portrait by DOM structure, not CDN URL. */
 [data-framer-background-image-wrapper="true"]:has(> img[alt="Dan Mall"][width="2000"][height="1333"]) {
-  background-image: url("${origin}/assets/florist-hero.webp") !important;
+  background-image: url("${origin}/hero-florist") !important;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
@@ -49,7 +48,6 @@ export async function GET(request: NextRequest) {
   let html = injectBase(await upstream.text());
   html = injectHeroOverrideCss(html, origin);
 
-  // Prevent the original portrait from flashing during the initial SSR pass.
   const transparentPixel =
     "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
   html = html.replace(DAN_HERO_ASSET_PATTERN, transparentPixel);
@@ -76,7 +74,7 @@ export async function GET(request: NextRequest) {
       "content-type": "text/html; charset=utf-8",
       "cache-control": "no-store, max-age=0",
       "x-reference-source": "danmall.com",
-      "x-project-copy": "floral-runtime-v9-hard-hero-override",
+      "x-project-copy": "floral-runtime-v10-decoded-hero",
     },
   });
 }
