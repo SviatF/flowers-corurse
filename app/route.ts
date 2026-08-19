@@ -2,6 +2,8 @@ import type { NextRequest } from "next/server";
 
 const SOURCE_URL = "https://danmall.com/?ref=lapaninja";
 const SOURCE_ORIGIN = "https://danmall.com/";
+const DAN_HERO_ASSET =
+  "https://framerusercontent.com/images/hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg";
 
 function injectBase(html: string) {
   if (html.includes("<base ")) return html;
@@ -27,11 +29,15 @@ export async function GET(request: NextRequest) {
 
   let html = injectBase(await upstream.text());
   const origin = request.nextUrl.origin;
+
+  // Replace the Dan Mall hero portrait BEFORE the HTML reaches the browser.
+  // Keeping any original query string is harmless; our local image route ignores it.
+  html = html.replaceAll(DAN_HERO_ASSET, `${origin}/florist-hero`);
+
   const runtime = [
     `<script src="${origin}/floral-copy-core.js"></script>`,
     `<script src="${origin}/floral-copy-results.js"></script>`,
     `<script src="${origin}/floral-copy-footer.js"></script>`,
-    `<script src="${origin}/floral-image-overrides.js"></script>`,
   ].join("");
 
   html = html.includes("</body>")
@@ -49,7 +55,7 @@ export async function GET(request: NextRequest) {
       "content-type": "text/html; charset=utf-8",
       "cache-control": "no-store, max-age=0",
       "x-reference-source": "danmall.com",
-      "x-project-copy": "floral-runtime-v4",
+      "x-project-copy": "floral-runtime-v5",
     },
   });
 }
