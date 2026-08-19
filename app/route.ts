@@ -10,17 +10,16 @@ function injectBase(html: string) {
   return html.replace(/<head([^>]*)>/i, `<head$1><base href="${SOURCE_ORIGIN}">`);
 }
 
-function injectHeroOverrideCss(html: string, origin: string) {
+function injectHeroOverrideCss(html: string) {
   const css = `<style id="floral-hero-hard-override">
-[data-framer-background-image-wrapper="true"]:has(> img[alt="Dan Mall"][width="2000"][height="1333"]) {
-  background-image: url("${origin}/hero-florist") !important;
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-}
-[data-framer-background-image-wrapper="true"] > img[alt="Dan Mall"][width="2000"][height="1333"] {
-  opacity: 0 !important;
-  visibility: hidden !important;
+[data-framer-background-image-wrapper="true"] > img[width="2000"][height="1333"] {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
 }
 </style>`;
 
@@ -45,15 +44,15 @@ export async function GET(request: NextRequest) {
   }
 
   const origin = request.nextUrl.origin;
+  const heroUrl = `${origin}/hero-florist?v=20260819-1`;
   let html = injectBase(await upstream.text());
-  html = injectHeroOverrideCss(html, origin);
+  html = injectHeroOverrideCss(html);
 
-  const transparentPixel =
-    "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
-  html = html.replace(DAN_HERO_ASSET_PATTERN, transparentPixel);
+  // Replace the original Dan Mall hero URL before the page reaches the browser.
+  html = html.replace(DAN_HERO_ASSET_PATTERN, heroUrl);
 
   const runtime = [
-    `<script src="${origin}/floral-image-overrides.js"></script>`,
+    `<script src="${origin}/floral-image-overrides.js?v=20260819-1"></script>`,
     `<script src="${origin}/floral-copy-core.js"></script>`,
     `<script src="${origin}/floral-copy-results.js"></script>`,
     `<script src="${origin}/floral-copy-footer.js"></script>`,
@@ -74,7 +73,7 @@ export async function GET(request: NextRequest) {
       "content-type": "text/html; charset=utf-8",
       "cache-control": "no-store, max-age=0",
       "x-reference-source": "danmall.com",
-      "x-project-copy": "floral-runtime-v10-decoded-hero",
+      "x-project-copy": "floral-runtime-v11-direct-img-hero",
     },
   });
 }
