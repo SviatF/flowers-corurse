@@ -1,8 +1,8 @@
 (() => {
-  const replacements = {
-    dan: "ГРОШІ",
-    mall: "НА КВІТАХ",
-  };
+  const replacements = new Map([
+    ["dan", "ГРОШІ"],
+    ["mall", "НА КВІТАХ"],
+  ]);
 
   const norm = (value) =>
     (value || "")
@@ -12,8 +12,7 @@
 
   let applying = false;
 
-  function findHeroWord(word) {
-    const candidates = [];
+  function replaceExactTextNodes() {
     const walker = document.createTreeWalker(
       document.body || document.documentElement,
       NodeFilter.SHOW_TEXT,
@@ -21,42 +20,40 @@
 
     let node;
     while ((node = walker.nextNode())) {
-      if (norm(node.nodeValue).toLowerCase() !== word) continue;
-
       const parent = node.parentElement;
       if (!parent) continue;
       if (["SCRIPT", "STYLE", "NOSCRIPT"].includes(parent.tagName)) continue;
 
-      const rect = parent.getBoundingClientRect();
-      if (rect.bottom < 0 || rect.top > window.innerHeight * 1.25) continue;
+      const key = norm(node.nodeValue).toLowerCase();
+      const replacement = replacements.get(key);
+      if (!replacement) continue;
 
-      const fontSize = parseFloat(getComputedStyle(parent).fontSize) || 0;
-      if (fontSize < 48) continue;
-
-      candidates.push({ node, parent, fontSize, top: rect.top });
+      // Replace only standalone Dan/Mall text nodes. Sentences and testimonials are untouched.
+      node.nodeValue = replacement;
+      parent.setAttribute("data-floral-hero-title-replaced", key);
     }
+  }
 
-    candidates.sort((a, b) => b.fontSize - a.fontSize || a.top - b.top);
-    return candidates[0] || null;
+  function replaceExactLeafElements() {
+    document.querySelectorAll("body *").forEach((element) => {
+      if (["SCRIPT", "STYLE", "NOSCRIPT"].includes(element.tagName)) return;
+      if (element.children.length > 0) return;
+
+      const key = norm(element.textContent).toLowerCase();
+      const replacement = replacements.get(key);
+      if (!replacement) return;
+
+      if (element.textContent !== replacement) element.textContent = replacement;
+      element.setAttribute("data-floral-hero-title-replaced", key);
+    });
   }
 
   function applyHeroTitle() {
     if (applying) return;
     applying = true;
-
     try {
-      const dan = findHeroWord("dan");
-      const mall = findHeroWord("mall");
-
-      if (dan) {
-        dan.node.nodeValue = replacements.dan;
-        dan.parent.setAttribute("data-floral-hero-word", "money");
-      }
-
-      if (mall) {
-        mall.node.nodeValue = replacements.mall;
-        mall.parent.setAttribute("data-floral-hero-word", "flowers");
-      }
+      replaceExactTextNodes();
+      replaceExactLeafElements();
     } finally {
       applying = false;
     }
@@ -65,8 +62,8 @@
   const schedule = () => requestAnimationFrame(applyHeroTitle);
 
   applyHeroTitle();
-  document.addEventListener("DOMContentLoaded", applyHeroTitle, { once: true });
-  window.addEventListener("load", applyHeroTitle, { once: true });
+  document.addEventListener("DOMContentLoaded", applyHeroTitle);
+  window.addEventListener("load", applyHeroTitle);
 
   new MutationObserver(schedule).observe(document.documentElement, {
     subtree: true,
@@ -74,7 +71,10 @@
     characterData: true,
   });
 
-  [50, 150, 350, 700, 1200, 2200].forEach((delay) =>
-    setTimeout(applyHeroTitle, delay),
+  [0, 25, 50, 100, 200, 400, 700, 1000, 1500, 2500, 4000, 6000].forEach(
+    (delay) => setTimeout(applyHeroTitle, delay),
   );
+
+  const timer = setInterval(applyHeroTitle, 500);
+  setTimeout(() => clearInterval(timer), 10000);
 })();
