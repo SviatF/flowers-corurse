@@ -9,166 +9,182 @@ const HERO_WOMAN_SRC = `data:image/webp;base64,${heroImage}`;
 
 const programs = [
   {
-    index: "01",
-    label: "START",
-    title: "Флорист від нуля до результату",
+    className: "course-scene course-scene--start",
+    index: "01 / START",
+    title: <>Флорист<br />від нуля до результату</>,
     price: "199 €",
     lead: "Професійна база для тих, хто хоче впевнено зайти у флористику.",
-    text: "Композиція, колір, форма, техніки роботи з квітами та мислення флориста — без хаосу й випадкових знань.",
-    cta: "Почати навчання",
+    points: ["Композиція", "Колір", "Форма", "Техніки", "Професійне мислення"],
+    cta: "ПОЧАТИ НАВЧАННЯ",
+    visual: "flower",
   },
   {
-    index: "02",
-    label: "BUSINESS",
-    title: "Флористичний бізнес від А до Я",
+    className: "course-scene course-scene--business",
+    index: "02 / BUSINESS",
+    title: <>Флористичний бізнес<br />від А до Я</>,
     price: "799 €",
-    lead: "Не просто робити красиві букети. Побудувати навколо них продукт і бізнес.",
-    text: "Концепція, асортимент, закупівлі, ціноутворення, продажі, клієнти, маркетинг і система розвитку власного квіткового бренду.",
-    cta: "Побудувати бізнес",
-    featured: true,
+    lead: "Не просто створюй букети. Побудуй бізнес навколо них.",
+    points: ["Концепція", "Продукт", "Закупівлі", "Ціноутворення", "Продажі", "Маркетинг", "Клієнти"],
+    cta: "ПОБУДУВАТИ БІЗНЕС",
+    visual: "bouquet",
   },
   {
-    index: "03",
-    label: "VIP / 3 MONTHS",
-    title: "VIP-наставництво",
+    className: "course-scene course-scene--vip",
+    index: "03 / PERSONAL",
+    title: <>VIP-наставництво</>,
     price: "2999 €",
-    lead: "Три місяці індивідуальної роботи над твоїм реальним запуском.",
-    text: "Разом проходимо шлях від ідеї та позиціонування до закупівель, першого продукту, продажів і перших клієнтів.",
-    cta: "Подати заявку",
+    lead: "3 місяці / 1:1 — індивідуальна робота над твоїм реальним бізнесом.",
+    points: ["Позиціонування", "Продукт", "Закупівлі", "Ціна", "Запуск", "Перші клієнти"],
+    cta: "ПОДАТИ ЗАЯВКУ",
+    visual: "portrait",
   },
 ];
 
 const outcomes = [
-  ["01", "Майстерність", "Створювати роботи, за які готові платити."],
-  ["02", "Стиль", "Сформувати власний візуальний почерк."],
-  ["03", "Продажі", "Розуміти продукт, ціну й клієнта."],
-  ["04", "Бізнес", "Побудувати систему, а не залежати від випадкових замовлень."],
+  ["01", "МАЙСТЕРНІСТЬ", "Створювати роботи, за які готові платити."],
+  ["02", "СТИЛЬ", "Сформувати власний візуальний почерк."],
+  ["03", "ПРОДАЖІ", "Розуміти продукт, ціну та клієнта."],
+  ["04", "БІЗНЕС", "Побудувати систему, а не залежати від випадкових замовлень."],
 ];
+
+const audience = [
+  "Хочеш освоїти професію флориста.",
+  "Вже працюєш, але відчуваєш, що стоїш на місці.",
+  "Мрієш про власний квітковий бренд.",
+  "Хочеш, щоб творчість стала джерелом доходу.",
+];
+
+function CourseVisual({ type }: { type: string }) {
+  if (type === "flower") {
+    return (
+      <div className="course-visual course-visual--flower" aria-hidden="true">
+        <div className="course-visual__wash" />
+        <img src="/site/images/3f61b04bf5f0c093.webp" alt="" />
+        <span>FLORAL FOUNDATION</span>
+      </div>
+    );
+  }
+
+  if (type === "bouquet") {
+    return (
+      <div className="course-visual course-visual--photo" aria-hidden="true">
+        <img src={HERO_WOMAN_SRC} alt="" />
+        <span>BUSINESS / PRODUCT / SALES</span>
+      </div>
+    );
+  }
+
+  return (
+    <div className="course-visual course-visual--portrait" aria-hidden="true">
+      <img src={HERO_WOMAN_SRC} alt="" />
+      <div className="course-visual__line">1:1 / PERSONAL / 3 MONTHS</div>
+    </div>
+  );
+}
 
 export default function Page() {
   return (
-    <main className="course-site">
-      <header className="pts-hero" aria-label="Hero">
+    <main className="luxury-site">
+      <header className="pts-hero" id="top" aria-label="Hero">
         <nav className="site-nav" aria-label="Головна навігація">
           <a className="site-nav__brand" href="#top">FLORAL EDUCATION</a>
           <div className="site-nav__links">
             <a href="#programs">ПРОГРАМИ</a>
-            <a href="#approach">ПІДХІД</a>
+            <a href="#results">РЕЗУЛЬТАТ</a>
             <a href="#vip">VIP</a>
           </div>
           <a className="site-nav__cta" href="#programs">ОБРАТИ ПРОГРАМУ ↗</a>
         </nav>
 
-        <div className="pts-hero__stage" id="top">
-          <img
-            className="pts-hero__portrait"
-            src={HERO_WOMAN_SRC}
-            alt="Флористка з білими трояндами"
-            width="1536"
-            height="1024"
-            loading="eager"
-            decoding="async"
-            fetchPriority="high"
-          />
+        <div className="pts-hero__stage">
+          <img className="pts-hero__portrait" src={HERO_WOMAN_SRC} alt="" loading="eager" decoding="async" fetchPriority="high" />
           <div className="pts-hero__veil" aria-hidden="true" />
           <img className="pts-hero__pink" src="/site/images/25a19fcf83a07670.webp" alt="" aria-hidden="true" />
           <img className="pts-hero__magnolia" src="/site/images/3f61b04bf5f0c093.webp" alt="" aria-hidden="true" />
-          <p className="pts-hero__eyebrow">FLORAL EDUCATION / 2026</p>
-          <h1 className="pts-hero__title" aria-label="СТВОРЮЙ. РОСТИ. ЗАРОБЛЯЙ.">
-            <span>СТВОРЮЙ.</span>
-            <span>РОСТИ.</span>
-            <span>ЗАРОБЛЯЙ.</span>
-          </h1>
-          <p className="pts-hero__subtitle">Перетвори любов до квітів на професію,<br />стиль і власний бізнес.</p>
-          <a className="pts-hero__scroll" href="#intro">ДІЗНАТИСЯ БІЛЬШЕ ↓</a>
+
+          <div className="hero-copy">
+            <p className="pts-hero__eyebrow">FLORAL EDUCATION / 2026</p>
+            <h1 className="pts-hero__title">
+              <span>СТВОРЮЙ.</span>
+              <span>РОСТИ.</span>
+              <span>ЗАРОБЛЯЙ.</span>
+            </h1>
+            <p className="pts-hero__subtitle">Перетвори любов до квітів<br />на професію, стиль і власний бізнес.</p>
+            <a className="pts-hero__scroll" href="#philosophy">ОБРАТИ СВІЙ ШЛЯХ ↓</a>
+          </div>
         </div>
       </header>
 
-      <section className="intro section-shell" id="intro">
-        <div className="intro__copy">
-          <div className="section-kicker">01 / ABOUT THE PATH</div>
-          <h2>Від першого букета — до власного квіткового бренду.</h2>
-          <p className="intro__lead">Флористика може залишитися красивим захопленням. А може стати професією, стилем і справою, яка приносить гроші.</p>
-          <p className="intro__text">Тому навчання побудоване як три рівні: майстерність, бізнес-система та персональний запуск із наставником.</p>
-          <a className="text-link" href="#programs">ОБРАТИ СВІЙ РІВЕНЬ →</a>
-        </div>
+      <section className="philosophy scene scene--ivory" id="philosophy">
+        <div className="shell philosophy__grid">
+          <div className="philosophy__copy motion">
+            <div className="eyebrow eyebrow--dark">01 / PHILOSOPHY</div>
+            <h2>Квіти —<br />це більше,<br />ніж красиво.</h2>
+            <p className="serif-lead">Це ремесло, стиль, продукт і можливість побудувати бізнес навколо того, що ти любиш.</p>
+            <p className="body-copy">Ми створили три рівні навчання — від професії флориста до запуску власного квіткового бренду.</p>
+          </div>
 
-        <figure className="intro__visual">
-          <img src={HERO_WOMAN_SRC} alt="Флористка поруч із композицією з білих троянд" />
-          <figcaption>
-            <span>FLORAL EDUCATION</span>
-            <span>CRAFT / STYLE / BUSINESS</span>
-          </figcaption>
-        </figure>
+          <figure className="editorial-photo motion">
+            <div className="editorial-photo__frame">
+              <img src={HERO_WOMAN_SRC} alt="Флористка з букетом білих троянд" />
+            </div>
+            <figcaption>
+              <span>FROM CRAFT TO BRAND</span>
+              <em>Від першого букета — до власного бренду.</em>
+            </figcaption>
+          </figure>
+        </div>
       </section>
 
-      <section className="programs section-shell" id="programs">
-        <div className="programs__header">
+      <section className="programs scene scene--charcoal" id="programs">
+        <div className="shell programs__head motion">
           <div>
-            <div className="section-kicker">02 / PROGRAMS</div>
-            <h2>Три рівні.<br />Один шлях уперед.</h2>
+            <div className="eyebrow">02 / PROGRAMS</div>
+            <h2>Обери свій шлях</h2>
           </div>
-          <p>Не потрібно купувати “все й одразу”. Обери точку, на якій ти зараз, і наступний логічний крок.</p>
+          <p className="serif-note">Три різні рівні.<br />Одна мета — твій результат.</p>
         </div>
 
-        <div className="program-grid">
+        <div className="shell course-stack">
           {programs.map((program) => (
-            <article className={`program-card${program.featured ? " program-card--featured" : ""}`} key={program.index}>
-              <div className="program-card__meta">
-                <span>{program.index}</span>
-                <span>{program.label}</span>
-              </div>
-              <div className="program-card__body">
+            <article className={`${program.className} motion`} key={program.index}>
+              <div className="course-scene__copy">
+                <div className="course-scene__meta">
+                  <span>{program.index}</span>
+                  <span>{program.price}</span>
+                </div>
                 <h3>{program.title}</h3>
-                <div className="program-card__price">{program.price}</div>
-                <p className="program-card__lead">{program.lead}</p>
-                <p className="program-card__text">{program.text}</p>
+                <p className="course-scene__lead">{program.lead}</p>
+                <div className="course-points">
+                  {program.points.map((item) => <span key={item}>{item}</span>)}
+                </div>
+                <a className="underlined-link" href="#final-cta">{program.cta} →</a>
               </div>
-              <a href="#final-cta">{program.cta} →</a>
+              <CourseVisual type={program.visual} />
             </article>
           ))}
         </div>
       </section>
 
-      <section className="visual-break" aria-label="Floral visual">
-        <div className="visual-break__copy section-shell">
-          <div className="section-kicker">03 / THE SHIFT</div>
-          <p className="visual-break__serif">Красиво — це старт.</p>
-          <h2>Професійно — це коли ти розумієш, чому це працює.</h2>
-          <p>Форма. Колір. Продукт. Ціна. Продаж. Клієнт. Система.</p>
-        </div>
-        <img className="visual-break__pink" src="/site/images/25a19fcf83a07670.webp" alt="" aria-hidden="true" />
-        <img className="visual-break__white" src="/site/images/3f61b04bf5f0c093.webp" alt="" aria-hidden="true" />
-      </section>
-
-      <section className="approach section-shell" id="approach">
-        <figure className="approach__visual">
-          <img src={HERO_WOMAN_SRC} alt="Портрет флористки" />
-          <div className="approach__badge">FROM FLOWERS<br />TO BUSINESS</div>
-        </figure>
-
-        <div className="approach__copy">
-          <div className="section-kicker">04 / APPROACH</div>
-          <h2>Не просто курс.<br />Послідовність рішень.</h2>
-          <p>Спочатку ти вчишся бачити й створювати. Потім — упаковувати роботу в продукт. Далі — продавати, рахувати й масштабувати.</p>
-          <ol className="approach__steps">
-            <li><span>01</span><div><strong>Створювати</strong><small>Техніка, композиція, смак.</small></div></li>
-            <li><span>02</span><div><strong>Позиціонувати</strong><small>Стиль, продукт, бренд.</small></div></li>
-            <li><span>03</span><div><strong>Продавати</strong><small>Ціна, клієнт, комунікація.</small></div></li>
-            <li><span>04</span><div><strong>Рости</strong><small>Процеси, система, масштаб.</small></div></li>
-          </ol>
+      <section className="visual-break scene">
+        <img className="visual-break__image" src={HERO_WOMAN_SRC} alt="Флористка та білі троянди" />
+        <div className="visual-break__shade" />
+        <div className="shell visual-break__content motion">
+          <div className="eyebrow">03 / PASSION TO PROFIT</div>
+          <p>Від любові<br />до квітів —</p>
+          <em>до справи,<br />яка приносить дохід.</em>
         </div>
       </section>
 
-      <section className="outcomes section-shell">
-        <div className="outcomes__header">
-          <div className="section-kicker">05 / RESULT</div>
-          <h2>Що зміниться після навчання</h2>
+      <section className="results scene scene--ivory" id="results">
+        <div className="shell results__head motion">
+          <div className="eyebrow eyebrow--dark">04 / WHAT YOU GET</div>
+          <h2>Не просто знання.<br /><span>Нова система мислення.</span></h2>
         </div>
-        <div className="outcome-grid">
+        <div className="shell result-grid">
           {outcomes.map(([index, title, text]) => (
-            <article className="outcome-item" key={index}>
-              <span>{index}</span>
+            <article className="result-item motion" key={index}>
+              <span className="result-item__index">{index}</span>
               <h3>{title}</h3>
               <p>{text}</p>
             </article>
@@ -176,43 +192,95 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="vip" id="vip">
-        <div className="vip__visual">
-          <img src={HERO_WOMAN_SRC} alt="Персональне наставництво з флористичного бізнесу" />
-        </div>
-        <div className="vip__content">
-          <div className="section-kicker">VIP / 3 MONTHS / 1:1</div>
-          <h2>Твій бізнес.<br />Наш спільний запуск.</h2>
-          <p className="vip__lead">Для тих, хто не хоче ще пів року збирати пазл самостійно.</p>
-          <p className="vip__text">Ми працюємо над твоєю реальною концепцією: позиціонування, продукт, закупівлі, ціна, продажі та перші клієнти. Три місяці — персонально.</p>
-          <div className="vip__price-row">
-            <div className="vip__price">2999 €</div>
-            <a href="#final-cta">ХОЧУ НАСТАВНИЦТВО →</a>
+      <section className="business scene scene--wine" id="business">
+        <div className="shell business__grid">
+          <div className="business__photo motion">
+            <img src={HERO_WOMAN_SRC} alt="Букет білих троянд" />
+            <div className="business__photo-label">CRAFT / PRODUCT / SALES</div>
           </div>
-          <small>Кількість місць обмежена через індивідуальний формат роботи.</small>
+          <div className="business__copy motion">
+            <div className="eyebrow">05 / BUSINESS MINDSET</div>
+            <h2>Талант —<br />це початок.<br /><span>Система — це гроші.</span></h2>
+            <p>Багато флористів створюють красиві роботи, але не розуміють, як перетворити майстерність на стабільний дохід.</p>
+            <div className="formula">
+              <span>ФЛОРИСТИКА</span><b>+</b><span>ПРОДУКТ</span><b>+</b><span>ЦІНА</span><b>+</b><span>МАРКЕТИНГ</span><b>+</b><span>ПРОДАЖІ</span>
+            </div>
+            <a className="underlined-link" href="#programs">ПОДИВИТИСЬ BUSINESS PROGRAM →</a>
+          </div>
         </div>
       </section>
 
-      <section className="final-cta section-shell" id="final-cta">
-        <div className="final-cta__copy">
-          <div className="section-kicker">READY?</div>
-          <h2>Обери точку старту.</h2>
-          <p>199 € — професія. 799 € — бізнес-система. 2999 € — персональний запуск.</p>
-          <div className="final-cta__actions">
-            <a className="button-primary" href="#programs">ПОРІВНЯТИ ПРОГРАМИ →</a>
-            <a className="button-secondary" href="#vip">ДІЗНАТИСЯ ПРО VIP →</a>
+      <section className="audience scene scene--taupe">
+        <div className="shell audience__grid">
+          <div className="audience__intro motion">
+            <div className="eyebrow eyebrow--dark">06 / FOR WHOM</div>
+            <h2>Це навчання<br />для тебе, якщо…</h2>
+            <p className="serif-lead">Не важливо, чи ти тільки починаєш, чи вже працюєш з квітами. Важливо — куди хочеш прийти.</p>
+          </div>
+          <div className="audience__rows">
+            {audience.map((item, index) => (
+              <div className="audience-row motion" key={item}>
+                <span>0{index + 1}</span>
+                <p>{item}</p>
+                {index % 2 === 0 ? (
+                  <div className="audience-row__floral" aria-hidden="true"><img src="/site/images/3f61b04bf5f0c093.webp" alt="" /></div>
+                ) : (
+                  <div className="audience-row__floral audience-row__floral--pink" aria-hidden="true"><img src="/site/images/25a19fcf83a07670.webp" alt="" /></div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
-        <img className="final-cta__flower" src="/site/images/3f61b04bf5f0c093.webp" alt="" aria-hidden="true" />
       </section>
 
-      <footer className="site-footer section-shell">
-        <div>FLORAL EDUCATION</div>
-        <div>СТВОРЮЙ. РОСТИ. ЗАРОБЛЯЙ.</div>
-        <a href="#top">НАВЕРХ ↑</a>
+      <section className="vip scene scene--olive" id="vip">
+        <div className="shell vip__grid">
+          <div className="vip__portrait motion">
+            <img src={HERO_WOMAN_SRC} alt="Персональна наставниця" />
+            <span>PERSONAL / 1:1 / 3 MONTHS</span>
+          </div>
+          <div className="vip__copy motion">
+            <div className="eyebrow">VIP / 3 MONTHS / PERSONAL</div>
+            <h2>Твій бізнес.<br /><span>Наш спільний запуск.</span></h2>
+            <p className="serif-lead serif-lead--light">Три місяці ми працюємо не над навчальним кейсом — а над твоїм реальним бізнесом.</p>
+            <div className="vip-roadmap">
+              {['КОНЦЕПЦІЯ','ПОЗИЦІОНУВАННЯ','ПРОДУКТ','ЗАКУПІВЛІ','ЦІНА','ПРОДАЖІ','ПЕРШІ КЛІЄНТИ'].map((item, index, arr) => (
+                <span key={item}>{item}{index < arr.length - 1 ? <b>→</b> : null}</span>
+              ))}
+            </div>
+            <div className="vip__footer">
+              <strong>2999 €</strong>
+              <a className="underlined-link" href="#final-cta">ХОЧУ НАСТАВНИЦТВО →</a>
+              <small>Кількість місць обмежена через індивідуальний формат роботи.</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="final-cta scene scene--charcoal" id="final-cta">
+        <img className="final-cta__flower final-cta__flower--left" src="/site/images/25a19fcf83a07670.webp" alt="" aria-hidden="true" />
+        <img className="final-cta__flower final-cta__flower--right" src="/site/images/3f61b04bf5f0c093.webp" alt="" aria-hidden="true" />
+        <div className="shell final-cta__inner motion">
+          <div className="eyebrow">READY?</div>
+          <h2>Квіти можуть стати<br />твоєю професією.</h2>
+          <p className="serif-note">А професія — власним бізнесом.</p>
+          <div className="final-actions">
+            <a className="button button--ivory" href="#programs">ОБРАТИ ПРОГРАМУ →</a>
+            <a className="button button--ghost" href="#programs">ПОТРІБНА ДОПОМОГА З ВИБОРОМ?</a>
+          </div>
+        </div>
+      </section>
+
+      <footer className="footer">
+        <div className="shell footer__inner">
+          <span>FLORAL EDUCATION</span>
+          <span>СТВОРЮЙ. РОСТИ. ЗАРОБЛЯЙ.</span>
+          <a href="#top">НАВЕРХ ↑</a>
+        </div>
       </footer>
 
       <HeroParallax />
     </main>
   );
 }
+
