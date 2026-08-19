@@ -92,6 +92,22 @@
   will-change: transform;
 }
 
+.pts-hero__eyebrow {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  z-index: 12;
+  margin: 0;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  opacity: .68;
+  white-space: nowrap;
+}
+
 .pts-hero__title {
   position: absolute;
   top: 64%;
@@ -123,7 +139,7 @@
 .pts-hero__subtitle {
   position: absolute;
   left: 50%;
-  bottom: clamp(18px, 3vh, 38px);
+  bottom: clamp(58px, 8vh, 92px);
   z-index: 11;
   width: min(82vw, 790px);
   margin: 0;
@@ -137,6 +153,27 @@
   text-shadow: 0 2px 18px rgba(0,0,0,.52);
   pointer-events: none;
   will-change: transform;
+}
+
+.pts-hero__scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 22px;
+  z-index: 14;
+  transform: translateX(-50%);
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(255,255,255,.72);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: opacity .2s ease;
+}
+
+.pts-hero__scroll:hover {
+  opacity: .55;
 }
 
 .pts-hero + * {
@@ -201,6 +238,11 @@
     bottom: calc(43vh - 86.75vw);
   }
 
+  .pts-hero__eyebrow {
+    top: 13%;
+    font-size: 8px;
+  }
+
   .pts-hero__title {
     top: 66%;
     width: 108vw;
@@ -214,9 +256,14 @@
   }
 
   .pts-hero__subtitle {
-    bottom: 14px;
+    bottom: 62px;
     width: 90vw;
     font-size: clamp(18px, 4.8vw, 27px);
+  }
+
+  .pts-hero__scroll {
+    bottom: 18px;
+    font-size: 8px;
   }
 }
 
