@@ -55,6 +55,7 @@ export async function GET(request: NextRequest) {
     `<script src="${origin}/floral-copy-core.js?v=20260819-2"></script>`,
     `<script src="${origin}/floral-copy-results.js?v=20260819-2"></script>`,
     `<script src="${origin}/floral-copy-footer.js?v=20260819-2"></script>`,
+    `<script src="${origin}/floral-programs-nav.js?v=20260819-1"></script>`,
   ].join("");
 
   html = html.includes("</body>")
@@ -72,7 +73,7 @@ export async function GET(request: NextRequest) {
       "content-type": "text/html; charset=utf-8",
       "cache-control": "no-store, max-age=0",
       "x-reference-source": "danmall.com",
-      "x-project-copy": "floral-runtime-v13-exact-uploaded-hero",
+      "x-project-copy": "floral-runtime-v14-programs-home-only",
     },
   });
 }
