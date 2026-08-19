@@ -52,9 +52,7 @@ export default function Page() {
     <main className="course-site">
       <header className="pts-hero" aria-label="Hero">
         <nav className="site-nav" aria-label="Головна навігація">
-          <a className="site-nav__brand" href="#top" aria-label="Floral Education — на початок">
-            FLORAL EDUCATION
-          </a>
+          <a className="site-nav__brand" href="#top" aria-label="Floral Education — на початок">FLORAL EDUCATION</a>
           <div className="site-nav__links">
             <a href="#programs">ПРОГРАМИ</a>
             <a href="#result">РЕЗУЛЬТАТ</a>
@@ -64,62 +62,25 @@ export default function Page() {
         </nav>
 
         <div className="pts-hero__stage" id="top">
-          <img
-            className="pts-hero__portrait"
-            src="/site/images/95e2e4fcdce83e14.jpg"
-            alt=""
-            width="2000"
-            height="1333"
-            loading="eager"
-            decoding="async"
-            fetchPriority="high"
-          />
+          <img className="pts-hero__portrait" src="/site/images/95e2e4fcdce83e14.jpg" alt="" width="2000" height="1333" loading="eager" decoding="async" fetchPriority="high" />
           <div className="pts-hero__veil" aria-hidden="true" />
-          <img
-            className="pts-hero__pink"
-            src="/site/images/25a19fcf83a07670.webp"
-            alt=""
-            aria-hidden="true"
-            loading="eager"
-            decoding="async"
-          />
-          <img
-            className="pts-hero__magnolia"
-            src="/site/images/3f61b04bf5f0c093.webp"
-            alt=""
-            aria-hidden="true"
-            loading="eager"
-            decoding="async"
-          />
+          <img className="pts-hero__pink" src="/site/images/25a19fcf83a07670.webp" alt="" aria-hidden="true" loading="eager" decoding="async" />
+          <img className="pts-hero__magnolia" src="/site/images/3f61b04bf5f0c093.webp" alt="" aria-hidden="true" loading="eager" decoding="async" />
           <p className="pts-hero__eyebrow">FLORAL EDUCATION / 2026</p>
           <h1 className="pts-hero__title" aria-label="СТВОРЮЙ. РОСТИ. ЗАРОБЛЯЙ.">
-            <span>СТВОРЮЙ.</span>
-            <span>РОСТИ.</span>
-            <span>ЗАРОБЛЯЙ.</span>
+            <span>СТВОРЮЙ.</span><span>РОСТИ.</span><span>ЗАРОБЛЯЙ.</span>
           </h1>
-          <p className="pts-hero__subtitle">
-            Перетвори любов до квітів на професію,
-            <br />
-            стиль і власний бізнес.
-          </p>
+          <p className="pts-hero__subtitle">Перетвори любов до квітів на професію,<br />стиль і власний бізнес.</p>
           <a className="pts-hero__scroll" href="#manifesto">ОБРАТИ СВІЙ ШЛЯХ ↓</a>
         </div>
       </header>
 
       <section className="manifesto section-shell" id="manifesto">
         <div className="section-kicker">01 / MANIFESTO</div>
-        <h2 className="display-title">
-          КВІТИ — ЦЕ БІЛЬШЕ,
-          <br />
-          НІЖ КРАСИВО.
-        </h2>
+        <h2 className="display-title">КВІТИ — ЦЕ БІЛЬШЕ,<br />НІЖ КРАСИВО.</h2>
         <div className="manifesto__copy">
-          <p className="manifesto__lead">
-            Це професія. Це продукт. Це бізнес, який можна побудувати навколо власного стилю.
-          </p>
-          <p>
-            Ми створили три рівні навчання — від першої професійної бази до запуску власного квіткового бізнесу.
-          </p>
+          <p className="manifesto__lead">Це професія. Це продукт. Це бізнес, який можна побудувати навколо власного стилю.</p>
+          <p>Ми створили три рівні навчання — від першої професійної бази до запуску власного квіткового бізнесу.</p>
         </div>
         <img className="manifesto__flower" src="/site/images/3f61b04bf5f0c093.webp" alt="" aria-hidden="true" />
       </section>
@@ -130,23 +91,13 @@ export default function Page() {
           <h2 className="display-title">ОБЕРИ СВІЙ РІВЕНЬ</h2>
           <p>Від першого букета — до власного бренду.</p>
         </div>
-
         <div className="program-list">
           {programs.map((program) => (
             <article className={`program-card${program.featured ? " program-card--featured" : ""}`} key={program.index}>
-              <div className="program-card__topline">
-                <span>{program.index}</span>
-                <span>{program.label}</span>
-              </div>
-              <div className="program-card__main">
-                <h3>{program.title}</h3>
-                <div className="program-card__price">{program.price}</div>
-              </div>
+              <div className="program-card__topline"><span>{program.index}</span><span>{program.label}</span></div>
+              <div className="program-card__main"><h3>{program.title}</h3><div className="program-card__price">{program.price}</div></div>
               <p className="program-card__statement">{program.statement}</p>
-              <div className="program-card__bottom">
-                <p>{program.description}</p>
-                <a href="#final-cta">{program.cta} →</a>
-              </div>
+              <div className="program-card__bottom"><p>{program.description}</p><a href="#final-cta">{program.cta} →</a></div>
             </article>
           ))}
         </div>
@@ -157,52 +108,22 @@ export default function Page() {
         <img className="floral-statement__white" src="/site/images/3f61b04bf5f0c093.webp" alt="" aria-hidden="true" />
         <div className="floral-statement__content section-shell">
           <div className="section-kicker">03 / FROM PASSION TO PROFIT</div>
-          <h2>
-            ВІД ЛЮБОВІ
-            <br />
-            ДО КВІТІВ —
-            <br />
-            ДО ДОХОДУ.
-          </h2>
+          <h2>ВІД ЛЮБОВІ<br />ДО КВІТІВ —<br />ДО ДОХОДУ.</h2>
           <p>Красиві роботи привертають увагу. Система перетворює їх на бізнес.</p>
         </div>
       </section>
 
       <section className="outcomes section-shell" id="result">
-        <div className="outcomes__intro">
-          <div className="section-kicker">04 / RESULT</div>
-          <h2 className="display-title">
-            НЕ ПРОСТО ЗНАННЯ.
-            <br />
-            НОВИЙ РІВЕНЬ.
-          </h2>
-        </div>
+        <div className="outcomes__intro"><div className="section-kicker">04 / RESULT</div><h2 className="display-title">НЕ ПРОСТО ЗНАННЯ.<br />НОВИЙ РІВЕНЬ.</h2></div>
         <div className="outcome-grid">
-          {outcomes.map(([index, title, text]) => (
-            <article className="outcome-item" key={index}>
-              <span>{index}</span>
-              <h3>{title}</h3>
-              <p>{text}</p>
-            </article>
-          ))}
+          {outcomes.map(([index, title, text]) => <article className="outcome-item" key={index}><span>{index}</span><h3>{title}</h3><p>{text}</p></article>)}
         </div>
       </section>
 
       <section className="money section-shell">
         <div className="section-kicker">05 / MONEY</div>
-        <h2 className="display-title">
-          ТАЛАНТ — ЦЕ ПОЧАТОК.
-          <br />
-          СИСТЕМА — ЦЕ ГРОШІ.
-        </h2>
-        <div className="money__copy">
-          <p>
-            Багато флористів вміють створювати красиві роботи, але не знають, як перетворити майстерність на стабільний дохід.
-          </p>
-          <p className="money__accent">
-            Тут ми поєднуємо флористику, продукт, маркетинг і бізнес-мислення.
-          </p>
-        </div>
+        <h2 className="display-title">ТАЛАНТ — ЦЕ ПОЧАТОК.<br />СИСТЕМА — ЦЕ ГРОШІ.</h2>
+        <div className="money__copy"><p>Багато флористів вміють створювати красиві роботи, але не знають, як перетворити майстерність на стабільний дохід.</p><p className="money__accent">Тут ми поєднуємо флористику, продукт, маркетинг і бізнес-мислення.</p></div>
       </section>
 
       <section className="audience section-shell">
@@ -220,44 +141,26 @@ export default function Page() {
         <img className="vip__flower" src="/site/images/3f61b04bf5f0c093.webp" alt="" aria-hidden="true" />
         <div className="vip__inner section-shell">
           <div className="section-kicker">VIP / 3 MONTHS / PERSONAL</div>
-          <h2>
-            ТВІЙ БІЗНЕС.
-            <br />
-            НАШ СПІЛЬНИЙ ЗАПУСК.
-          </h2>
+          <h2>ТВІЙ БІЗНЕС.<br />НАШ СПІЛЬНИЙ ЗАПУСК.</h2>
           <p className="vip__lead">Три місяці ми працюємо разом над реальним бізнесом, а не навчальним кейсом.</p>
-          <div className="vip__roadmap">
-            КОНЦЕПЦІЯ <span>→</span> ПОЗИЦІОНУВАННЯ <span>→</span> ПРОДУКТ <span>→</span> ЗАКУПІВЛІ <span>→</span> ЦІНА <span>→</span> ПРОДАЖІ <span>→</span> ПЕРШІ КЛІЄНТИ
-          </div>
-          <div className="vip__footer">
-            <div className="vip__price">2999 €</div>
-            <a href="#final-cta">ХОЧУ НАСТАВНИЦТВО →</a>
-            <small>Кількість місць обмежена через індивідуальний формат роботи.</small>
-          </div>
+          <div className="vip__roadmap">КОНЦЕПЦІЯ <span>→</span> ПОЗИЦІОНУВАННЯ <span>→</span> ПРОДУКТ <span>→</span> ЗАКУПІВЛІ <span>→</span> ЦІНА <span>→</span> ПРОДАЖІ <span>→</span> ПЕРШІ КЛІЄНТИ</div>
+          <div className="vip__footer"><div className="vip__price">2999 €</div><a href="#final-cta">ХОЧУ НАСТАВНИЦТВО →</a><small>Кількість місць обмежена через індивідуальний формат роботи.</small></div>
         </div>
       </section>
 
       <section className="final-cta section-shell" id="final-cta">
         <img className="final-cta__flower" src="/site/images/25a19fcf83a07670.webp" alt="" aria-hidden="true" />
         <div className="section-kicker">READY?</div>
-        <h2>
-          КВІТИ МОЖУТЬ
-          <br />
-          СТАТИ ТВОЄЮ
-          <br />
-          ПРОФЕСІЄЮ.
-        </h2>
+        <h2>КВІТИ МОЖУТЬ<br />СТАТИ ТВОЄЮ<br />ПРОФЕСІЄЮ.</h2>
         <p>А професія — бізнесом.</p>
         <div className="final-cta__actions">
           <a className="button-primary" href="#programs">ОБРАТИ ПРОГРАМУ →</a>
-          <a className="button-secondary" href="mailto:hello@floraleducation.com">ПОТРІБНА ДОПОМОГА З ВИБОРОМ? →</a>
+          <a className="button-secondary" href="#programs">ПОРІВНЯТИ ПРОГРАМИ →</a>
         </div>
       </section>
 
       <footer className="site-footer section-shell">
-        <div>FLORAL EDUCATION</div>
-        <div>СТВОРЮЙ. РОСТИ. ЗАРОБЛЯЙ.</div>
-        <a href="#top">НАВЕРХ ↑</a>
+        <div>FLORAL EDUCATION</div><div>СТВОРЮЙ. РОСТИ. ЗАРОБЛЯЙ.</div><a href="#top">НАВЕРХ ↑</a>
       </footer>
 
       <HeroParallax />
