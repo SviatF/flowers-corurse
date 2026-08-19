@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/selfhost_runtime.py", line 292, in <module>
+    main()
+  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/selfhost_runtime.py", line 269, in main
+    source, mirrored = mirror(source)
+                       ^^^^^^^^^^^^^^
+  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/selfhost_runtime.py", line 188, in mirror
+    fs.write_bytes(data)
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/pathlib.py", line 1036, in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: '/home/runner/work/flowers-corurse/flowers-corurse/public/vendor/www.hvdfonts.com/fonts'

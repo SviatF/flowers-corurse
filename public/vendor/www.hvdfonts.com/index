@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en-EN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/assets/img/favicon/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/img/favicon/favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/assets/img/favicon/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/assets/img/favicon/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/assets/img/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#8ECFD4">
+<meta name="msapplication-TileImage" content="/assets/img/favicon/mstile-144x144.png">
+<meta name="theme-color" content="#8ECFD4">
+
+  <script type="module">!function(){const e=document.createElement("link").relList;if(!(e&&e.supports&&e.supports("modulepreload"))){for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver((e=>{for(const o of e)if("childList"===o.type)for(const e of o.addedNodes)if("LINK"===e.tagName&&"modulepreload"===e.rel)r(e);else if(e.querySelectorAll)for(const o of e.querySelectorAll("link[rel=modulepreload]"))r(o)})).observe(document,{childList:!0,subtree:!0})}function r(e){if(e.ep)return;e.ep=!0;const r=function(e){const r={};return e.integrity&&(r.integrity=e.integrity),e.referrerpolicy&&(r.referrerPolicy=e.referrerpolicy),"use-credentials"===e.crossorigin?r.credentials="include":"anonymous"===e.crossorigin?r.credentials="omit":r.credentials="same-origin",r}(e);fetch(e.href,r)}}();</script>
+<script type="module" src="/assets/dist/assets/app-BHmhj9u_.js" crossorigin onload="e=new CustomEvent(&#039;vite-script-loaded&#039;, {detail:{path: &#039;web/assets/js/bundle.js&#039;}});document.dispatchEvent(e);"></script>
+<link href="/assets/dist/assets/app-D4o9fGLL.css" rel="stylesheet">
+
+  <script>
+    var supportsWoff2=function(a){if(!("FontFace"in a))return!1;var b=new FontFace("t",'url( "data:application/font-woff2;base64,d09GMgABAAAAAADcAAoAAAAAAggAAACWAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABk4ALAoUNAE2AiQDCAsGAAQgBSAHIBtvAcieB3aD8wURQ+TZazbRE9HvF5vde4KCYGhiCgq/NKPF0i6UIsZynbP+Xi9Ng+XLbNlmNz/xIBBqq61FIQRJhC/+QA/08PJQJ3sK5TZFMlWzC/iK5GUN40psgqvxwBjBOg6JUSJ7ewyKE2AAaXZrfUB4v+hze37ugJ9d+DeYqiDwVgCawviwVFGnuttkLqIMGivmDg" ) format( "woff2" )',{});return b.load().catch(function(){}),"loading"==b.status||"loaded"==b.status}(this);
+
+    function onloadCSS(a,b){function d(){!c&&b&&(c=!0,b.call(a))}var c;a.addEventListener&&a.addEventListener("load",d),a.attachEvent&&a.attachEvent("onload",d),"isApplicationInstalled"in navigator&&"onloadcssdefined"in a&&a.onloadcssdefined(d)}
+
+    !function(e){"use strict";var n=function(n,t,o){function i(e){return a.body?e():void setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var s=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=s[s.length-1]}var f=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=f.length;t--;)if(f[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+
+  !function(t){if(t.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return t.document.createElement("link").relList.supports("preload")}catch(e){return!1}},e.poly=function(){for(var e=t.document.getElementsByTagName("link"),n=0;n<e.length;n++){var r=e[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(t.loadCSS(r.href,r),r.rel=null)}},!e.support()){e.poly();var n=t.setInterval(e.poly,300);t.addEventListener&&t.addEventListener("load",function(){t.clearInterval(n)}),t.attachEvent&&t.attachEvent("onload",function(){t.clearInterval(n)})}}}(this);
+</script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112417191-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-112417191-1');
+  </script>
+<title>Home | HvD Fonts</title><meta name="generator" content="SEOmatic">
+<meta name="keywords" content="fonts, typefaces">
+<meta name="description" content="We are HvD Fonts – a type foundry for high quality, original retail fonts as well as nice custom font solutions.">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="robots" content="all">
+<meta content="en" property="og:locale">
+<meta content="HvD Fonts" property="og:site_name">
+<meta content="website" property="og:type">
+<meta content="https://www.hvdfonts.com/" property="og:url">
+<meta content="Home" property="og:title">
+<meta content="We are HvD Fonts – a type foundry for high quality, original retail fonts as well as nice custom font solutions." property="og:description">
+<meta content="https://www.hvdfonts.com/public/_1200x630_crop_center-center_82_none/HVD_World.jpg?mtime=1515580121" property="og:image">
+<meta content="1200" property="og:image:width">
+<meta content="630" property="og:image:height">
+<meta content="We are HvD Fonts – a type foundry for high quality, original retail fonts as well as nice custom font solutions." property="og:image:alt">
+<meta content="http://www.behance.net/hvdfonts" property="og:see_also">
+<meta content="https://www.instagram.com/hvdfonts/" property="og:see_also">
+<meta content="https://www.facebook.com/hannes.vondohren" property="og:see_also">
+<meta content="http://twitter.com/hvdfonts" property="og:see_also">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@hvdfonts">
+<meta name="twitter:creator" content="@hvdfonts">
+<meta name="twitter:title" content="Home">
+<meta name="twitter:description" content="We are HvD Fonts – a type foundry for high quality, original retail fonts as well as nice custom font solutions.">
+<meta name="twitter:image" content="https://www.hvdfonts.com/public/_800x418_crop_center-center_82_none/HVD_World.jpg?mtime=1515580121">
+<meta name="twitter:image:width" content="800">
+<meta name="twitter:image:height" content="418">
+<meta name="twitter:image:alt" content="We are HvD Fonts – a type foundry for high quality, original retail fonts as well as nice custom font solutions.">
+<link href="https://www.hvdfonts.com/" rel="canonical">
+<link href="https://www.hvdfonts.com/" rel="home">
+<link type="text/plain" href="https://www.hvdfonts.com/humans.txt" rel="author"></head>
+
+<body class="page-home">
+  <div class="page">
+        
+
+<nav class="mini-nav">
+  <button class="mini-nav__burger-button" for="header-trigger" onclick="document.body.classList.toggle('nav-open')">
+    <span>Main Menu</span>
+  </button>
+
+      <span id="blitz-inject-1" class="blitz-inject" data-blitz-id="1" data-blitz-uri="/_dynamic_include_2130344825" data-blitz-params="" data-blitz-property=""></span>
+  </nav>
+
+<header class="header has-hide-animation">
+  <div class="header__content">
+    <div class="wrapper">
+      <a href="/" class="header__logo" id="js-logo">
+        <img src="/assets/img/hvd_logo.svg" alt="HvD Logo">
+      </a>
+
+      <div class="header__content-inner">
+        <ul class="header__socialmedia">
+                      <li class="header__socialmedia-item">
+              <a href="https://www.facebook.com/hvdfonts/" class="header__socialmedia-link">Facebook</a>
+            </li>
+                      <li class="header__socialmedia-item">
+              <a href="https://www.instagram.com/hvdfonts/" class="header__socialmedia-link">Instagram</a>
+            </li>
+                      <li class="header__socialmedia-item">
+              <a href="https://www.twitter.com/hvdfonts/" class="header__socialmedia-link">Twitter</a>
+            </li>
+                      <li class="header__socialmedia-item">
+              <a href="https://www.behance.net/hvdfonts" class="header__socialmedia-link">Behance</a>
+            </li>
+                  </ul>
+        <ul class="header__main">
+          <div class="header__column">
+            <li class="header__main-item is-active"><a class="header__main-link" href="https://www.hvdfonts.com/">Home</a></li>
+                          <li class="header__main-item "><a class="header__main-link" href="https://www.hvdfonts.com/fonts">Retail Fonts</a></li>
+                          <li class="header__main-item "><a class="header__main-link" href="https://www.hvdfonts.com/custom-cases">Custom Type</a></li>
+                          <li class="header__main-item "><a class="header__main-link" href="https://www.hvdfonts.com/in-use-gallery">In Use Gallery</a></li>
+                          <li class="header__main-item "><a class="header__main-link" href="https://www.hvdfonts.com/about">About HvD</a></li>
+                      </div>
+
+          <div class="header__column">
+            <li class="header__main-item "><a href="https://www.hvdfonts.com/trial-fonts" class="header__main-link">Trial Fonts</a></li>
+                          <li class="header__main-item "><a href="https://www.hvdfonts.com/shop/cart" class="header__main-link">Cart</a></li>
+                        <li class="header__main-item "><a href="https://www.hvdfonts.com/shop/customer" class="header__main-link">Account</a></li>
+          </div>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main id="content" class="content" role="main">
+      
+          <section class="mainstage module has-no-padding">
+                  <a class="cursor--arrow" href="https://www.hvdfonts.com/fonts/bellemer" title="Go to BelleMer">
+                    <div class="video__stretcher"></div>
+      <div class="video--fixed">
+        <div class="video__container">
+          <div class="video__stretcher"></div>
+          <video class="video--background" autoplay loop muted playsinline >
+            <source src="https://www.hvdfonts.com/public/videos/BelleMer_loop01_Web.mp4" type="video/mp4; codecs="avc1.42E01E, mp4a.40.2"">
+                        </video>
+        </div>
+      </div>
+      <div class="mainstage__overlay video__overlay"></div>
+        <div class="mainstage__content">
+              <img class="mainstage__content-image" src="https://www.hvdfonts.com/public/BelleMer_Homepage.svg" title="Belle Mer Homepage">
+          </div>
+          </a>
+      </section>
+
+      <section class="module has-double-padding bg-black text-white">
+      <div class="module__inner w100 tac body-text mw--ml">
+        <p><strong>WE MAKE TYPE.</strong></p><p>HvD Fonts – a type foundry for high quality, original retail fonts as well as nice custom font solutions.</p>
+      </div>
+    </section>
+  
+  <section class="overview module has-no-padding bg-grey-dark" id="overview-grid">
+    <div class="module__inner w100 grid-1-to-2 tac">
+              <div class="cell has-no-padding text-white bg-black">
+          <div class="overview__item" style="background-image: url(https://www.hvdfonts.com/public/overview/retail-fonts.jpg)">
+            <a href="https://www.hvdfonts.com/fonts" class="cursor--arrow">
+              <div class="overview__item-overlay"></div>
+              <div class="overview__item-inner">
+                <h1 class="overview__item-headline el">Retail Fonts</h1>
+                <h2 class="overview__item-subheadline">Fonts everybody can buy and use.</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+              <div class="cell has-no-padding text-white bg-black">
+          <div class="overview__item" style="background-image: url(https://www.hvdfonts.com/public/overview/custom-type.jpg)">
+            <a href="https://www.hvdfonts.com/custom-cases" class="cursor--arrow">
+              <div class="overview__item-overlay"></div>
+              <div class="overview__item-inner">
+                <h1 class="overview__item-headline el">Custom Type</h1>
+                <h2 class="overview__item-subheadline">Typefaces we designed for companies.</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+              <div class="cell has-no-padding text-white bg-black">
+          <div class="overview__item" style="background-image: url(https://www.hvdfonts.com/public/overview/on-the-road.jpg)">
+            <a href="https://www.hvdfonts.com/in-use-gallery" class="cursor--arrow">
+              <div class="overview__item-overlay"></div>
+              <div class="overview__item-inner">
+                <h1 class="overview__item-headline el">On the Road</h1>
+                <h2 class="overview__item-subheadline">Snapshots of our typefaces in the wild.</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+              <div class="cell has-no-padding text-white bg-black">
+          <div class="overview__item" style="background-image: url(https://www.hvdfonts.com/public/overview/the-studio.jpg)">
+            <a href="https://www.hvdfonts.com/about" class="cursor--arrow">
+              <div class="overview__item-overlay"></div>
+              <div class="overview__item-inner">
+                <h1 class="overview__item-headline el">The Studio</h1>
+                <h2 class="overview__item-subheadline">Who we are and what we do.</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+          </div>
+  </section>
+    </main>
+     <footer>
+  <section class="module type-s-to-ml bg-grey-dark">
+    <div class="module__inner">
+      <div class="footer">
+        <div class="footer-list">
+          <h5 class="footer-list__head">Menu</h5>
+          <a class="footer-list__item" href="https://www.hvdfonts.com/">Home</a>
+                      <a class="footer-list__item" href="https://www.hvdfonts.com/fonts">Retail Fonts</a>
+                      <a class="footer-list__item" href="https://www.hvdfonts.com/custom-cases">Custom Type</a>
+                      <a class="footer-list__item" href="https://www.hvdfonts.com/in-use-gallery">In Use Gallery</a>
+                      <a class="footer-list__item" href="https://www.hvdfonts.com/about">About HvD</a>
+                  </div>
+
+        <div class="footer-list">
+          <h5 class="footer-list__head">Support</h5>
+          <a class="footer-list__item" href="/legal-notice">Legal Notice</a>
+          <a class="footer-list__item" href="/privacy-policy">Privacy Policy</a>
+          <a class="footer-list__item" href="/terms-of-service">Terms of Service</a>
+          <a class="footer-list__item" href="/returns-policy">Returns Policy</a>
+          <a class="footer-list__item" href="/licenses/desktop">Desktop License EULA</a>
+          <a class="footer-list__item" href="/licenses/web">Web License EULA</a>
+          <a class="footer-list__item" href="/licenses/app">App License EULA</a>
+          <a class="footer-list__item" href="/licenses/server">Server License EULA</a>
+                                <a class="footer-list__item" target="_blank" href="https://www.hvdfonts.com/public/pdfs/HVD_EULA_Trial.pdf">Trial Fonts License EULA</a>
+                  </div>
+
+        <div class="footer-list">
+          <h5 class="footer-list__head">Account</h5>
+          <a class="footer-list__item" href="https://www.hvdfonts.com/trial-fonts">Trial Fonts</a></li>
+                      <a class="footer-list__item" href="https://www.hvdfonts.com/shop/cart">Cart</a></li>
+                    <a class="footer-list__item" href="https://www.hvdfonts.com/shop/customer">Account</a>
+        </div>
+
+        <div class="footer-list">
+          <h5 class="footer-list__head">Follow Us</h5>
+                      <a class="footer-list__item" href="https://www.facebook.com/hvdfonts/">Facebook</a>
+                      <a class="footer-list__item" href="https://www.instagram.com/hvdfonts/">Instagram</a>
+                      <a class="footer-list__item" href="https://www.twitter.com/hvdfonts/">Twitter</a>
+                      <a class="footer-list__item" href="https://www.behance.net/hvdfonts">Behance</a>
+                  </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="module bg-grey-dark">
+    <div class="module__inner">
+      <div class="tac mt mb--xl type-s-to-m text-grey-medium">
+        © HvD Fonts 2026, All rights reserved.
+      </div>
+    </div>
+  </section>
+</footer>
+
+<section id="cookiewarning" class="module cookiebar">
+  <div class="module__inner cookiebar__inner">
+    <div class="cookiebar__text">
+      We utilize <a class="lnk" href="http://hvdfonts.com/legal-notice">Cookies</a> in order to optimize the website.
+    </div>
+    <a href="#" class="cookiebar__accept lnk">Accept</a>
+  </div>
+</section>
+  </div>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","author":{"@id":"https://www.hvdfonts.com#identity"},"copyrightHolder":{"@id":"https://www.hvdfonts.com#identity"},"copyrightYear":"2016","creator":{"@id":"https://www.hvdfonts.com#creator"},"dateModified":"2026-04-28T18:18:15+02:00","datePublished":"2016-12-19T10:54:27+01:00","description":"We are HvD Fonts – a type foundry for high quality, original retail fonts as well as nice custom font solutions.","headline":"Home","image":{"@type":"ImageObject","url":"https://www.hvdfonts.com/public/_1200x630_crop_center-center_82_none/HVD_World.jpg?mtime=1515580121"},"inLanguage":"en","mainEntityOfPage":"https://www.hvdfonts.com/","name":"HvD Fonts","publisher":{"@id":"https://www.hvdfonts.com#creator"},"url":"https://www.hvdfonts.com/"},{"@id":"https://www.hvdfonts.com#identity","@type":"LocalBusiness","description":"We are HvD Fonts - a type foundry for high quality, original retail fonts as well as nice custom font solutions.","email":"hi@hvdfonts.com","image":{"@type":"ImageObject","height":"433","url":"https://www.hvdfonts.com/public/HVD_Logo_Drbl.jpg","width":"433"},"logo":{"@type":"ImageObject","height":"60","url":"https://www.hvdfonts.com/public/_600x60_fit_center-center_82_none/68100/HVD_Logo_Drbl.png?mtime=1589377686","width":"60"},"name":"HvD Fonts","priceRange":"$","sameAs":["http://twitter.com/hvdfonts","https://www.facebook.com/hannes.vondohren","https://www.instagram.com/hvdfonts/","http://www.behance.net/hvdfonts"],"url":"https://www.hvdfonts.com"},{"@id":"#creator","@type":"Organization"},{"@type":"BreadcrumbList","description":"Breadcrumbs list","itemListElement":[{"@type":"ListItem","item":"https://www.hvdfonts.com/","name":"Home","position":1}],"name":"Breadcrumbs"}]}</script><script src="https://www.hvdfonts.com/cpresources/371f7e25/js/blitzInjectScript.js?v=1783430585"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2dab8f02b2879fd',t:'MTc4NzE1ODkwOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+<!-- Cached by Blitz on 2026-07-07T15:23:38+02:00 --><!-- Served by Blitz on 2026-08-19T19:01:49+02:00 -->
