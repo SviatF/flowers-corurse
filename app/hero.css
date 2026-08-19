@@ -58,18 +58,13 @@
   pointer-events: none;
 }
 
-/*
- * Full source artwork is preserved: no fixed-height crop and no object-fit: cover.
- * The images are allowed to overflow below the sticky stage so petals are never
- * clipped by the hero boundary or covered by the following black section.
- */
 .pts-hero__pink {
   position: absolute;
   left: 50%;
-  bottom: calc(30vh - 29vw);
+  bottom: calc(30vh - 43.5vw);
   z-index: 5;
   display: block;
-  width: 58vw;
+  width: 87vw;
   max-width: none;
   height: auto;
   transform: translate3d(-50%, var(--pink-y), 0);
@@ -83,7 +78,7 @@
 .pts-hero__magnolia {
   position: absolute;
   left: 50%;
-  bottom: calc(36vh - 78.75vw);
+  bottom: calc(41vh - 78.75vw);
   z-index: 6;
   display: block;
   width: 118vw;
@@ -96,7 +91,6 @@
   will-change: transform;
 }
 
-/* Text is deliberately above every visual/floral layer. */
 .pts-hero__title {
   position: absolute;
   top: 64%;
@@ -144,7 +138,6 @@
   will-change: transform;
 }
 
-/* Keep immediate sections below the hero underneath the overflowing flowers. */
 .pts-hero + * {
   position: relative;
   z-index: 0;
@@ -165,13 +158,13 @@
   }
 
   .pts-hero__pink {
-    width: 62vw;
-    bottom: calc(30vh - 31vw);
+    width: 93vw;
+    bottom: calc(30vh - 46.5vw);
   }
 
   .pts-hero__magnolia {
     width: 124vw;
-    bottom: calc(37vh - 82.75vw);
+    bottom: calc(42vh - 82.75vw);
   }
 
   .pts-hero__title {
@@ -198,13 +191,13 @@
   }
 
   .pts-hero__pink {
-    width: 68vw;
-    bottom: calc(29vh - 34vw);
+    width: 102vw;
+    bottom: calc(29vh - 51vw);
   }
 
   .pts-hero__magnolia {
     width: 130vw;
-    bottom: calc(38vh - 86.75vw);
+    bottom: calc(43vh - 86.75vw);
   }
 
   .pts-hero__title {
