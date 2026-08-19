@@ -1,5 +1,5 @@
 (() => {
-  const REPLACEMENT = "/assets/florist-hero.webp";
+  const REPLACEMENT = "/hero-florist";
   const HERO_SELECTOR =
     '[data-framer-background-image-wrapper="true"] > img[alt="Dan Mall"][width="2000"][height="1333"]';
   let applying = false;
@@ -8,8 +8,6 @@
     const wrapper = img.parentElement;
     if (!(wrapper instanceof HTMLElement)) return;
 
-    // Put our image on the existing hero wrapper itself. This survives Framer
-    // changing src/srcset/currentSrc on its internal <img> element.
     wrapper.style.setProperty(
       "background-image",
       `url("${REPLACEMENT}")`,
@@ -19,11 +17,8 @@
     wrapper.style.setProperty("background-position", "center center", "important");
     wrapper.style.setProperty("background-repeat", "no-repeat", "important");
 
-    // The original Dan portrait is never allowed to become visible again.
     img.style.setProperty("opacity", "0", "important");
     img.style.setProperty("visibility", "hidden", "important");
-
-    // Also replace its network source so Framer no longer needs the old image.
     img.removeAttribute("srcset");
     img.removeAttribute("sizes");
     img.setAttribute("src", REPLACEMENT);
@@ -39,8 +34,6 @@
         if (node instanceof HTMLImageElement) replaceHeroImage(node);
       });
 
-      // Framer may change the alt attribute during hydration. Fallback to the
-      // unique 2000x1333 image in a Framer background wrapper near the top.
       document
         .querySelectorAll(
           '[data-framer-background-image-wrapper="true"] > img[width="2000"][height="1333"]',
