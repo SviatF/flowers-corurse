@@ -83,7 +83,7 @@
 .pts-hero__magnolia {
   position: absolute;
   left: 50%;
-  bottom: calc(31vh - 78.75vw);
+  bottom: calc(36vh - 78.75vw);
   z-index: 6;
   display: block;
   width: 118vw;
@@ -171,7 +171,7 @@
 
   .pts-hero__magnolia {
     width: 124vw;
-    bottom: calc(32vh - 82.75vw);
+    bottom: calc(37vh - 82.75vw);
   }
 
   .pts-hero__title {
@@ -204,7 +204,7 @@
 
   .pts-hero__magnolia {
     width: 130vw;
-    bottom: calc(33vh - 86.75vw);
+    bottom: calc(38vh - 86.75vw);
   }
 
   .pts-hero__title {
