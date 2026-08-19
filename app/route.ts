@@ -30,14 +30,15 @@ export async function GET(request: NextRequest) {
   let html = injectBase(await upstream.text());
   const origin = request.nextUrl.origin;
 
-  // Replace the original Dan Mall hero portrait with our local florist hero
-  // before Framer reaches the browser, including query-string/srcset variants.
-  html = html.replace(
-    DAN_HERO_ASSET_PATTERN,
-    `${origin}/assets/florist-hero.webp`,
-  );
+  // Do not render Dan's portrait during the server pass. Framer will hydrate
+  // the hero afterwards, and floral-image-overrides.js replaces that hydrated
+  // portrait in-place with our local florist hero image.
+  const transparentPixel =
+    "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
+  html = html.replace(DAN_HERO_ASSET_PATTERN, transparentPixel);
 
   const runtime = [
+    `<script src="${origin}/floral-image-overrides.js"></script>`,
     `<script src="${origin}/floral-copy-core.js"></script>`,
     `<script src="${origin}/floral-copy-results.js"></script>`,
     `<script src="${origin}/floral-copy-footer.js"></script>`,
@@ -58,7 +59,7 @@ export async function GET(request: NextRequest) {
       "content-type": "text/html; charset=utf-8",
       "cache-control": "no-store, max-age=0",
       "x-reference-source": "danmall.com",
-      "x-project-copy": "floral-runtime-v7-new-hero",
+      "x-project-copy": "floral-runtime-v8-hydration-hero-fix",
     },
   });
 }
