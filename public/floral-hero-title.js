@@ -1,197 +1,173 @@
 (() => {
-  const HERO_IMAGE_SELECTOR =
-    '[data-framer-background-image-wrapper="true"] > img[width="2000"][height="1333"]';
-  const TITLE_ID = 'floral-safe-hero-title';
+  const STYLE_ID = "floral-hero-wordmark-style";
 
-  const norm = (value) =>
-    (value || '')
-      .replace(/\u00a0/g, ' ')
-      .replace(/\s+/g, ' ')
-      .trim();
+  const compact = (value) =>
+    (value || "")
+      .toLowerCase()
+      .replace(/\u00a0/g, " ")
+      .replace(/[^a-z]/g, "");
 
-  const visible = (element) => {
+  const isVisible = (element) => {
     const style = getComputedStyle(element);
+    const rect = element.getBoundingClientRect();
     return (
-      style.display !== 'none' &&
-      style.visibility !== 'hidden' &&
-      Number(style.opacity || 1) > 0.01
+      style.display !== "none" &&
+      style.visibility !== "hidden" &&
+      Number(style.opacity || 1) > 0.01 &&
+      rect.width > 0 &&
+      rect.height > 0
     );
   };
 
-  function isFlowerElement(element, flowerImg) {
-    if (!element || !flowerImg) return false;
-    if (element === flowerImg) return true;
-    if (element.contains(flowerImg)) return true;
-    if (flowerImg.contains(element)) return true;
-
-    if (element instanceof HTMLImageElement) {
-      const src = element.currentSrc || element.src || '';
-      if (/hero-florist|hero-current|hIvMq00Eiq5eJzxlzt69EooL6Cg/i.test(src)) {
-        return true;
-      }
+  const isSafeTextElement = (element) => {
+    if (!(element instanceof HTMLElement)) return false;
+    if (["SCRIPT", "STYLE", "NOSCRIPT", "IMG", "SVG", "CANVAS", "VIDEO", "PICTURE"].includes(element.tagName)) {
+      return false;
     }
+    if (element.closest("#floral-safe-hero-title")) return false;
+    if (element.querySelector("img,svg,canvas,video,picture")) return false;
+    return true;
+  };
 
-    return false;
+  function ensureStyle() {
+    if (document.getElementById(STYLE_ID)) return;
+    const style = document.createElement("style");
+    style.id = STYLE_ID;
+    style.textContent = `
+      [data-floral-hero-word] {
+        position: relative !important;
+      }
+      [data-floral-hero-word] *:not(.floral-hero-replacement) {
+        color: transparent !important;
+        -webkit-text-fill-color: transparent !important;
+        text-shadow: none !important;
+      }
+      [data-floral-hero-word] > .floral-hero-replacement {
+        position: absolute !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        white-space: nowrap !important;
+        color: #fff !important;
+        -webkit-text-fill-color: #fff !important;
+        text-shadow: none !important;
+        pointer-events: none !important;
+        z-index: 2 !important;
+      }
+    `;
+    document.head.appendChild(style);
   }
 
-  function candidateFromPoint(x, y, flowerImg) {
+  function findWordElement(word) {
     const viewportW = window.innerWidth;
     const viewportH = window.innerHeight;
     const candidates = [];
 
-    for (const hit of document.elementsFromPoint(x, y)) {
-      let element = hit;
+    document.querySelectorAll("body *").forEach((element) => {
+      if (!isSafeTextElement(element) || !isVisible(element)) return;
+      if (compact(element.innerText || element.textContent) !== word) return;
 
-      while (
-        element &&
-        element !== document.body &&
-        element !== document.documentElement
-      ) {
-        if (!isFlowerElement(element, flowerImg) && visible(element)) {
-          const rect = element.getBoundingClientRect();
-          const centerX = rect.left + rect.width / 2;
-          const text = norm(element.textContent).toLowerCase();
+      const rect = element.getBoundingClientRect();
+      if (rect.top > viewportH * 0.78 || rect.bottom < 0) return;
+      if (rect.width < viewportW * 0.12 || rect.height < viewportH * 0.07) return;
 
-          const geometryOk =
-            rect.width >= viewportW * 0.22 &&
-            rect.width <= viewportW * 0.82 &&
-            rect.height >= viewportH * 0.09 &&
-            rect.height <= viewportH * 0.42 &&
-            Math.abs(centerX - viewportW / 2) <= viewportW * 0.24 &&
-            y >= rect.top - 4 &&
-            y <= rect.bottom + 4;
+      const ownFont = parseFloat(getComputedStyle(element).fontSize || "0");
+      let largestFont = ownFont;
+      element.querySelectorAll("*").forEach((child) => {
+        if (!(child instanceof HTMLElement)) return;
+        const size = parseFloat(getComputedStyle(child).fontSize || "0");
+        if (size > largestFont) largestFont = size;
+      });
 
-          const textOk =
-            !text ||
-            text === 'dan' ||
-            text === 'mall' ||
-            text === 'd a n' ||
-            text === 'm a l l';
+      if (largestFont < 48 && rect.height < 90) return;
 
-          if (geometryOk && textOk) {
-            const visual =
-              element.tagName === 'SVG' ||
-              element.tagName === 'IMG' ||
-              element.tagName === 'CANVAS' ||
-              element.querySelector('svg,img,canvas,path,polygon') ||
-              getComputedStyle(element).backgroundImage !== 'none' ||
-              getComputedStyle(element).maskImage !== 'none' ||
-              getComputedStyle(element).webkitMaskImage !== 'none';
+      candidates.push({
+        element,
+        rect,
+        area: rect.width * rect.height,
+        largestFont,
+      });
+    });
 
-            if (visual) {
-              candidates.push({
-                element,
-                rect,
-                area: rect.width * rect.height,
-              });
-            }
-          }
-        }
-
-        element = element.parentElement;
+    candidates.sort((a, b) => {
+      if (Math.abs(a.largestFont - b.largestFont) > 4) {
+        return b.largestFont - a.largestFont;
       }
-    }
+      return a.area - b.area;
+    });
 
-    candidates.sort((a, b) => a.area - b.area);
     return candidates[0] || null;
   }
 
-  function findWordmarks(flowerImg) {
-    const w = window.innerWidth;
-    const h = window.innerHeight;
+  function representativeStyle(element) {
+    let best = element;
+    let bestSize = parseFloat(getComputedStyle(element).fontSize || "0");
 
-    const topProbes = [0.17, 0.21, 0.25, 0.29];
-    const bottomProbes = [0.36, 0.41, 0.46, 0.51];
-
-    let top = null;
-    let bottom = null;
-
-    for (const ratio of topProbes) {
-      top = candidateFromPoint(w / 2, h * ratio, flowerImg);
-      if (top) break;
-    }
-
-    for (const ratio of bottomProbes) {
-      bottom = candidateFromPoint(w / 2, h * ratio, flowerImg);
-      if (bottom && (!top || bottom.element !== top.element)) break;
-    }
-
-    if (!top || !bottom) return null;
-    if (top.element === bottom.element) return null;
-
-    return { top, bottom };
-  }
-
-  function ensureOverlay() {
-    let overlay = document.getElementById(TITLE_ID);
-    if (overlay) return overlay;
-
-    overlay = document.createElement('div');
-    overlay.id = TITLE_ID;
-    overlay.setAttribute('aria-label', 'ГРОШІ НА КВІТАХ');
-    overlay.innerHTML = `
-      <div data-line="top">ГРОШІ</div>
-      <div data-line="bottom">НА КВІТАХ</div>
-    `;
-
-    Object.assign(overlay.style, {
-      position: 'absolute',
-      left: '0',
-      top: '0',
-      width: '100%',
-      height: '0',
-      zIndex: '2147482000',
-      pointerEvents: 'none',
+    element.querySelectorAll("*").forEach((child) => {
+      if (!(child instanceof HTMLElement)) return;
+      const text = (child.innerText || child.textContent || "").trim();
+      if (!text) return;
+      const size = parseFloat(getComputedStyle(child).fontSize || "0");
+      if (size > bestSize) {
+        best = child;
+        bestSize = size;
+      }
     });
 
-    document.body.appendChild(overlay);
-    return overlay;
+    return getComputedStyle(best);
   }
 
-  function styleLine(line) {
-    Object.assign(line.style, {
-      position: 'absolute',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      whiteSpace: 'nowrap',
-      overflow: 'visible',
-      color: '#ffffff',
-      fontFamily: 'Impact, "Arial Black", Arial, sans-serif',
-      fontWeight: '900',
-      lineHeight: '0.8',
-      letterSpacing: '-0.055em',
-      textTransform: 'uppercase',
-      margin: '0',
-      padding: '0',
-      transformOrigin: 'center center',
+  function installReplacement(candidate, label, text) {
+    const element = candidate.element;
+    if (element.getAttribute("data-floral-hero-word") === label) {
+      const existing = element.querySelector(":scope > .floral-hero-replacement");
+      if (existing) return existing;
+    }
+
+    element.setAttribute("data-floral-hero-word", label);
+
+    let replacement = element.querySelector(":scope > .floral-hero-replacement");
+    if (!(replacement instanceof HTMLSpanElement)) {
+      replacement = document.createElement("span");
+      replacement.className = "floral-hero-replacement";
+      replacement.setAttribute("aria-hidden", "true");
+      element.appendChild(replacement);
+    }
+
+    replacement.textContent = text;
+
+    const source = representativeStyle(element);
+    Object.assign(replacement.style, {
+      fontFamily: source.fontFamily,
+      fontStyle: source.fontStyle,
+      fontWeight: source.fontWeight,
+      lineHeight: source.lineHeight === "normal" ? "0.82" : source.lineHeight,
+      letterSpacing: source.letterSpacing,
+      textTransform: source.textTransform,
     });
+
+    return replacement;
   }
 
-  function fitLine(line, rect) {
-    line.style.left = `${rect.left + window.scrollX}px`;
-    line.style.top = `${rect.top + window.scrollY}px`;
-    line.style.width = `${rect.width}px`;
-    line.style.height = `${rect.height}px`;
-
+  function fitReplacement(replacement, rect, sourceSize) {
     let low = 24;
-    let high = Math.max(40, rect.height * 1.45);
+    let high = Math.max(sourceSize || 0, rect.height * 1.25, 80);
 
-    for (let i = 0; i < 12; i += 1) {
+    for (let i = 0; i < 14; i += 1) {
       const mid = (low + high) / 2;
-      line.style.fontSize = `${mid}px`;
+      replacement.style.fontSize = `${mid}px`;
+      const box = replacement.getBoundingClientRect();
 
-      if (
-        line.scrollWidth <= rect.width * 0.98 &&
-        line.scrollHeight <= rect.height * 1.03
-      ) {
+      if (box.width <= rect.width * 0.97 && box.height <= rect.height * 1.04) {
         low = mid;
       } else {
         high = mid;
       }
     }
 
-    line.style.fontSize = `${low}px`;
+    replacement.style.fontSize = `${low}px`;
   }
 
   let applying = false;
@@ -201,39 +177,17 @@
     applying = true;
 
     try {
-      const flowerImg = document.querySelector(HERO_IMAGE_SELECTOR);
-      if (!(flowerImg instanceof HTMLImageElement)) return;
+      ensureStyle();
 
-      // Always restore the intended flower image if another runtime touched it.
-      flowerImg.removeAttribute('srcset');
-      flowerImg.removeAttribute('sizes');
-      if (!/\/hero-florist\?v=20260819-2$/.test(flowerImg.getAttribute('src') || '')) {
-        flowerImg.setAttribute('src', '/hero-florist?v=20260819-2');
-      }
-      flowerImg.style.setProperty('opacity', '1', 'important');
-      flowerImg.style.setProperty('visibility', 'visible', 'important');
-      flowerImg.style.setProperty('display', 'block', 'important');
+      const dan = findWordElement("dan");
+      const mall = findWordElement("mall");
+      if (!dan || !mall || dan.element === mall.element) return;
 
-      const wordmarks = findWordmarks(flowerImg);
-      if (!wordmarks) return;
+      const danReplacement = installReplacement(dan, "dan", "ГРОШІ");
+      const mallReplacement = installReplacement(mall, "mall", "НА КВІТАХ");
 
-      const { top, bottom } = wordmarks;
-
-      // Hide only the two detected wordmark visuals. Never touch the flower image/wrapper.
-      top.element.style.setProperty('opacity', '0', 'important');
-      bottom.element.style.setProperty('opacity', '0', 'important');
-      top.element.setAttribute('data-floral-hidden-wordmark', 'dan');
-      bottom.element.setAttribute('data-floral-hidden-wordmark', 'mall');
-
-      const overlay = ensureOverlay();
-      const topLine = overlay.querySelector('[data-line="top"]');
-      const bottomLine = overlay.querySelector('[data-line="bottom"]');
-      if (!(topLine instanceof HTMLElement) || !(bottomLine instanceof HTMLElement)) return;
-
-      styleLine(topLine);
-      styleLine(bottomLine);
-      fitLine(topLine, top.element.getBoundingClientRect());
-      fitLine(bottomLine, bottom.element.getBoundingClientRect());
+      fitReplacement(danReplacement, dan.element.getBoundingClientRect(), dan.largestFont);
+      fitReplacement(mallReplacement, mall.element.getBoundingClientRect(), mall.largestFont);
     } finally {
       applying = false;
     }
@@ -242,18 +196,17 @@
   const schedule = () => requestAnimationFrame(apply);
 
   apply();
-  document.addEventListener('DOMContentLoaded', apply);
-  window.addEventListener('load', apply);
-  window.addEventListener('resize', schedule);
+  document.addEventListener("DOMContentLoaded", apply);
+  window.addEventListener("load", apply);
+  window.addEventListener("resize", schedule);
 
   new MutationObserver(schedule).observe(document.documentElement, {
     subtree: true,
     childList: true,
-    attributes: true,
-    attributeFilter: ['style', 'class', 'src', 'srcset'],
+    characterData: true,
   });
 
-  [0, 50, 100, 200, 400, 700, 1000, 1500, 2500, 4000].forEach((delay) =>
+  [0, 50, 100, 200, 400, 700, 1000, 1500, 2500, 4000, 7000].forEach((delay) =>
     setTimeout(apply, delay),
   );
 })();
