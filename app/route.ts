@@ -10,6 +10,24 @@ function injectBase(html: string) {
   return html.replace(/<head([^>]*)>/i, `<head$1><base href="${SOURCE_ORIGIN}">`);
 }
 
+function injectHeroOverrideCss(html: string, origin: string) {
+  const css = `<style id="floral-hero-hard-override">
+/* Target the exact Dan Mall 2000x1333 hero portrait by DOM structure, not CDN URL. */
+[data-framer-background-image-wrapper="true"]:has(> img[alt="Dan Mall"][width="2000"][height="1333"]) {
+  background-image: url("${origin}/assets/florist-hero.webp") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+[data-framer-background-image-wrapper="true"] > img[alt="Dan Mall"][width="2000"][height="1333"] {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+</style>`;
+
+  return html.replace(/<head([^>]*)>/i, `<head$1>${css}`);
+}
+
 export async function GET(request: NextRequest) {
   const upstream = await fetch(SOURCE_URL, {
     cache: "no-store",
@@ -27,12 +45,11 @@ export async function GET(request: NextRequest) {
     );
   }
 
-  let html = injectBase(await upstream.text());
   const origin = request.nextUrl.origin;
+  let html = injectBase(await upstream.text());
+  html = injectHeroOverrideCss(html, origin);
 
-  // Do not render Dan's portrait during the server pass. Framer will hydrate
-  // the hero afterwards, and floral-image-overrides.js replaces that hydrated
-  // portrait in-place with our local florist hero image.
+  // Prevent the original portrait from flashing during the initial SSR pass.
   const transparentPixel =
     "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
   html = html.replace(DAN_HERO_ASSET_PATTERN, transparentPixel);
@@ -59,7 +76,7 @@ export async function GET(request: NextRequest) {
       "content-type": "text/html; charset=utf-8",
       "cache-control": "no-store, max-age=0",
       "x-reference-source": "danmall.com",
-      "x-project-copy": "floral-runtime-v8-hydration-hero-fix",
+      "x-project-copy": "floral-runtime-v9-hard-hero-override",
     },
   });
 }
