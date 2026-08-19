@@ -1,6 +1,6 @@
 (() => {
   const TARGET = "hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg";
-  const REPLACEMENT = "/assets/florist-hero.png";
+  const REPLACEMENT = "/assets/florist-hero.webp";
 
   function replaceHeroPortrait() {
     document.querySelectorAll("img").forEach((img) => {
