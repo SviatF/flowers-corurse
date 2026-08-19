@@ -1,6 +1,13 @@
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import type { NextRequest } from "next/server";
 
-const SOURCE_URL = "https://danmall.com/?ref=lapaninja";
+const SNAPSHOT_PATH = path.join(
+  process.cwd(),
+  "public",
+  "snapshot",
+  "reference.html",
+);
 const SOURCE_ORIGIN = "https://danmall.com/";
 const DAN_HERO_ASSET_PATTERN =
   /https:\/\/framerusercontent\.com\/images\/hIvMq00Eiq5eJzxlzt69EooL6Cg\.jpg(?:\?[^\s\"'<>)]*)?/gi;
@@ -27,25 +34,21 @@ function injectHeroOverrideCss(html: string) {
 }
 
 export async function GET(request: NextRequest) {
-  const upstream = await fetch(SOURCE_URL, {
-    cache: "no-store",
-    headers: {
-      "user-agent":
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150 Safari/537.36",
-      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-    },
-  });
+  let snapshot: string;
 
-  if (!upstream.ok) {
+  try {
+    snapshot = await readFile(SNAPSHOT_PATH, "utf8");
+  } catch (error) {
+    console.error("Unable to read local reference snapshot", error);
     return new Response(
-      `<!doctype html><html><body style="font-family:system-ui;padding:32px"><h1>Reference snapshot unavailable</h1><p>Dan Mall returned ${upstream.status}.</p></body></html>`,
-      { status: 502, headers: { "content-type": "text/html; charset=utf-8" } },
+      `<!doctype html><html><body style="font-family:system-ui;padding:32px"><h1>Local reference snapshot unavailable</h1></body></html>`,
+      { status: 500, headers: { "content-type": "text/html; charset=utf-8" } },
     );
   }
 
   const origin = request.nextUrl.origin;
   const heroUrl = `${origin}/hero-florist?v=20260819-2`;
-  let html = injectBase(await upstream.text());
+  let html = injectBase(snapshot);
   html = injectHeroOverrideCss(html);
 
   html = html.replace(DAN_HERO_ASSET_PATTERN, heroUrl);
@@ -73,8 +76,8 @@ export async function GET(request: NextRequest) {
     headers: {
       "content-type": "text/html; charset=utf-8",
       "cache-control": "no-store, max-age=0",
-      "x-reference-source": "danmall.com",
-      "x-project-copy": "floral-runtime-v18-safe-title-overlay",
+      "x-reference-source": "local-snapshot",
+      "x-project-copy": "floral-runtime-v19-local-html-snapshot",
     },
   });
 }
