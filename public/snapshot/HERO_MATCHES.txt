@@ -1,0 +1,535 @@
+--- MATCH 'Dan' @ 262 ---
+<!doctype html>
+<!-- Made in Framer · framer.com ✨ -->
+<!-- Published Aug 19, 2026, 2:38 PM UTC -->
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="generator" content="Framer 27dd866">
+	<title>Dan Mall Helps Designers Make More Money &amp; Get Their Flowers</title>
+    <meta name="description" content="I help designers make more money and get their flowers through better pricing, leadership, and a career you love. 28 years of lessons. Join 70k+ readers.">
+    <meta name="framer-search-index" content="https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/searchIndex-OWtKPr99KYkd.json">
+    <meta name="framer-search-index-fallback" content="https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/searchIndex-QXi2penFfS6e.json">
+    <link href="https://framerusercontent.com/images/9bxYxYRHZdrr0I2fK5ByFugfv4M.png" rel="icon" media="(prefers-color-scheme: light)">
+    <link href="https://framerusercontent.com/images/9bxYxYRHZdrr0I2fK5ByFugfv4M.png" rel="icon" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" href="https://framerusercontent.com/images/Hi83v8
+
+--- MATCH 'Dan' @ 1304 ---
+y and get their flowers through better pricing, leadership, and a career you love. 28 years of lessons. Join 70k+ readers.">
+    <meta name="framer-search-index" content="https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/searchIndex-OWtKPr99KYkd.json">
+    <meta name="framer-search-index-fallback" content="https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/searchIndex-QXi2penFfS6e.json">
+    <link href="https://framerusercontent.com/images/9bxYxYRHZdrr0I2fK5ByFugfv4M.png" rel="icon" media="(prefers-color-scheme: light)">
+    <link href="https://framerusercontent.com/images/9bxYxYRHZdrr0I2fK5ByFugfv4M.png" rel="icon" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" href="https://framerusercontent.com/images/Hi83v8elHYQMSe0HxhXxuZGPon0.png">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dan Mall Helps Designers Make More Money &amp; Get Their Flowers">
+    <meta property="og:description" content="I help designers make more money and get their flowers through better pricing, leadership, and a career you love. 28 years of lessons. Join 70k+ readers.">
+    <meta property="og:image" content="https://framerusercontent.com/images/5iNlQ9vWy985rE7DxnOJd0vSGik.png">
+    <!-- X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dan Mall Helps Designers Make More Money &amp; Get Their Flowers">
+    <meta name="twitter:description" content="I help designers make more money and get their flowers through better pricing, leadership, and a career you love. 28 years of lessons. Join 70k+ readers.">
+    <meta name="twitter:image" content="https://framerusercontent.com/images/5iNlQ9vWy985rE7DxnOJd0vSGik.png">
+	
+	
+	<script>try{if(localStor
+
+--- MATCH 'Dan' @ 1798 ---
+rel="icon" media="(prefers-color-scheme: light)">
+    <link href="https://framerusercontent.com/images/9bxYxYRHZdrr0I2fK5ByFugfv4M.png" rel="icon" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" href="https://framerusercontent.com/images/Hi83v8elHYQMSe0HxhXxuZGPon0.png">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dan Mall Helps Designers Make More Money &amp; Get Their Flowers">
+    <meta property="og:description" content="I help designers make more money and get their flowers through better pricing, leadership, and a career you love. 28 years of lessons. Join 70k+ readers.">
+    <meta property="og:image" content="https://framerusercontent.com/images/5iNlQ9vWy985rE7DxnOJd0vSGik.png">
+    <!-- X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dan Mall Helps Designers Make More Money &amp; Get Their Flowers">
+    <meta name="twitter:description" content="I help designers make more money and get their flowers through better pricing, leadership, and a career you love. 28 years of lessons. Join 70k+ readers.">
+    <meta name="twitter:image" content="https://framerusercontent.com/images/5iNlQ9vWy985rE7DxnOJd0vSGik.png">
+	
+	
+	<script>try{if(localStorage.getItem("__framer_force_showing_editorbar_since")){const n=document.createElement("link");n.rel="modulepreload";n.href="https://framer.com/edit/init.mjs";document.head.appendChild(n)}}catch(e){}</script>
+	<link rel="canonical" href="https://danmall.com/"><meta property="og:url" content="https://danmall.com/"><!-- Start of headStart -->
+    <!-- Snippet: legacy-headStart -->
+<style>
+/* SELECTION STATES */
+*::selection {
+    background: rgba(247, 121, 208, 1) !important;
+    color: black
+
+--- MATCH 'dan' @ 2452 ---
+oin 70k+ readers.">
+    <meta property="og:image" content="https://framerusercontent.com/images/5iNlQ9vWy985rE7DxnOJd0vSGik.png">
+    <!-- X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dan Mall Helps Designers Make More Money &amp; Get Their Flowers">
+    <meta name="twitter:description" content="I help designers make more money and get their flowers through better pricing, leadership, and a career you love. 28 years of lessons. Join 70k+ readers.">
+    <meta name="twitter:image" content="https://framerusercontent.com/images/5iNlQ9vWy985rE7DxnOJd0vSGik.png">
+	
+	
+	<script>try{if(localStorage.getItem("__framer_force_showing_editorbar_since")){const n=document.createElement("link");n.rel="modulepreload";n.href="https://framer.com/edit/init.mjs";document.head.appendChild(n)}}catch(e){}</script>
+	<link rel="canonical" href="https://danmall.com/"><meta property="og:url" content="https://danmall.com/"><!-- Start of headStart -->
+    <!-- Snippet: legacy-headStart -->
+<style>
+/* SELECTION STATES */
+*::selection {
+    background: rgba(247, 121, 208, 1) !important;
+    color: black !important;
+}
+
+[data-framer-name*="Form"] *::selection,
+[data-framer-name*="Quote Pink"] *::selection {
+  background: black !important;
+  color: rgb(247, 121, 208) !important;
+}
+
+/* END SELECTION STATES */
+/* FOCUS STATES */
+
+*:focus-visible {
+    outline: 3px dotted rgba(247,121,208) !important;
+    outline-offset: 8px !important;
+    border-radius: 8px !important;
+    background: rgba(247, 121, 208, .25) !important;
+}
+
+[data-framer-name="navbar cards"] *:focus-visible {
+border-radius: 0 !important;
+outline: none !important;
+background: initial !important;
+}
+
+[name="subscribe-button"] *:focus-visible,
+[data-framer-name="Main Button"]:focus-visi
+
+--- MATCH 'dan' @ 2507 ---
+nt="https://framerusercontent.com/images/5iNlQ9vWy985rE7DxnOJd0vSGik.png">
+    <!-- X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dan Mall Helps Designers Make More Money &amp; Get Their Flowers">
+    <meta name="twitter:description" content="I help designers make more money and get their flowers through better pricing, leadership, and a career you love. 28 years of lessons. Join 70k+ readers.">
+    <meta name="twitter:image" content="https://framerusercontent.com/images/5iNlQ9vWy985rE7DxnOJd0vSGik.png">
+	
+	
+	<script>try{if(localStorage.getItem("__framer_force_showing_editorbar_since")){const n=document.createElement("link");n.rel="modulepreload";n.href="https://framer.com/edit/init.mjs";document.head.appendChild(n)}}catch(e){}</script>
+	<link rel="canonical" href="https://danmall.com/"><meta property="og:url" content="https://danmall.com/"><!-- Start of headStart -->
+    <!-- Snippet: legacy-headStart -->
+<style>
+/* SELECTION STATES */
+*::selection {
+    background: rgba(247, 121, 208, 1) !important;
+    color: black !important;
+}
+
+[data-framer-name*="Form"] *::selection,
+[data-framer-name*="Quote Pink"] *::selection {
+  background: black !important;
+  color: rgb(247, 121, 208) !important;
+}
+
+/* END SELECTION STATES */
+/* FOCUS STATES */
+
+*:focus-visible {
+    outline: 3px dotted rgba(247,121,208) !important;
+    outline-offset: 8px !important;
+    border-radius: 8px !important;
+    background: rgba(247, 121, 208, .25) !important;
+}
+
+[data-framer-name="navbar cards"] *:focus-visible {
+border-radius: 0 !important;
+outline: none !important;
+background: initial !important;
+}
+
+[name="subscribe-button"] *:focus-visible,
+[data-framer-name="Main Button"]:focus-visible {
+    background: rgba(247, 121, 208, 1) !important
+
+--- MATCH 'Dan' @ 6397 ---
+framer-text {
+    color: #478AC2;
+    font-size: 80%;
+}
+
+.framer-image.framer-text {
+    width: 100%;
+    margin-top: 2.4em !important;
+    margin-bottom: 2.4em !important;
+}
+
+[data-framer-name="intro"] > ol.framer-text,
+[data-framer-name="intro"] > ul.framer-text {
+    overflow: hidden;
+}
+
+[aria-label="newsletterQuote"] [data-framer-name="quote-text"] p:first-child:before {
+    content: "“";
+    color: #F779D0;
+}
+
+[aria-label="newsletterQuote"] [data-framer-name="quote-text"] p:last-child:after {
+    content: "”";
+    color: #F779D0;
+}
+
+[aria-label="jsExcerptBlock"],
+[aria-label="jsQuoteWhiteBlock"],
+[aria-label="jsQuotePinkBlock"] {
+    display: none !important;
+}
+
+.framer-form-text-input .framer-form-input {
+    padding-left: 0.5em !important;
+    text-indent: 0.5em;
+}
+
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dan Mall",
+  "url": "https://danmall.com",
+  "image": "https://framerusercontent.com/images/hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg",
+  "jobTitle": "Designer, Educator, Entrepreneur",
+  "sameAs": [
+    "https://www.linkedin.com/in/danmall/",
+    "https://x.com/danmall",
+    "https://www.instagram.com/danmall/"
+  ]
+}
+</script>
+<!-- SnippetEnd: legacy-headStart -->
+<!-- Snippet: CSwFLLk5P -->
+<!-- RightMessage -->
+<script type="text/javascript"> 
+(function(p, a, n, d, o, b, c) {
+  window.RM = window.RM || [];
+  o = n.createElement('script'); o.type = 'text/javascript'; o.async = true; o.src = 'https://t.rightmessage.com/'+p+'.js';
+  b = n.getElementsByTagName('script')[0]; d = function(h, u, i, s) { var c = n.createElement('style'); c.id = 'rmcloak'+i;
+      c.type = 'text/css'; c.appendChild(n.createTextNode('.rmcloak'+h+'{visibility:hidden}.rmcloak'+u+'{display:none}'+s));
+      b.parentNode.insert
+
+--- MATCH 'dan' @ 6426 ---
+AC2;
+    font-size: 80%;
+}
+
+.framer-image.framer-text {
+    width: 100%;
+    margin-top: 2.4em !important;
+    margin-bottom: 2.4em !important;
+}
+
+[data-framer-name="intro"] > ol.framer-text,
+[data-framer-name="intro"] > ul.framer-text {
+    overflow: hidden;
+}
+
+[aria-label="newsletterQuote"] [data-framer-name="quote-text"] p:first-child:before {
+    content: "“";
+    color: #F779D0;
+}
+
+[aria-label="newsletterQuote"] [data-framer-name="quote-text"] p:last-child:after {
+    content: "”";
+    color: #F779D0;
+}
+
+[aria-label="jsExcerptBlock"],
+[aria-label="jsQuoteWhiteBlock"],
+[aria-label="jsQuotePinkBlock"] {
+    display: none !important;
+}
+
+.framer-form-text-input .framer-form-input {
+    padding-left: 0.5em !important;
+    text-indent: 0.5em;
+}
+
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dan Mall",
+  "url": "https://danmall.com",
+  "image": "https://framerusercontent.com/images/hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg",
+  "jobTitle": "Designer, Educator, Entrepreneur",
+  "sameAs": [
+    "https://www.linkedin.com/in/danmall/",
+    "https://x.com/danmall",
+    "https://www.instagram.com/danmall/"
+  ]
+}
+</script>
+<!-- SnippetEnd: legacy-headStart -->
+<!-- Snippet: CSwFLLk5P -->
+<!-- RightMessage -->
+<script type="text/javascript"> 
+(function(p, a, n, d, o, b, c) {
+  window.RM = window.RM || [];
+  o = n.createElement('script'); o.type = 'text/javascript'; o.async = true; o.src = 'https://t.rightmessage.com/'+p+'.js';
+  b = n.getElementsByTagName('script')[0]; d = function(h, u, i, s) { var c = n.createElement('style'); c.id = 'rmcloak'+i;
+      c.type = 'text/css'; c.appendChild(n.createTextNode('.rmcloak'+h+'{visibility:hidden}.rmcloak'+u+'{display:none}'+s));
+      b.parentNode.insertBefore(c, b); return c; }; c 
+
+--- MATCH 'dan' @ 6620 ---
+ata-framer-name="intro"] > ul.framer-text {
+    overflow: hidden;
+}
+
+[aria-label="newsletterQuote"] [data-framer-name="quote-text"] p:first-child:before {
+    content: "“";
+    color: #F779D0;
+}
+
+[aria-label="newsletterQuote"] [data-framer-name="quote-text"] p:last-child:after {
+    content: "”";
+    color: #F779D0;
+}
+
+[aria-label="jsExcerptBlock"],
+[aria-label="jsQuoteWhiteBlock"],
+[aria-label="jsQuotePinkBlock"] {
+    display: none !important;
+}
+
+.framer-form-text-input .framer-form-input {
+    padding-left: 0.5em !important;
+    text-indent: 0.5em;
+}
+
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dan Mall",
+  "url": "https://danmall.com",
+  "image": "https://framerusercontent.com/images/hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg",
+  "jobTitle": "Designer, Educator, Entrepreneur",
+  "sameAs": [
+    "https://www.linkedin.com/in/danmall/",
+    "https://x.com/danmall",
+    "https://www.instagram.com/danmall/"
+  ]
+}
+</script>
+<!-- SnippetEnd: legacy-headStart -->
+<!-- Snippet: CSwFLLk5P -->
+<!-- RightMessage -->
+<script type="text/javascript"> 
+(function(p, a, n, d, o, b, c) {
+  window.RM = window.RM || [];
+  o = n.createElement('script'); o.type = 'text/javascript'; o.async = true; o.src = 'https://t.rightmessage.com/'+p+'.js';
+  b = n.getElementsByTagName('script')[0]; d = function(h, u, i, s) { var c = n.createElement('style'); c.id = 'rmcloak'+i;
+      c.type = 'text/css'; c.appendChild(n.createTextNode('.rmcloak'+h+'{visibility:hidden}.rmcloak'+u+'{display:none}'+s));
+      b.parentNode.insertBefore(c, b); return c; }; c = d('', '-hidden', '', '[data-rm-if],[data-rm-else-if],[data-rm-else]{display:none}'); d('-stay-invisible', '-stay-hidden', '-stay', '');
+  setTimeout(o.onerror = function() { c.parentNode && c.
+
+--- MATCH 'dan' @ 6650 ---
+framer-text {
+    overflow: hidden;
+}
+
+[aria-label="newsletterQuote"] [data-framer-name="quote-text"] p:first-child:before {
+    content: "“";
+    color: #F779D0;
+}
+
+[aria-label="newsletterQuote"] [data-framer-name="quote-text"] p:last-child:after {
+    content: "”";
+    color: #F779D0;
+}
+
+[aria-label="jsExcerptBlock"],
+[aria-label="jsQuoteWhiteBlock"],
+[aria-label="jsQuotePinkBlock"] {
+    display: none !important;
+}
+
+.framer-form-text-input .framer-form-input {
+    padding-left: 0.5em !important;
+    text-indent: 0.5em;
+}
+
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dan Mall",
+  "url": "https://danmall.com",
+  "image": "https://framerusercontent.com/images/hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg",
+  "jobTitle": "Designer, Educator, Entrepreneur",
+  "sameAs": [
+    "https://www.linkedin.com/in/danmall/",
+    "https://x.com/danmall",
+    "https://www.instagram.com/danmall/"
+  ]
+}
+</script>
+<!-- SnippetEnd: legacy-headStart -->
+<!-- Snippet: CSwFLLk5P -->
+<!-- RightMessage -->
+<script type="text/javascript"> 
+(function(p, a, n, d, o, b, c) {
+  window.RM = window.RM || [];
+  o = n.createElement('script'); o.type = 'text/javascript'; o.async = true; o.src = 'https://t.rightmessage.com/'+p+'.js';
+  b = n.getElementsByTagName('script')[0]; d = function(h, u, i, s) { var c = n.createElement('style'); c.id = 'rmcloak'+i;
+      c.type = 'text/css'; c.appendChild(n.createTextNode('.rmcloak'+h+'{visibility:hidden}.rmcloak'+u+'{display:none}'+s));
+      b.parentNode.insertBefore(c, b); return c; }; c = d('', '-hidden', '', '[data-rm-if],[data-rm-else-if],[data-rm-else]{display:none}'); d('-stay-invisible', '-stay-hidden', '-stay', '');
+  setTimeout(o.onerror = function() { c.parentNode && c.parentNode.removeChild(c); }, 
+
+--- MATCH 'dan' @ 6691 ---
+ria-label="newsletterQuote"] [data-framer-name="quote-text"] p:first-child:before {
+    content: "“";
+    color: #F779D0;
+}
+
+[aria-label="newsletterQuote"] [data-framer-name="quote-text"] p:last-child:after {
+    content: "”";
+    color: #F779D0;
+}
+
+[aria-label="jsExcerptBlock"],
+[aria-label="jsQuoteWhiteBlock"],
+[aria-label="jsQuotePinkBlock"] {
+    display: none !important;
+}
+
+.framer-form-text-input .framer-form-input {
+    padding-left: 0.5em !important;
+    text-indent: 0.5em;
+}
+
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dan Mall",
+  "url": "https://danmall.com",
+  "image": "https://framerusercontent.com/images/hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg",
+  "jobTitle": "Designer, Educator, Entrepreneur",
+  "sameAs": [
+    "https://www.linkedin.com/in/danmall/",
+    "https://x.com/danmall",
+    "https://www.instagram.com/danmall/"
+  ]
+}
+</script>
+<!-- SnippetEnd: legacy-headStart -->
+<!-- Snippet: CSwFLLk5P -->
+<!-- RightMessage -->
+<script type="text/javascript"> 
+(function(p, a, n, d, o, b, c) {
+  window.RM = window.RM || [];
+  o = n.createElement('script'); o.type = 'text/javascript'; o.async = true; o.src = 'https://t.rightmessage.com/'+p+'.js';
+  b = n.getElementsByTagName('script')[0]; d = function(h, u, i, s) { var c = n.createElement('style'); c.id = 'rmcloak'+i;
+      c.type = 'text/css'; c.appendChild(n.createTextNode('.rmcloak'+h+'{visibility:hidden}.rmcloak'+u+'{display:none}'+s));
+      b.parentNode.insertBefore(c, b); return c; }; c = d('', '-hidden', '', '[data-rm-if],[data-rm-else-if],[data-rm-else]{display:none}'); d('-stay-invisible', '-stay-hidden', '-stay', '');
+  setTimeout(o.onerror = function() { c.parentNode && c.parentNode.removeChild(c); }, a); b.parentNode.insertBefore(o, b);
+})('
+
+--- MATCH 'Dan' @ 183528 ---
+vigation"><div class="ssr-variant hidden-1lask8k hidden-cadhbj"><div class="framer-k845b1-container"><div class="framer-v6yOj framer-PhEw5 framer-lkl78 framer-v-lkl78" data-framer-name="Desktop" style="background-color:rgba(0, 0, 0, 0);max-width:100%;width:100%"><div class="framer-17coaum" data-framer-name="navbar-container" style="box-shadow:none"><div class="framer-jh4i0f" data-framer-name="navbar"><div class="framer-1ogfw5k" data-framer-name="logo"><!--$--><a as="a" class="framer-121426s framer-1nidhz3" data-framer-name="Headshot logo Desktop" href="./" data-framer-page-link-current="true"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="406" height="192" src="https://framerusercontent.com/images/8QiRsqvA475fXqNmIGjo1PFgzRo.png?width=406&amp;height=192" alt="Dan mail" style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center;object-fit:cover"></div></a><!--/$--></div><div class="framer-ozjg20" data-framer-name="menu-stack"><div class="framer-5w63a6" data-framer-name="nav"><div class="framer-ixoygo-container"><div class="framer-iv4ai framer-GMtqL framer-1mmiy66 framer-v-1mmiy66" data-framer-name="Desktop Closed" data-highlight="true" tabindex="0" style="background-color:rgba(0, 0, 0, 0)"><div class="framer-wnx4ze" data-framer-name="Learn" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-uttpyn" data-styles-preset="xsZn7MnOz" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-140
+
+--- MATCH 'Dan' @ 191722 ---
+ssr-variant hidden-1lask8k hidden-1f7ou6p hidden-psdqzv"><div class="framer-k845b1-container"><div class="framer-v6yOj framer-PhEw5 framer-lkl78 framer-v-jy9iho" data-framer-name="Tablet Closed" style="background-color:rgba(0, 0, 0, 0);max-width:100%;width:100%"><div class="framer-17coaum" data-framer-name="navbar-container" style="box-shadow:none"><div class="framer-jh4i0f" data-framer-name="navbar"><div class="framer-1ogfw5k" data-framer-name="logo"><!--$--><a as="a" class="framer-121426s framer-1nidhz3" data-framer-name="Headshot logo Desktop" href="./" data-framer-page-link-current="true"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="406" height="192" src="https://framerusercontent.com/images/8QiRsqvA475fXqNmIGjo1PFgzRo.png?width=406&amp;height=192" alt="Dan mail" style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center;object-fit:cover"></div></a><!--/$--><div class="framer-7mcl2n-container"><div class="framer-3SPPj framer-1i1tl33 framer-v-1i1tl33" data-framer-name="Open Menu" data-highlight="true" tabindex="0"><div class="framer-nax5tg" data-framer-name="Line"><div class="framer-10ym26l" style="background-color:rgb(255, 255, 255);transform:none"></div><div class="framer-15252t1" style="background-color:rgb(255, 255, 255);transform:none"></div></div><div class="framer-2joeag" data-framer-name="Menu"><div class="framer-1es3a5k" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none"><p class="framer-text" s
+
+--- MATCH 'Dan' @ 193420 ---
+t-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none"><p class="framer-text" style="--font-selector:Q1VTVE9NO01hcmsgUHJvIEJvbGQ=;--framer-font-family:&quot;Mark Pro Bold&quot;, sans-serif;--framer-font-size:10px;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)));--framer-text-transform:uppercase">MENU</p></div></div></div></div></div></div></div></div></div></div></nav><style data-framer-html-style>html body { background: var(--token-c5993a0d-f38a-477e-bb35-f1902c049a2f, rgb(0, 0, 0)); }</style><!--$--><div data-framer-root class="framer-7z32J framer-vYTYS framer-mr7h0 framer-72rtr7" style="min-height:100vh;width:auto;display:contents"><header class="framer-yngmb2" data-framer-name="Hero Section"><div class="ssr-variant"><div class="framer-175kbwk" data-framer-appear-id="175kbwk" data-framer-name="Danmal Image" style="opacity:0.001;transform:scale(0.6)"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="2000" height="1333" sizes="(min-width: 1440px) 100vw, (min-width: 810px) and (max-width: 1439.98px) 100vw, (max-width: 809.98px) 100vw" srcset="https://framerusercontent.com/images/hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg?scale-down-to=512&amp;width=2000&amp;height=1333 512w,https://framerusercontent.com/images/hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg?scale-down-to=1024&amp;width=2000&amp;height=1333 1024w,https://framerusercontent.com/images/hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg?width=2000&amp;height=1333 2000w" src="https://framerusercontent.com/images/hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg?width=2000&amp;height=1333" alt="Dan Mall" style="display:block;width:100%;height:100%;border-radius
+
+--- MATCH 'Dan' @ 194256 ---
+amer-175kbwk" data-framer-appear-id="175kbwk" data-framer-name="Danmal Image" style="opacity:0.001;transform:scale(0.6)"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="2000" height="1333" sizes="(min-width: 1440px) 100vw, (min-width: 810px) and (max-width: 1439.98px) 100vw, (max-width: 809.98px) 100vw" srcset="https://framerusercontent.com/images/hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg?scale-down-to=512&amp;width=2000&amp;height=1333 512w,https://framerusercontent.com/images/hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg?scale-down-to=1024&amp;width=2000&amp;height=1333 1024w,https://framerusercontent.com/images/hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg?width=2000&amp;height=1333 2000w" src="https://framerusercontent.com/images/hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg?width=2000&amp;height=1333" alt="Dan Mall" style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center;object-fit:cover"></div></div></div><div class="framer-5jufkh" data-framer-name="Spacing"></div><div class="ssr-variant hidden-1f9k79x"><div class="framer-1m1zaec" data-framer-name="Content"><div class="ssr-variant"><div class="framer-15xl7io" data-framer-name="flowers Image" style="will-change:transform;opacity:0;transform:translateX(-50%) translateY(80px)"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="3072" height="1536" sizes="(min-width: 1440px) calc(100vw * 1.1), (min-width: 810px) and (max-width: 1439.98px) calc(100vw * 1.1), (max-width: 809.98px) calc(100vw * 1.5)" srcset="https://framerusercontent.com/images/BZcrpXuxs1Fhqa1qlhbe2HKEPIQ.
+
+--- MATCH 'Dan' @ 195682 ---
+nherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="3072" height="1536" sizes="(min-width: 1440px) calc(100vw * 1.1), (min-width: 810px) and (max-width: 1439.98px) calc(100vw * 1.1), (max-width: 809.98px) calc(100vw * 1.5)" srcset="https://framerusercontent.com/images/BZcrpXuxs1Fhqa1qlhbe2HKEPIQ.webp?scale-down-to=512&amp;width=3072&amp;height=1536 512w,https://framerusercontent.com/images/BZcrpXuxs1Fhqa1qlhbe2HKEPIQ.webp?scale-down-to=1024&amp;width=3072&amp;height=1536 1024w,https://framerusercontent.com/images/BZcrpXuxs1Fhqa1qlhbe2HKEPIQ.webp?scale-down-to=2048&amp;width=3072&amp;height=1536 2048w,https://framerusercontent.com/images/BZcrpXuxs1Fhqa1qlhbe2HKEPIQ.webp?width=3072&amp;height=1536 3072w" src="https://framerusercontent.com/images/BZcrpXuxs1Fhqa1qlhbe2HKEPIQ.webp?width=3072&amp;height=1536" alt="Dan Mall" style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center top;object-fit:contain"></div></div></div><div class="ssr-variant hidden-1x7jwz9"><div class="framer-men18s" data-framer-name="flowers Image" style="will-change:transform;opacity:0;transform:translateX(-50%) translateY(80px)"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="3840" height="2562" sizes="(min-width: 1440px) calc(100vw * 1.1), (min-width: 810px) and (max-width: 1439.98px) calc(100vw * 1.1), (max-width: 809.98px) calc(100vw * 1.5)" srcset="https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=512&amp;width=3840&amp;height=2562 512w,https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-do
+
+--- MATCH 'Dan' @ 196968 ---
+ius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="3840" height="2562" sizes="(min-width: 1440px) calc(100vw * 1.1), (min-width: 810px) and (max-width: 1439.98px) calc(100vw * 1.1), (max-width: 809.98px) calc(100vw * 1.5)" srcset="https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=512&amp;width=3840&amp;height=2562 512w,https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=1024&amp;width=3840&amp;height=2562 1024w,https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=2048&amp;width=3840&amp;height=2562 2048w,https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?width=3840&amp;height=2562 3840w" src="https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?width=3840&amp;height=2562" alt="Dan Mall" style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center top;object-fit:contain"></div></div></div><div class="ssr-variant hidden-72rtr7"><div class="framer-men18s" data-framer-name="flowers Image" style="will-change:transform;opacity:0;transform:translateX(-50%) translateY(80px)"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="3840" height="2562" sizes="(min-width: 1440px) calc(100vw * 1.1), (min-width: 810px) and (max-width: 1439.98px) calc(100vw * 1.1), (max-width: 809.98px) calc(100vw * 1.5)" srcset="https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=512&amp;width=3840&amp;height=2562 512w,https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-dow
+
+--- MATCH 'Dan' @ 198253 ---
+ius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="3840" height="2562" sizes="(min-width: 1440px) calc(100vw * 1.1), (min-width: 810px) and (max-width: 1439.98px) calc(100vw * 1.1), (max-width: 809.98px) calc(100vw * 1.5)" srcset="https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=512&amp;width=3840&amp;height=2562 512w,https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=1024&amp;width=3840&amp;height=2562 1024w,https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=2048&amp;width=3840&amp;height=2562 2048w,https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?width=3840&amp;height=2562 3840w" src="https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?width=3840&amp;height=2562" alt="Dan Mall" style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center bottom;object-fit:contain"></div></div></div><div class="ssr-variant"><div class="framer-rtslzw" data-framer-name="Dan Mall" style="will-change:transform;opacity:0;transform:translateY(80px)"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="2022" height="1377" sizes="(min-width: 1440px) calc(100vw * 0.6559), (min-width: 810px) and (max-width: 1439.98px) 100vw, (max-width: 809.98px) 100vw" srcset="https://framerusercontent.com/images/nT1RIIaymTzAI6UESI2yEzrKinU.png?scale-down-to=512&amp;width=2022&amp;height=1377 512w,https://framerusercontent.com/images/nT1RIIaymTzAI6UESI2yEzrKinU.png?scale-down-to=1024&amp;width=2022&amp;height=1377 1024w,https:/
+
+--- MATCH 'Dan' @ 198488 ---
+h: 1439.98px) calc(100vw * 1.1), (max-width: 809.98px) calc(100vw * 1.5)" srcset="https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=512&amp;width=3840&amp;height=2562 512w,https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=1024&amp;width=3840&amp;height=2562 1024w,https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=2048&amp;width=3840&amp;height=2562 2048w,https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?width=3840&amp;height=2562 3840w" src="https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?width=3840&amp;height=2562" alt="Dan Mall" style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center bottom;object-fit:contain"></div></div></div><div class="ssr-variant"><div class="framer-rtslzw" data-framer-name="Dan Mall" style="will-change:transform;opacity:0;transform:translateY(80px)"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="2022" height="1377" sizes="(min-width: 1440px) calc(100vw * 0.6559), (min-width: 810px) and (max-width: 1439.98px) 100vw, (max-width: 809.98px) 100vw" srcset="https://framerusercontent.com/images/nT1RIIaymTzAI6UESI2yEzrKinU.png?scale-down-to=512&amp;width=2022&amp;height=1377 512w,https://framerusercontent.com/images/nT1RIIaymTzAI6UESI2yEzrKinU.png?scale-down-to=1024&amp;width=2022&amp;height=1377 1024w,https://framerusercontent.com/images/nT1RIIaymTzAI6UESI2yEzrKinU.png?width=2022&amp;height=1377 2022w" src="https://framerusercontent.com/images/nT1RIIaymTzAI6UESI2yEzrKinU.png?width=2022&amp;height=1377" alt style="display:block;width:100%;h
+
+--- MATCH 'Dan' @ 201602 ---
+nherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="3072" height="1536" sizes="(min-width: 1440px) calc(100vw * 1.1), (min-width: 810px) and (max-width: 1439.98px) calc(100vw * 1.1), (max-width: 809.98px) calc(100vw * 1.5)" srcset="https://framerusercontent.com/images/BZcrpXuxs1Fhqa1qlhbe2HKEPIQ.webp?scale-down-to=512&amp;width=3072&amp;height=1536 512w,https://framerusercontent.com/images/BZcrpXuxs1Fhqa1qlhbe2HKEPIQ.webp?scale-down-to=1024&amp;width=3072&amp;height=1536 1024w,https://framerusercontent.com/images/BZcrpXuxs1Fhqa1qlhbe2HKEPIQ.webp?scale-down-to=2048&amp;width=3072&amp;height=1536 2048w,https://framerusercontent.com/images/BZcrpXuxs1Fhqa1qlhbe2HKEPIQ.webp?width=3072&amp;height=1536 3072w" src="https://framerusercontent.com/images/BZcrpXuxs1Fhqa1qlhbe2HKEPIQ.webp?width=3072&amp;height=1536" alt="Dan Mall" style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center top;object-fit:contain"></div></div><div class="framer-men18s" data-framer-name="flowers Image" style="will-change:transform;height:auto;aspect-ratio:1.4988290398126465;opacity:0;transform:translateX(-50%) translateY(80px)"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="3840" height="2562" sizes="(min-width: 1440px) calc(100vw * 1.1), (min-width: 810px) and (max-width: 1439.98px) calc(100vw * 1.1), (max-width: 809.98px) calc(100vw * 1.5)" srcset="https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=512&amp;width=3840&amp;height=2562 512w,https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down
+
+--- MATCH 'Dan' @ 202886 ---
+ius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="3840" height="2562" sizes="(min-width: 1440px) calc(100vw * 1.1), (min-width: 810px) and (max-width: 1439.98px) calc(100vw * 1.1), (max-width: 809.98px) calc(100vw * 1.5)" srcset="https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=512&amp;width=3840&amp;height=2562 512w,https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=1024&amp;width=3840&amp;height=2562 1024w,https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=2048&amp;width=3840&amp;height=2562 2048w,https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?width=3840&amp;height=2562 3840w" src="https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?width=3840&amp;height=2562" alt="Dan Mall" style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center bottom;object-fit:contain"></div></div><div class="framer-rtslzw" data-framer-name="Dan Mall" style="will-change:transform;opacity:0;transform:translateY(80px)"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="2022" height="1377" sizes="(min-width: 1440px) calc(100vw * 0.6559), (min-width: 810px) and (max-width: 1439.98px) 100vw, (max-width: 809.98px) 100vw" srcset="https://framerusercontent.com/images/nT1RIIaymTzAI6UESI2yEzrKinU.png?scale-down-to=512&amp;width=2022&amp;height=1377 512w,https://framerusercontent.com/images/nT1RIIaymTzAI6UESI2yEzrKinU.png?scale-down-to=1024&amp;width=2022&amp;height=1377 1024w,https://framerusercontent.com/images/n
+
+--- MATCH 'Dan' @ 203090 ---
+min-width: 810px) and (max-width: 1439.98px) calc(100vw * 1.1), (max-width: 809.98px) calc(100vw * 1.5)" srcset="https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=512&amp;width=3840&amp;height=2562 512w,https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=1024&amp;width=3840&amp;height=2562 1024w,https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=2048&amp;width=3840&amp;height=2562 2048w,https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?width=3840&amp;height=2562 3840w" src="https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?width=3840&amp;height=2562" alt="Dan Mall" style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center bottom;object-fit:contain"></div></div><div class="framer-rtslzw" data-framer-name="Dan Mall" style="will-change:transform;opacity:0;transform:translateY(80px)"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="2022" height="1377" sizes="(min-width: 1440px) calc(100vw * 0.6559), (min-width: 810px) and (max-width: 1439.98px) 100vw, (max-width: 809.98px) 100vw" srcset="https://framerusercontent.com/images/nT1RIIaymTzAI6UESI2yEzrKinU.png?scale-down-to=512&amp;width=2022&amp;height=1377 512w,https://framerusercontent.com/images/nT1RIIaymTzAI6UESI2yEzrKinU.png?scale-down-to=1024&amp;width=2022&amp;height=1377 1024w,https://framerusercontent.com/images/nT1RIIaymTzAI6UESI2yEzrKinU.png?width=2022&amp;height=1377 2022w" src="https://framerusercontent.com/images/nT1RIIaymTzAI6UESI2yEzrKinU.png?width=2022&amp;height=1377" alt style="display:block;width:100%;h
+
+--- MATCH 'Dan' @ 285513 ---
+--token-1c336699-737e-4aec-b2e1-971e73335af6, rgb(166, 145, 129))" class="framer-text">Life outside the work.</p></div></div></div></div></a><!--/$--></div></div></div></section><div class="ssr-variant hidden-1x7jwz9 hidden-1f9k79x"><div class="framer-1d4ndzh-container"><!--$--><section aria-label="Pink Quote" class="framer-0sXI5 framer-FioQn framer-oT3sq framer-JUrnB framer-3utC1 framer-15m5a9k framer-v-15m5a9k" data-framer-name="Quote Pink Desktop" style="background-color:var(--token-367af27f-f35a-422a-bdaa-8bd86584529d, rgb(247, 121, 208));width:100%"><div class="framer-lvgnhg" data-framer-name="Container"><!--$--><div class="framer-13sf538"><!--$--><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-1y4gw93">Dan is an educator, mentor, and most importantly, a friend. He is a leader who helps others realize their superpowers and deliver their best work, all while showing how to enjoy the ride. The things I’ve learned from him will forever be key parts of my DNA as a designer.</p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">Julia Fernandez</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong cl
+
+--- MATCH 'Dan' @ 288043 ---
+Tg2yZif" dir="auto" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))">, </p></div><div class="framer-1ms3nl0" data-framer-name="Source Company" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)))">Meta</p></div></div></div><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p dir="auto" class="framer-text framer-styles-preset-1y4gw93">Dan is exceedingly generous with his time, advice, resources, and knowledge. He’s the best mentor I have ever had.</p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">Riley Sykes</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong class="framer-text">, </strong></p></div><div class="framer-16cv4s5" data-framer-name="Source Role" data-framer-component-type="RichTextContainer" style="--extract
+
+--- MATCH 'Dan' @ 290441 ---
+amer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))">, </p></div><div class="framer-1ms3nl0" data-framer-name="Source Company" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)))">The New York Times</p></div></div></div><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p dir="auto" class="framer-text framer-styles-preset-1y4gw93">As a new leader, Dan helped me find and create clarity for our team, not by giving me all the answers, but by helping me grow and find the confidence to chart our path forward together.</p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">Mikaila Weaver</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong class="framer-text">, </strong></p></div><div class="framer-16cv4s5" data-framer-name="Source Role" data-f
+
+--- MATCH 'Dan' @ 292881 ---
+ style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))">, </p></div><div class="framer-1ms3nl0" data-framer-name="Source Company" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)))">Eventbrite</p></div></div></div><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p dir="auto" class="framer-text framer-styles-preset-1y4gw93">Working with Dan has been truly career-changing. His influence still shapes how I tackle project possibilities and solutions. </p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">Lauren Deal</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong class="framer-text">, </strong></p></div><div class="framer-16cv4s5" data-framer-name="Source Role" data-framer-component-type="RichTextContainer" style="--extracte
+
+--- MATCH 'Dan' @ 295316 ---
+color:var(--extracted-r6o4lv, rgb(255, 255, 255))">, </p></div><div class="framer-1ms3nl0" data-framer-name="Source Company" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)))">Instrument</p></div></div></div><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-1y4gw93">I was worried that I wouldn’t be able to learn anymore at work. Working with Dan changed that.</p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">Norel Hassan</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong class="framer-text">, </strong></p></div><div class="framer-16cv4s5" data-framer-name="Source Role" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:rgb(255, 255, 255);--framer-paragraph-spacing:0px;transform:none"><p class="framer-tex
+
+--- MATCH 'Dan' @ 297603 ---
+auto" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))">, </p></div><div class="framer-1ms3nl0" data-framer-name="Source Company" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)))">The New York Times</p></div></div></div><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p dir="auto" class="framer-text framer-styles-preset-1y4gw93">Dan is a phenomenon. He is equal parts analytical and intuitive, collaborative and focused, tenacious and calm. He’s one of the finest people I’ve had the opportunity to work with.</p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">Michael Lebowitz</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong class="framer-text">, </strong></p></div><div class="framer-16cv4s5" data-framer-name="Sourc
+
+--- MATCH 'Dan' @ 300061 ---
+dir="auto" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))">, </p></div><div class="framer-1ms3nl0" data-framer-name="Source Company" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)))">Big Spaceship</p></div></div></div><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p dir="auto" class="framer-text framer-styles-preset-1y4gw93">Dan’s attention to detail and lusciously rich arsenal of knowledge in both design and code make him an amazing collaborator and leader. He is a great teacher, mentor, friend, and a genuinely exceptional human being.</p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">Benjamin Bojko</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong class="framer-text">, </strong></p></div><div class="framer
+
+--- MATCH 'Dan' @ 302112 ---
+et="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))">Creative Tech Director</p></div><div class="framer-1ms3nl0" data-framer-name="Source Company" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)))"></p></div></div></div><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-1y4gw93">Dan has one of the best minds for design in our industry, but he takes it so much further in his unparalleled grace and his seamless collaboration.</p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">Mike Kenny</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong class="framer-text">, </strong></p></div><div class="framer-16cv4s5" data-framer-name="Source Role" data-framer-component-type="Ric
+
+--- MATCH 'Dan' @ 304522 ---
+if" dir="auto" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))">, </p></div><div class="framer-1ms3nl0" data-framer-name="Source Company" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)))">Justworks</p></div></div></div><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p dir="auto" class="framer-text framer-styles-preset-1y4gw93">Dan has an unparalleled ability to articulate his ideas and nurture yours. He’s bursting with integrity, and it comes across in everything he touches.</p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">Victor Pineiro</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong class="framer-text">, </strong></p></div><div class="framer-16cv4s5" data-framer-name="Source Role" data-framer-component-ty
+
+--- MATCH 'Dan' @ 306957 ---
+if" dir="auto" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))">, </p></div><div class="framer-1ms3nl0" data-framer-name="Source Company" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)))">HBO | Max</p></div></div></div><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p dir="auto" class="framer-text framer-styles-preset-1y4gw93">Dan’s wisdom echoes for miles. The only thing that rivals his passion for creating amazing work is his ridiculously large sneaker collection.</p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">Jay Quercia</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong class="framer-text">, </strong></p></div><div class="framer-16cv4s5" data-framer-name="Source Role" data-framer-component-type="RichText
+
+--- MATCH 'Dan' @ 308939 ---
+2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))">Art Director &amp; Illustrator</p></div><div class="framer-1ms3nl0" data-framer-name="Source Company" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)))"></p></div></div></div><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-1y4gw93">Dan has vision and is able to see the potential in anything he touches. He never stops thinking about what can be done better, which leads to fresh, smart, and original work.</p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">Sabah Kosoy</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong class="framer-text">, </strong></p></div><div class="framer-16cv4s5" data-framer-name="Source Role" dat
+
+--- MATCH 'Dan' @ 311377 ---
+2yZif" dir="auto" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))">, </p></div><div class="framer-1ms3nl0" data-framer-name="Source Company" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)))">Google</p></div></div></div><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p dir="auto" class="framer-text framer-styles-preset-1y4gw93">Dan is a powerful leader who honors everyone’s input.</p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">Rebecca Mitchell</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong class="framer-text">, </strong></p></div><div class="framer-16cv4s5" data-framer-name="Source Role" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:rgb(255, 255, 255);--framer-paragraph-spacing:
+
+--- MATCH 'Dan' @ 313702 ---
+yZif" dir="auto" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))">, </p></div><div class="framer-1ms3nl0" data-framer-name="Source Company" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)))">Point72</p></div></div></div><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p dir="auto" class="framer-text framer-styles-preset-1y4gw93">Dan is a very special blend of leader, teacher, and experience. He’s contagious.</p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">S. Jason Prohaska</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong class="framer-text">, </strong></p></div><div class="framer-16cv4s5" data-framer-name="Source Role" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:rgb(255, 255, 255)
+
+--- MATCH 'Dan' @ 316138 ---
+ rgb(255, 255, 255))">, </p></div><div class="framer-1ms3nl0" data-framer-name="Source Company" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)))">Media.Monks</p></div></div></div><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p dir="auto" class="framer-text framer-styles-preset-1y4gw93">If I closed my eyes and thought of five people I’d want to work with for the rest of my life, Dan would be one of the five. Doesn’t matter what the project is.</p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">Jamie Kosoy</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong class="framer-text">, </strong></p></div><div class="framer-16cv4s5" data-framer-name="Source Role" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:rgb(255, 255, 255);--framer-paragraph-s
+
+--- MATCH 'Dan' @ 318445 ---
+reset="dnTg2yZif" dir="auto" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))">, </p></div><div class="framer-1ms3nl0" data-framer-name="Source Company" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)))">Stripe</p></div></div></div><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-1y4gw93">Dan isn’t just knowledgeable; he’s got this endearing presence. When he speaks, I’m compelled to listen.</p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">Eric Odom</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong class="framer-text">, </strong></p></div><div class="framer-16cv4s5" data-framer-name="Source Role" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:rg
+
+--- MATCH 'Dan' @ 320801 ---
+="auto" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))">, </p></div><div class="framer-1ms3nl0" data-framer-name="Source Company" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)))">Art Dept. Club</p></div></div></div><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-1y4gw93">Working with Dan early on in my career was a major turning point for me and helped change the way I think about teamwork and leadership.</p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">Carlos Andujar</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong class="framer-text">, </strong></p></div><div class="framer-16cv4s5" data-framer-name="Source Role" data-framer-component-type="RichTextContainer" styl
+
+--- MATCH 'Dan' @ 322754 ---
+s-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))">Product Designer</p></div><div class="framer-1ms3nl0" data-framer-name="Source Company" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)))"></p></div></div></div><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-1y4gw93">Dan was the biggest impact in my design career while I was at my last agency.</p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">Shubh Singhi</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong class="framer-text">, </strong></p></div><div class="framer-16cv4s5" data-framer-name="Source Role" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:rgb(255, 255, 255);--frame
+
+--- MATCH 'Dan' @ 325156 ---
+cted-r6o4lv, rgb(255, 255, 255))">, </p></div><div class="framer-1ms3nl0" data-framer-name="Source Company" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)))">Distilled Strategy</p></div></div></div><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-1y4gw93">I still have so much more to learn, but I know I wouldn’t be where I am today without Dan. I’m a bit more of an unapologetic Dan Mall lifer™.</p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">Zach McNair</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong class="framer-text">, </strong></p></div><div class="framer-16cv4s5" data-framer-name="Source Role" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:rgb(255, 255, 255);--framer-paragraph-spacing:0px
+
+--- MATCH 'Dan' @ 325195 ---
+></div><div class="framer-1ms3nl0" data-framer-name="Source Company" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-d63b101c-2fb9-4347-8db8-1405e4653c52, rgb(255, 255, 255)))">Distilled Strategy</p></div></div></div><div aria-label="jsQuotePinkBlock" class="framer-1nvrc5b"><div class="framer-1j63dgl" data-framer-name="jsQuoteCopy" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-1y4gw93">I still have so much more to learn, but I know I wouldn’t be where I am today without Dan. I’m a bit more of an unapologetic Dan Mall lifer™.</p></div><div class="framer-crro0x" data-framer-name="Source"><div class="framer-i2ewid" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif"><strong class="framer-text">Zach McNair</strong></p></div><div class="framer-3uq8rt" data-framer-name="jsSourceName" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing:0px;transform:none"><p class="framer-text framer-styles-preset-1b2zb9g" data-styles-preset="dnTg2yZif" dir="auto"><strong class="framer-text">, </strong></p></div><div class="framer-16cv4s5" data-framer-name="Source Role" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv:rgb(255, 255, 255);--framer-paragraph-spacing:0px;transform:none"><p class="framer-text 
