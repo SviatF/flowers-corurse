@@ -1,15 +1,176 @@
 Traceback (most recent call last):
-  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/selfhost_runtime.py", line 292, in <module>
-    main()
-  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/selfhost_runtime.py", line 269, in main
+  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/selfhost_runtime_run.py", line 11, in <module>
+    build.main()
+  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/selfhost_runtime.py", line 273, in main
     source, mirrored = mirror(source)
                        ^^^^^^^^^^^^^^
-  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/selfhost_runtime.py", line 188, in mirror
-    fs.write_bytes(data)
-  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/pathlib.py", line 1036, in write_bytes
-    with self.open(mode='wb') as f:
-         ^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/pathlib.py", line 1013, in open
-    return io.open(self, mode, buffering, encoding, errors, newline)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-IsADirectoryError: [Errno 21] Is a directory: '/home/runner/work/flowers-corurse/flowers-corurse/public/vendor/www.hvdfonts.com/fonts'
+  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/selfhost_runtime.py", line 207, in mirror
+    raise RuntimeError("Could not mirror:\n" + "\n".join(failures))
+RuntimeError: Could not mirror:
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/siteНАВИЧКАdata.BuiuVxXA.mjs :: 'ascii' codec can't encode characters in position 38-44: ordinal not in range(128)
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/` :: HTTP Error 403: Forbidden
+https://fonts.gstatic.com/s/` :: HTTP Error 404: Not Found
+https://framerusercontent.com/third-party-assets/fontshare/` :: HTTP Error 400: Bad Request
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/s[1] :: HTTP Error 403: Forbidden
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/e,t :: HTTP Error 403: Forbidden
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/p.location.href :: HTTP Error 403: Forbidden
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/e :: HTTP Error 403: Forbidden
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/${s} :: HTTP Error 403: Forbidden
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/e,F_.document.baseURI :: HTTP Error 403: Forbidden
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/new Blob([`(`,Yu( :: URL can't contain control characters. '/sites/4MPXIbGvh3LCXvmIeOSkpX/new Blob([`(`,Yu(' (found at least ' ')
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/n :: HTTP Error 403: Forbidden
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/e.value :: HTTP Error 403: Forbidden
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/${i} :: HTTP Error 403: Forbidden
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/t.src :: HTTP Error 403: Forbidden
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/n,F_.location.href :: HTTP Error 403: Forbidden
+https://framerusercontent.com/images/LidNvfOnmuvxIpTZooO9I8acv74.jpg?width=1365&height=1161`,srcSet:`https://framerusercontent.com/images/LidNvfOnmuvxIpTZooO9I8acv74.jpg?scale-down-to=512&width=1365&height=1161 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/8MBBpzxItj4NLdLX97x1dwuVTw.svg?width=972&height=688`,srcSet:`https://framerusercontent.com/images/8MBBpzxItj4NLdLX97x1dwuVTw.svg?scale-down-to=512&width=972&height=688 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/rV0f27HcGpJ7yLQHWBjmUq86bws.svg?width=972&height=689`,srcSet:`https://framerusercontent.com/images/rV0f27HcGpJ7yLQHWBjmUq86bws.svg?scale-down-to=512&width=972&height=689 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/NSFLnp7bP1IEZZQ4Aim5d5Bn1tI.svg?width=29&height=29`},className:`framer-lughtn` :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/NSFLnp7bP1IEZZQ4Aim5d5Bn1tI.svg?width=29&height=29`}},cQPkrfYZs:{background:{alt:``,fit:`fill`,loading:S((f?.y||0 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/NSFLnp7bP1IEZZQ4Aim5d5Bn1tI.svg?width=29&height=29`}}},x,O :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/iJxl8k4nU1JIx9y5cZ0OJgDMg.png?width=1023&height=1023`,srcSet:`https://framerusercontent.com/images/iJxl8k4nU1JIx9y5cZ0OJgDMg.png?scale-down-to=512&width=1023&height=1023 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/vk1krUDqfOi4jSlnGHMvtNNtuG8.png?width=1200&height=1200`,srcSet:`https://framerusercontent.com/images/vk1krUDqfOi4jSlnGHMvtNNtuG8.png?scale-down-to=512&width=1200&height=1200 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/wc0aKChC4sNYEdKkEXAhXsMpA0.svg?width=41&height=30`},className:`framer-15n3stm` :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/wc0aKChC4sNYEdKkEXAhXsMpA0.svg?width=41&height=30`}},cQPkrfYZs:{background:{alt:``,fit:`fill`,loading:S((f?.y||0 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/wc0aKChC4sNYEdKkEXAhXsMpA0.svg?width=41&height=30`}}},x,O :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/d4cVBVokU8g85XI7BgpcOa5940.png?width=80&height=80`},className:`framer-1trfq11` :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/d4cVBVokU8g85XI7BgpcOa5940.png?width=80&height=80`}},cQPkrfYZs:{background:{alt:``,fit:`fill`,loading:S((f?.y||0 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/d4cVBVokU8g85XI7BgpcOa5940.png?width=80&height=80`}}},x,O :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/uSW5pqdZY4A1bE96kTY52w9bJG8.jpeg?width=1280&height=731`,srcSet:`https://framerusercontent.com/images/uSW5pqdZY4A1bE96kTY52w9bJG8.jpeg?scale-down-to=512&width=1280&height=731 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/assets/UocEh2ABfCXvGsUub5sU0cJnTM.woff2`,weight:`400`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0460-052F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2`,weight:`400`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0301 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2`,weight:`400`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+1F00-1FFF`,url:`https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2`,weight:`400`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0370-03FF`,url:`https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2`,weight:`400`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0100-024F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2`,weight:`400`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0000-00FF :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2`,weight:`400`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0102-0103 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2`,weight:`400`},{cssFamilyName:`RST :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/DimDETn6IDIrostEQuP6awrzbBo.woff2`,weight:`400`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0460-052F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/5A3Ce6C9YYmCjpQx9M4inSaKU.woff2`,weight:`500`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0301 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/Qx95Xyt0Ka3SGhinnbXIGpEIyP4.woff2`,weight:`500`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+1F00-1FFF`,url:`https://framerusercontent.com/assets/6mJuEAguuIuMog10gGvH5d3cl8.woff2`,weight:`500`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0370-03FF`,url:`https://framerusercontent.com/assets/xYYWaj7wCU5zSQH0eXvSaS19wo.woff2`,weight:`500`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0100-024F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/otTaNuNpVK4RbdlT7zDDdKvQBA.woff2`,weight:`500`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0000-00FF :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/UjlFhCnUjxhNfep4oYBPqnEssyo.woff2`,weight:`500`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0102-0103 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/DolVirEGb34pEXEp8t8FQBSK4.woff2`,weight:`500`}]},...Ee,...O(ie :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/QPYimiRfj01J6tLf9SvhFp7pLxQ.woff2`}]}],Ye=[`.framer-GMtqL :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2`,weight:`400`},{cssFamilyName:`Bueno :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/DQu3jxrbUC4XsdbN76QBHVOLGlI.woff2`,weight:`700`}]},...O(Je :: HTTP Error 403: Forbidden
+https://framerusercontent.com/images/wxdzrGI6yKiWDUyw8XTiP9EjII.png?width=560&height=452`,srcSet:`https://framerusercontent.com/images/wxdzrGI6yKiWDUyw8XTiP9EjII.png?scale-down-to=512&width=560&height=452 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/assets/owA3pf9TszBYgY9HOBPGsARMsCo.woff2`,weight:`500`},{cssFamilyName:`Bueno :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/F6rIwDxBtsKrSWZLA8fKvk40nQ.woff2`,weight:`900`},{cssFamilyName:`RST :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/TdeeLrWjBPqlWQXOXYo9crU6wE.woff2`,weight:`400`}]}],{supportsExplicitInterCodegen:!0} :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/QPYimiRfj01J6tLf9SvhFp7pLxQ.woff2`,weight:`700`}]}],{supportsExplicitInterCodegen:!0} :: HTTP Error 403: Forbidden
+https://framerusercontent.com/images/8QiRsqvA475fXqNmIGjo1PFgzRo.png?width=406&height=192`},className:`framer-121426s :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/8QiRsqvA475fXqNmIGjo1PFgzRo.png?width=406&height=192`}},LgGYiUwWK:{background:{alt:`Dan :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/8QiRsqvA475fXqNmIGjo1PFgzRo.png?width=406&height=192`}}},C,j :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/rms9Moc27iSWrqp5fbYVZ2oxUVg.png?width=172&height=172`},className:`framer-t8s1aa :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/rms9Moc27iSWrqp5fbYVZ2oxUVg.png?width=172&height=172`}},jMLp3_Cdg:{as:`a`,background:{alt:``,fit:`fill`,intrinsicHeight:137.6,intrinsicWidth:137.6,loading:S((f?.y||0 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/rms9Moc27iSWrqp5fbYVZ2oxUVg.png?width=172&height=172`}},kZGLFiH7I:{as:`a`,background:{alt:``,fit:`fill`,intrinsicHeight:137.6,intrinsicWidth:137.6,loading:S((f?.y||0 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/rms9Moc27iSWrqp5fbYVZ2oxUVg.png?width=172&height=172`}},l6XwceleZ:{as:`a`,background:{alt:``,fit:`fill`,intrinsicHeight:137.6,intrinsicWidth:137.6,loading:S((f?.y||0 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/rms9Moc27iSWrqp5fbYVZ2oxUVg.png?width=172&height=172`}},PhrhrmRcF:{as:`a`,background:{alt:``,fit:`fill`,intrinsicHeight:137.6,intrinsicWidth:137.6,loading:S((f?.y||0 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/rms9Moc27iSWrqp5fbYVZ2oxUVg.png?width=172&height=172`}}},C,j :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/a5TI5tK2RresM9keFVWNjThqAYc.webp?width=3060&height=1415`,srcSet:`https://framerusercontent.com/images/a5TI5tK2RresM9keFVWNjThqAYc.webp?scale-down-to=512&width=3060&height=1415 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/RyhSshrzQaOgHzssQqFy92hlE.webp?width=2590&height=1585`,srcSet:`https://framerusercontent.com/images/RyhSshrzQaOgHzssQqFy92hlE.webp?scale-down-to=512&width=2590&height=1585 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/HOHF5eLADXFMPQN2BvOr2oW0NbU.webp?width=2189&height=1038`,srcSet:`https://framerusercontent.com/images/HOHF5eLADXFMPQN2BvOr2oW0NbU.webp?scale-down-to=512&width=2189&height=1038 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/gftqxfc3tRP15LUZMd0IyxdCSVc.webp?width=2000&height=992`,srcSet:`https://framerusercontent.com/images/gftqxfc3tRP15LUZMd0IyxdCSVc.webp?scale-down-to=512&width=2000&height=992 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/assets/QPYimiRfj01J6tLf9SvhFp7pLxQ.woff2`,weight:`700`},{cssFamilyName:`Bueno :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/DQu3jxrbUC4XsdbN76QBHVOLGlI.woff2`,weight:`700`}]},...Ht,...Ut,...Wt,...Gt,...Kt,...O(We :: HTTP Error 403: Forbidden
+https://framerusercontent.com/images/pzGRRJjTHc2e75KcUbV2YShPD6k.png?width=380&height=188`},className:`framer-12iiu1p` :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/xjWTt03RVDpfdPzyel0csxMcNU.png?width=324&height=180`},className:`framer-1i1ftoj` :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/zVrOhWY76MwYs4RNSBtLQEjtxo.png?width=328&height=256`},className:`framer-6l0th` :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg?width=2000&height=1333`,srcSet:`https://framerusercontent.com/images/hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg?scale-down-to=512&width=2000&height=1333 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/BZcrpXuxs1Fhqa1qlhbe2HKEPIQ.webp?width=3072&height=1536`,srcSet:`https://framerusercontent.com/images/BZcrpXuxs1Fhqa1qlhbe2HKEPIQ.webp?scale-down-to=512&width=3072&height=1536 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?width=3840&height=2562`,srcSet:`https://framerusercontent.com/images/Vj2sUVeKh69wBm6eGZIvVWtEDo.webp?scale-down-to=512&width=3840&height=2562 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/nT1RIIaymTzAI6UESI2yEzrKinU.png?width=2022&height=1377`,srcSet:`https://framerusercontent.com/images/nT1RIIaymTzAI6UESI2yEzrKinU.png?scale-down-to=512&width=2022&height=1377 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/8sPkB8j9n1Ptg7bXTdHv4SS8tiY.png?width=3244&height=4162`,srcSet:`https://framerusercontent.com/images/8sPkB8j9n1Ptg7bXTdHv4SS8tiY.png?scale-down-to=1024&width=3244&height=4162 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/aU99AjbUdQfIRY9IepSuknwoYo.png?width=2470&height=393`,srcSet:`https://framerusercontent.com/images/aU99AjbUdQfIRY9IepSuknwoYo.png?scale-down-to=512&width=2470&height=393 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/images/g0FO3EqHnoXXVZfSwZwjLmvc0.png?width=1676&height=693`,srcSet:`https://framerusercontent.com/images/g0FO3EqHnoXXVZfSwZwjLmvc0.png?scale-down-to=512&width=1676&height=693 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/assets/nHUJR6J5RUflFX8W9roY2DQM4xg.woff2`,weight:`400`},{cssFamilyName:`Bueno :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/DQu3jxrbUC4XsdbN76QBHVOLGlI.woff2`,weight:`700`},{cssFamilyName:`RST :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/IBGouJv6AreeDOiHniOtQ9RX9SY.woff2`,weight:`300`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0460-052F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/BkDpl4ghaqvMi1btKFyG2tdbec.woff2`,weight:`300`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0301 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/zAMK70AQRFSShJgUiaR5IiIhgzk.woff2`,weight:`300`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+1F00-1FFF`,url:`https://framerusercontent.com/assets/IETjvc5qzUaRoaruDpPSwCUM8.woff2`,weight:`300`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0370-03FF`,url:`https://framerusercontent.com/assets/oLCoaT3ioA0fHdJnWR9W6k7NY.woff2`,weight:`300`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0100-024F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/Sj0PCHQSBjFmEp6NBWg6FNaKc.woff2`,weight:`300`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0000-00FF :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/aqiiD4LUKkKzXdjGL5UzHq8bo5w.woff2`,weight:`300`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0102-0103 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/H4TfENUY1rh8R9UaSD6vngjJP3M.woff2`,weight:`300`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+0460-052F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/YYB6GZmCWnZq3RWZOghuZIOxQY.woff2`,weight:`300`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+0301 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/miJTzODdiyIr3tRo9KEoqXXk2PM.woff2`,weight:`300`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+1F00-1FFF`,url:`https://framerusercontent.com/assets/6ZMhcggRFfEfbf7lncCpaUbA.woff2`,weight:`300`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+0370-03FF`,url:`https://framerusercontent.com/assets/8sCN6PGUr4I8q5hC5twAXfcwqV0.woff2`,weight:`300`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+0100-024F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/aUYDUTztS7anQw5JuwCncXeLOBY.woff2`,weight:`300`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+0000-00FF :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/8mwKwShtYEXIZ5diRBT74yn9jdQ.woff2`,weight:`300`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+0102-0103 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/yDiPvYxioBHsicnYxpPW35WQmx8.woff2`,weight:`300`},{cssFamilyName:`RST :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/nHUJR6J5RUflFX8W9roY2DQM4xg.woff2`,weight:`400`},{cssFamilyName:`Heebo`,source:`google`,style:`normal`,uiFamilyName:`Heebo`,url:`https://fonts.gstatic.com/s/heebo/v28/NGSpv5_NC0k9P_v6ZUCbLRAHxK1E1yycd0Onz02SXQ.woff2`,weight:`300`},{cssFamilyName:`Bueno :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/DQu3jxrbUC4XsdbN76QBHVOLGlI.woff2`,weight:`700`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0460-052F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2`,weight:`400`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0460-052F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2`,weight:`700`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0301 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2`,weight:`700`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+1F00-1FFF`,url:`https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2`,weight:`700`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0370-03FF`,url:`https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2`,weight:`700`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0100-024F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2`,weight:`700`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0000-00FF :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/syRNPWzAMIrcJ3wIlPIP43KjQs.woff2`,weight:`700`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0102-0103 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2`,weight:`700`},{cssFamilyName:`RST :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/ddE2BiA2g5m5IM0Hpp9Vfc6onjA.woff2`,weight:`400`},{cssFamilyName:`RST :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/EkNthrh6FUizG6e5pbrcqdYM3SM.woff2`,variationAxes:[{defaultValue:100,maxValue:900,minValue:100,name:`Weight`,tag:`wght`},{defaultValue:100,maxValue:900,minValue:100,name:`Optical :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/DIbbaztH6aNrfYcOd06ufxvPtY.woff2`,weight:`700`},{cssFamilyName:`RST :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/nHUJR6J5RUflFX8W9roY2DQM4xg.woff2`,weight:`400`}]}],U=[`.framer-gRNZN :: HTTP Error 403: Forbidden
+https://framerusercontent.com/images/xA7lz1IuDv03CyKUdivb5oKbeM.png?width=2688&height=1536`,srcSet:`https://framerusercontent.com/images/xA7lz1IuDv03CyKUdivb5oKbeM.png?scale-down-to=512&width=2688&height=1536 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/assets/QPYimiRfj01J6tLf9SvhFp7pLxQ.woff2`,weight:`700`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0460-052F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/hyOgCu0Xnghbimh0pE8QTvtt2AU.woff2`,weight:`600`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0301 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/NeGmSOXrPBfEFIy5YZeHq17LEDA.woff2`,weight:`600`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+1F00-1FFF`,url:`https://framerusercontent.com/assets/oYaAX5himiTPYuN8vLWnqBbfD2s.woff2`,weight:`600`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0370-03FF`,url:`https://framerusercontent.com/assets/lEJLP4R0yuCaMCjSXYHtJw72M.woff2`,weight:`600`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0100-024F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/cRJyLNuTJR5jbyKzGi33wU9cqIQ.woff2`,weight:`600`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0000-00FF :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/yDtI2UI8XcEg1W2je9XPN3Noo.woff2`,weight:`600`},{cssFamilyName:`Inter`,source:`framer`,style:`normal`,uiFamilyName:`Inter`,unicodeRange:`U+0102-0103 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/A0Wcc7NgXMjUuFdquHDrIZpzZw0.woff2`,weight:`600`}]}],{supportsExplicitInterCodegen:!0} :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2`,weight:`700`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+0460-052F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/H89BbHkbHDzlxZzxi8uPzTsp90.woff2`,weight:`700`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+0301 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2`,weight:`700`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+1F00-1FFF`,url:`https://framerusercontent.com/assets/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2`,weight:`700`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+0370-03FF`,url:`https://framerusercontent.com/assets/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2`,weight:`700`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+0100-024F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2`,weight:`700`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+0000-00FF :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/ia3uin3hQWqDrVloC1zEtYHWw.woff2`,weight:`700`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+0102-0103 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/2A4Xx7CngadFGlVV4xrO06OBHY.woff2`,weight:`700`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+0460-052F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/CfMzU8w2e7tHgF4T4rATMPuWosA.woff2`,weight:`400`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+0301 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/867QObYax8ANsfX4TGEVU9YiCM.woff2`,weight:`400`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+1F00-1FFF`,url:`https://framerusercontent.com/assets/Oyn2ZbENFdnW7mt2Lzjk1h9Zb9k.woff2`,weight:`400`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+0370-03FF`,url:`https://framerusercontent.com/assets/cdAe8hgZ1cMyLu9g005pAW3xMo.woff2`,weight:`400`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+0100-024F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/DOfvtmE1UplCq161m6Hj8CSQYg.woff2`,weight:`400`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+0000-00FF :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/pKRFNWFoZl77qYCAIp84lN1h944.woff2`,weight:`400`},{cssFamilyName:`Inter`,source:`framer`,style:`italic`,uiFamilyName:`Inter`,unicodeRange:`U+0102-0103 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/tKtBcDnBMevsEEJKdNGhhkLzYo.woff2`,weight:`400`},{cssFamilyName:`RST :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/nHUJR6J5RUflFX8W9roY2DQM4xg.woff2`,weight:`400`}]},...Q,...E(H :: HTTP Error 403: Forbidden
+https://fonts.gstatic.com/s/fragmentmono/v6/4iCr6K5wfMRRjxp0DA6-2CLnN4FNh4UI_1U.woff2`,weight:`400`}]}]}} :: HTTP Error 404: Not Found
+https://framerusercontent.com/assets/QPYimiRfj01J6tLf9SvhFp7pLxQ.woff2`},{family:`Inter`,source:`framer`,style:`normal`,unicodeRange:`U+0460-052F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2`,weight:`700`},{family:`Inter`,source:`framer`,style:`normal`,unicodeRange:`U+0301 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2`,weight:`700`},{family:`Inter`,source:`framer`,style:`normal`,unicodeRange:`U+1F00-1FFF`,url:`https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2`,weight:`700`},{family:`Inter`,source:`framer`,style:`normal`,unicodeRange:`U+0370-03FF`,url:`https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2`,weight:`700`},{family:`Inter`,source:`framer`,style:`normal`,unicodeRange:`U+0100-024F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2`,weight:`700`},{family:`Inter`,source:`framer`,style:`normal`,unicodeRange:`U+0000-00FF :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/syRNPWzAMIrcJ3wIlPIP43KjQs.woff2`,weight:`700`},{family:`Inter`,source:`framer`,style:`normal`,unicodeRange:`U+0102-0103 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2`,weight:`700`},{family:`Inter`,source:`framer`,style:`italic`,unicodeRange:`U+0460-052F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/H89BbHkbHDzlxZzxi8uPzTsp90.woff2`,weight:`700`},{family:`Inter`,source:`framer`,style:`italic`,unicodeRange:`U+0301 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2`,weight:`700`},{family:`Inter`,source:`framer`,style:`italic`,unicodeRange:`U+1F00-1FFF`,url:`https://framerusercontent.com/assets/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2`,weight:`700`},{family:`Inter`,source:`framer`,style:`italic`,unicodeRange:`U+0370-03FF`,url:`https://framerusercontent.com/assets/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2`,weight:`700`},{family:`Inter`,source:`framer`,style:`italic`,unicodeRange:`U+0100-024F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2`,weight:`700`},{family:`Inter`,source:`framer`,style:`italic`,unicodeRange:`U+0000-00FF :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/ia3uin3hQWqDrVloC1zEtYHWw.woff2`,weight:`700`},{family:`Inter`,source:`framer`,style:`italic`,unicodeRange:`U+0102-0103 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/2A4Xx7CngadFGlVV4xrO06OBHY.woff2`,weight:`700`},{family:`Inter`,source:`framer`,style:`italic`,unicodeRange:`U+0460-052F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/CfMzU8w2e7tHgF4T4rATMPuWosA.woff2`,weight:`400`},{family:`Inter`,source:`framer`,style:`italic`,unicodeRange:`U+0301 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/867QObYax8ANsfX4TGEVU9YiCM.woff2`,weight:`400`},{family:`Inter`,source:`framer`,style:`italic`,unicodeRange:`U+1F00-1FFF`,url:`https://framerusercontent.com/assets/Oyn2ZbENFdnW7mt2Lzjk1h9Zb9k.woff2`,weight:`400`},{family:`Inter`,source:`framer`,style:`italic`,unicodeRange:`U+0370-03FF`,url:`https://framerusercontent.com/assets/cdAe8hgZ1cMyLu9g005pAW3xMo.woff2`,weight:`400`},{family:`Inter`,source:`framer`,style:`italic`,unicodeRange:`U+0100-024F :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/DOfvtmE1UplCq161m6Hj8CSQYg.woff2`,weight:`400`},{family:`Inter`,source:`framer`,style:`italic`,unicodeRange:`U+0000-00FF :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/pKRFNWFoZl77qYCAIp84lN1h944.woff2`,weight:`400`},{family:`Inter`,source:`framer`,style:`italic`,unicodeRange:`U+0102-0103 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/tKtBcDnBMevsEEJKdNGhhkLzYo.woff2`,weight:`400`}]}],i=[`.framer-vYTYS :: HTTP Error 403: Forbidden
+https://framerusercontent.com/images/0HQ65WLEtAEuiddUrZyFPHhk.png?width=2912&height=1632`,srcSet:`https://framerusercontent.com/images/0HQ65WLEtAEuiddUrZyFPHhk.png?scale-down-to=512&width=2912&height=1632 :: HTTP Error 400: Bad Request
+https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2`,weight:`400`},{cssFamilyName:`United :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/ah4HjXWIYs5QXDjOiR4NTuXxFs.woff2`,weight:`500`},{cssFamilyName:`RST :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/ddE2BiA2g5m5IM0Hpp9Vfc6onjA.woff2`,weight:`400`}]},...z,...w(I :: HTTP Error 403: Forbidden
+https://framerusercontent.com/images/GfGkADagM4KEibNcIiRUWlfrR0.jpg`,alt:`Gradient :: HTTP Error 400: Bad Request
+https://framerusercontent.com/assets/tKtBcDnBMevsEEJKdNGhhkLzYo.woff2`,weight:`400`}]}],I=[`.framer-3utC1 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/ddE2BiA2g5m5IM0Hpp9Vfc6onjA.woff2`},{family:`RST :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/nHUJR6J5RUflFX8W9roY2DQM4xg.woff2`}]}],B=[`.framer-FioQn :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2`,weight:`700`}]},...S(z :: HTTP Error 403: Forbidden
+https://framerusercontent.com/modules/iefw9QM4c81enm9XGovY/6VewpCGlUWmjMGT6GGey/wj4SCv588.js` :: HTTP Error 404: Not Found
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/`./wj4SCv588-chunk-default-0.framercms`,`https:/framerusercontent.com/modules/iefw9QM4c81enm9XGovY/6VewpCGlUWmjMGT6GGey/wj4SCv588.js` :: HTTP Error 403: Forbidden
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/`./wj4SCv588-indexes-default-0.framercms`,`https:/framerusercontent.com/modules/iefw9QM4c81enm9XGovY/6VewpCGlUWmjMGT6GGey/wj4SCv588.js` :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/ddE2BiA2g5m5IM0Hpp9Vfc6onjA.woff2`,weight:`400`}]},...we],{supportsExplicitInterCodegen:!0} :: HTTP Error 403: Forbidden
+https://framerusercontent.com/modules/t6pqATXBXidvTAaMO715/UCW8Hx8NDYMOCkLyUxZF/QWk0PDe3A.js` :: HTTP Error 404: Not Found
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/`./QWk0PDe3A-chunk-default-0.framercms`,`https:/framerusercontent.com/modules/t6pqATXBXidvTAaMO715/UCW8Hx8NDYMOCkLyUxZF/QWk0PDe3A.js` :: HTTP Error 403: Forbidden
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/`./QWk0PDe3A-indexes-default-0.framercms`,`https:/framerusercontent.com/modules/t6pqATXBXidvTAaMO715/UCW8Hx8NDYMOCkLyUxZF/QWk0PDe3A.js` :: HTTP Error 403: Forbidden
+https://framerusercontent.com/modules/W1xE1F8G5z4tblYvd4Xc/fTcxtYOBd6Wbk1LJrCn1/CLy7ERFjo.js` :: HTTP Error 404: Not Found
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/`./CLy7ERFjo-chunk-default-0.framercms`,`https:/framerusercontent.com/modules/W1xE1F8G5z4tblYvd4Xc/fTcxtYOBd6Wbk1LJrCn1/CLy7ERFjo.js` :: HTTP Error 403: Forbidden
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/`./CLy7ERFjo-indexes-default-0.framercms`,`https:/framerusercontent.com/modules/W1xE1F8G5z4tblYvd4Xc/fTcxtYOBd6Wbk1LJrCn1/CLy7ERFjo.js` :: HTTP Error 403: Forbidden
+https://framerusercontent.com/modules/zMZpGvKm6myTtA7lVXvE/gHH3ae4dhnEtvlYKAXh9/f6h7NpMCZ.js` :: HTTP Error 404: Not Found
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/`./f6h7NpMCZ-chunk-default-0.framercms`,`https:/framerusercontent.com/modules/zMZpGvKm6myTtA7lVXvE/gHH3ae4dhnEtvlYKAXh9/f6h7NpMCZ.js` :: HTTP Error 403: Forbidden
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/`./f6h7NpMCZ-indexes-default-0.framercms`,`https:/framerusercontent.com/modules/zMZpGvKm6myTtA7lVXvE/gHH3ae4dhnEtvlYKAXh9/f6h7NpMCZ.js` :: HTTP Error 403: Forbidden
+https://framerusercontent.com/modules/o9DZil0GfbinApCTbHRH/6R3S5CaUc433JYYQ9WiH/IR4lVKJ02.js` :: HTTP Error 404: Not Found
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/`./IR4lVKJ02-chunk-default-0.framercms`,`https:/framerusercontent.com/modules/o9DZil0GfbinApCTbHRH/6R3S5CaUc433JYYQ9WiH/IR4lVKJ02.js` :: HTTP Error 403: Forbidden
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/`./IR4lVKJ02-indexes-default-0.framercms`,`https:/framerusercontent.com/modules/o9DZil0GfbinApCTbHRH/6R3S5CaUc433JYYQ9WiH/IR4lVKJ02.js` :: HTTP Error 403: Forbidden
+https://framerusercontent.com/modules/yIEmNlOGNj6ocXbYcsbj/v8bNpwDNK2SxeAwVvxqB/XwofB_Qfx.js` :: HTTP Error 404: Not Found
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/`./XwofB_Qfx-chunk-default-0.framercms`,`https:/framerusercontent.com/modules/yIEmNlOGNj6ocXbYcsbj/v8bNpwDNK2SxeAwVvxqB/XwofB_Qfx.js` :: HTTP Error 403: Forbidden
+https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/`./XwofB_Qfx-indexes-default-0.framercms`,`https:/framerusercontent.com/modules/yIEmNlOGNj6ocXbYcsbj/v8bNpwDNK2SxeAwVvxqB/XwofB_Qfx.js` :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/tKtBcDnBMevsEEJKdNGhhkLzYo.woff2`,weight:`400`}]}],i=[`.framer-mr7h0 :: HTTP Error 403: Forbidden
+https://framerusercontent.com/assets/9bxYxYRHZdrr0I2fK5ByFugfv4M.png`,robots:`max-image-preview:large`,socialImage:`https://framerusercontent.com/assets/5iNlQ9vWy985rE7DxnOJd0vSGik.png`,title:`Dan :: HTTP Error 403: Forbidden
