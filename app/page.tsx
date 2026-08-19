@@ -3,51 +3,39 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-const offers = [
+const FLOWER_A = "https://framerusercontent.com/images/nT1RIIaymTzAI6UESI2yEzrKinU.png?height=1377&width=2022";
+const FLOWER_B = "https://framerusercontent.com/images/8sPkB8j9n1Ptg7bXTdHv4SS8tiY.png?height=4162&width=3244";
+const TEXTURE = "https://framerusercontent.com/images/gftqxfc3tRP15LUZMd0IyxdCSVc.webp?height=992&width=2000";
+
+const programs = [
   {
-    number: "01",
+    no: "01",
     title: "Флорист від нуля до результату",
+    subtitle: "Сильна база для старту у професії.",
     price: "199 €",
-    text: "Для тих, хто хоче освоїти професію флориста та отримати міцну базу знань.",
-    tone: "soft",
   },
   {
-    number: "02",
+    no: "02",
     title: "Флористичний бізнес від А до Я",
+    subtitle: "Запуск і розвиток власного квіткового бізнесу.",
     price: "799 €",
-    text: "Покроковий курс про запуск, упаковку та розвиток власного квіткового бізнесу.",
-    tone: "acid",
   },
   {
-    number: "03",
+    no: "03",
     title: "VIP-наставництво",
+    subtitle: "3 місяці персонального супроводу до запуску.",
     price: "2999 €",
-    text: "3 місяці індивідуального супроводу: від концепції та закупівель до перших продажів і клієнтів.",
-    tone: "dark",
   },
 ];
-
-function Flower({ className = "" }: { className?: string }) {
-  return (
-    <div className={`flower ${className}`} aria-hidden="true">
-      <span className="petal p1" />
-      <span className="petal p2" />
-      <span className="petal p3" />
-      <span className="petal p4" />
-      <span className="petal p5" />
-      <span className="flower-core" />
-    </div>
-  );
-}
 
 function Reveal({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, y: 70 }}
+      initial={{ opacity: 0, y: 55 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-10%" }}
-      transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+      viewport={{ once: true, margin: "-8%" }}
+      transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
     >
       {children}
     </motion.div>
@@ -55,195 +43,170 @@ function Reveal({ children, className = "" }: { children: React.ReactNode; class
 }
 
 export default function Home() {
-  const heroRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: heroRef,
-    offset: ["start start", "end start"],
-  });
-
-  const flowerY = useTransform(scrollYProgress, [0, 1], [0, 260]);
-  const flowerRotate = useTransform(scrollYProgress, [0, 1], [-12, 45]);
-  const flowerScale = useTransform(scrollYProgress, [0, 1], [1, 1.34]);
-  const headlineY = useTransform(scrollYProgress, [0, 1], [0, -110]);
+  const hero = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({ target: hero, offset: ["start start", "end start"] });
+  const heroFlowerY = useTransform(scrollYProgress, [0, 1], [0, 240]);
+  const heroFlowerR = useTransform(scrollYProgress, [0, 1], [-7, 24]);
+  const heroCopyY = useTransform(scrollYProgress, [0, 1], [0, -130]);
 
   return (
     <main>
-      <section ref={heroRef} className="hero section-grid">
-        <header className="nav shell">
-          <a className="brand" href="#top" aria-label="Florist home">
-            FLORIST<span>•</span>
-          </a>
-          <nav>
-            <a href="#programs">Програми</a>
-            <a href="#about">Про навчання</a>
-            <a className="menu-pill" href="#contact">Записатись</a>
-          </nav>
+      <section ref={hero} className="dm-hero" id="top">
+        <header className="dm-nav page-pad">
+          <a href="#top" className="wordmark">FLORIST</a>
+          <div className="nav-right">
+            <a href="#programs">ПРОГРАМИ</a>
+            <a href="#learn">ПРО НАВЧАННЯ</a>
+            <a href="#contact" className="menu">MENU</a>
+          </div>
         </header>
 
-        <div id="top" className="hero-inner shell">
-          <motion.div className="hero-copy" style={{ y: headlineY }}>
-            <p className="eyebrow">Навчання · Бізнес · Наставництво</p>
-            <h1>
-              Створи кар’єру,
-              <br />
-              що <em>розквітає.</em>
-            </h1>
-            <div className="hero-bottom">
-              <p>
-                Не просто навчитись збирати букети. Побудувати навички, стиль і бізнес,
-                які працюють у реальному світі.
-              </p>
-              <a className="round-link" href="#programs" aria-label="Переглянути програми">
-                ↓
-              </a>
-            </div>
-          </motion.div>
+        <motion.div className="hero-copy" style={{ y: heroCopyY }}>
+          <p className="hero-small">НАВЧАННЯ ФЛОРИСТИЦІ · БІЗНЕС · НАСТАВНИЦТВО</p>
+          <h1>
+            Допомагаю флористам
+            <span>створювати красу</span>
+            <span className="indent">і будувати бізнес.</span>
+          </h1>
+        </motion.div>
 
-          <motion.div
-            className="hero-flower-wrap"
-            style={{ y: flowerY, rotate: flowerRotate, scale: flowerScale }}
-          >
-            <Flower className="hero-flower" />
-          </motion.div>
+        <motion.img
+          src={FLOWER_A}
+          alt=""
+          className="asset hero-flower"
+          style={{ y: heroFlowerY, rotate: heroFlowerR }}
+        />
+        <motion.img
+          src={FLOWER_B}
+          alt=""
+          className="asset hero-flower-secondary"
+          initial={{ rotate: 8, scale: 0.86 }}
+          animate={{ rotate: [8, 13, 8], scale: [0.86, 0.9, 0.86] }}
+          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+        />
+
+        <div className="hero-foot page-pad">
+          <span>SCROLL TO EXPLORE</span>
+          <span>↓</span>
         </div>
+      </section>
 
-        <div className="hero-ticker" aria-hidden="true">
-          <div>
-            <span>FLORAL EDUCATION</span><span>BUILD YOUR CRAFT</span><span>BUILD YOUR BUSINESS</span>
-            <span>FLORAL EDUCATION</span><span>BUILD YOUR CRAFT</span><span>BUILD YOUR BUSINESS</span>
+      <section className="dm-belief" id="learn">
+        <div className="belief-title page-pad">
+          <Reveal>
+            <h2>
+              Бути флористом
+              <span>— одна з найкрасивіших</span>
+              <span className="indent-lg">професій у світі.</span>
+            </h2>
+          </Reveal>
+        </div>
+        <motion.img
+          src={FLOWER_B}
+          alt=""
+          className="asset belief-flower"
+          whileInView={{ rotate: [-18, 5], y: [120, 0] }}
+          viewport={{ once: false, amount: 0.15 }}
+          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+        />
+
+        <div className="belief-copy page-pad">
+          <Reveal className="lead-copy">
+            <p>Чому так мало флористів живуть так, як хочуть?</p>
+          </Reveal>
+          <div className="long-copy">
+            <Reveal><p>Ти можеш роками вчитись збирати композиції, відчувати колір і бачити красу там, де інші її не помічають. Але цього недостатньо, якщо ніхто не показав, як перетворити навичку на професію, продукт і стабільний дохід.</p></Reveal>
+            <Reveal><p>Саме тому навчання побудоване не навколо красивої теорії. Ми працюємо з ремеслом, власним стилем, клієнтом, закупівлями, ціноутворенням, продажами та бізнес-моделлю.</p></Reveal>
+            <Reveal><p>Мета проста: щоб квіти залишались тим, що ти любиш, але водночас стали системою, на якій можна побудувати сильну карʼєру або власний бренд.</p></Reveal>
           </div>
         </div>
       </section>
 
-      <section id="about" className="manifesto section-grid">
-        <div className="shell manifesto-grid">
-          <Reveal className="manifesto-kicker">
-            <span>01</span>
-            <p>Професія, у якій смак перетворюється на цінність.</p>
-          </Reveal>
-
-          <Reveal className="manifesto-copy">
-            <h2>
-              Флористика — це не тільки про <i>красиві квіти.</i>
-            </h2>
-            <p>
-              Це композиція, відчуття кольору, робота з клієнтом, закупівлі, ціноутворення,
-              продажі й уміння перетворити творчість на систему.
-            </p>
-          </Reveal>
+      <section className="experience-band">
+        <div className="experience-copy page-pad">
+          <span>ВІД ПЕРШОЇ КОМПОЗИЦІЇ</span>
+          <span>ДО ВЛАСНОГО КВІТКОВОГО БІЗНЕСУ</span>
         </div>
-
-        <motion.div
-          className="floating-flower one"
-          initial={{ rotate: -25, y: 80 }}
-          whileInView={{ rotate: 18, y: 0 }}
-          viewport={{ once: false, amount: 0.2 }}
-          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-        >
-          <Flower />
-        </motion.div>
+        <img src={TEXTURE} alt="" className="band-texture" />
       </section>
 
-      <section className="statement">
-        <div className="statement-line left">ВІД СМАКУ</div>
-        <div className="statement-line right">ДО СИСТЕМИ</div>
-        <div className="statement-line left italic">ВІД БУКЕТА</div>
-        <div className="statement-line right">ДО БРЕНДУ</div>
-      </section>
-
-      <section id="programs" className="programs">
-        <div className="shell section-head">
-          <span>02 / Програми</span>
-          <p>Обери рівень, на якому ти зараз — і наступний, до якого хочеш дійти.</p>
+      <section className="dm-hits" id="programs">
+        <div className="hits-heading page-pad">
+          <div className="hits-kicker">ОБЕРИ СВІЙ РІВЕНЬ</div>
+          <h2><span>three</span> programs</h2>
+          <p>Від першого кроку у флористиці — до запуску власного бізнесу з персональним супроводом.</p>
         </div>
 
         <div className="program-list">
-          {offers.map((offer, index) => (
-            <motion.article
-              key={offer.number}
-              className={`program-card ${offer.tone}`}
-              initial={{ opacity: 0, y: 90 }}
+          {programs.map((p, i) => (
+            <motion.a
+              href="#contact"
+              className="program-row page-pad"
+              key={p.no}
+              initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.25 }}
-              transition={{ duration: 0.8, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
+              viewport={{ once: true, amount: 0.35 }}
+              transition={{ duration: 0.7, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
             >
-              <div className="program-number">{offer.number}</div>
-              <div className="program-main">
-                <h3>{offer.title}</h3>
-                <p>{offer.text}</p>
+              <div className="program-no">{p.no}</div>
+              <div className="program-copy">
+                <h3>{p.title}</h3>
+                <p>{p.subtitle}</p>
               </div>
-              <div className="program-price">{offer.price}</div>
+              <div className="program-price">{p.price}</div>
               <div className="program-arrow">↗</div>
-            </motion.article>
+            </motion.a>
           ))}
         </div>
       </section>
 
-      <section className="story section-grid">
-        <div className="shell story-grid">
-          <Reveal className="story-title">
-            <span>03 / Як це працює</span>
-            <h2>Менше теорії. Більше рішень, які можна застосувати завтра.</h2>
-          </Reveal>
-
-          <div className="steps">
-            {[
-              ["01", "База", "Композиція, колір, форми, сезонність і робота з квіткою."],
-              ["02", "Практика", "Завдання, розбори й системне відточування власної подачі."],
-              ["03", "Монетизація", "Ціна, клієнт, позиціонування, продаж і бізнес-процеси."],
-            ].map(([n, title, text]) => (
-              <Reveal key={n} className="step">
-                <span>{n}</span>
-                <h3>{title}</h3>
-                <p>{text}</p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-
-        <motion.div
-          className="floating-flower two"
-          whileInView={{ rotate: 360 }}
-          viewport={{ once: false, amount: 0.1 }}
-          transition={{ duration: 18, ease: "linear", repeat: Infinity }}
-        >
-          <Flower />
-        </motion.div>
-      </section>
-
-      <section className="quote-band">
-        <div className="quote-track">
-          <span>КВІТИ — ЦЕ МОВА</span><i>✳</i><span>БІЗНЕС — ЦЕ СИСТЕМА</span><i>✳</i>
-          <span>КВІТИ — ЦЕ МОВА</span><i>✳</i><span>БІЗНЕС — ЦЕ СИСТЕМА</span><i>✳</i>
+      <section className="dm-topics">
+        <div className="topics-label page-pad">ЩО МИ БУДУЄМО РАЗОМ</div>
+        <div className="topic-grid">
+          {[
+            ["01", "Техніка", "Композиція, форма, колір, сезонність."],
+            ["02", "Стиль", "Власна впізнавана флористична мова."],
+            ["03", "Продаж", "Ціна, упаковка, клієнт і комунікація."],
+            ["04", "Бізнес", "Система, закупівлі, команда й масштаб."],
+          ].map(([n, t, d]) => (
+            <motion.div className="topic-card" key={n} whileHover={{ y: -10 }}>
+              <span>{n}</span>
+              <h3>{t}</h3>
+              <p>{d}</p>
+              <b>↗</b>
+            </motion.div>
+          ))}
         </div>
       </section>
 
-      <section id="contact" className="cta section-grid">
-        <div className="shell cta-inner">
-          <Reveal>
-            <p className="eyebrow">Готова почати?</p>
-            <h2>
-              Твоя нова професія
-              <br />
-              може початися <em>сьогодні.</em>
-            </h2>
-          </Reveal>
-
-          <Reveal className="cta-actions">
-            <a className="primary-btn" href="mailto:hello@florist.education">Обрати програму ↗</a>
-            <p>Напиши нам — допоможемо зрозуміти, який формат підійде саме тобі.</p>
-          </Reveal>
-
-          <div className="cta-flower">
-            <Flower />
-          </div>
+      <section className="dm-quote">
+        <motion.img
+          src={FLOWER_A}
+          alt=""
+          className="asset quote-flower"
+          whileInView={{ rotate: [-30, 12], scale: [0.75, 1] }}
+          transition={{ duration: 1.3, ease: [0.22, 1, 0.36, 1] }}
+        />
+        <div className="page-pad quote-inner">
+          <p className="quote-kicker">ПІДХІД</p>
+          <Reveal><blockquote>“Не просто навчитись збирати букети. Навчитись створювати цінність, за яку готові платити.”</blockquote></Reveal>
+          <p className="quote-author">FLORAL EDUCATION / 2026</p>
         </div>
       </section>
 
-      <footer className="footer shell">
-        <div className="brand">FLORIST<span>•</span></div>
-        <p>© 2026 Floral Education</p>
-        <a href="#top">На початок ↑</a>
+      <section className="dm-cta" id="contact">
+        <img src={FLOWER_B} alt="" className="asset cta-flower" />
+        <div className="cta-copy page-pad">
+          <p>ГОТОВА ПОЧАТИ?</p>
+          <h2>Отримай<br/>свої <em>квіти.</em></h2>
+          <a href="mailto:hello@florist.education" className="cta-link">ОБРАТИ ПРОГРАМУ ↗</a>
+        </div>
+      </section>
+
+      <footer className="dm-footer page-pad">
+        <div className="wordmark">FLORIST</div>
+        <p>Навчання, що перетворює талант на професію.</p>
+        <a href="#top">BACK TO TOP ↑</a>
       </footer>
     </main>
   );
