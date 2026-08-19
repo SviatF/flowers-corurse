@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import "./site.css";
 import "./hero.css";
+import HeroParallax from "./HeroParallax";
 
 export const dynamic = "force-dynamic";
 
@@ -29,11 +30,6 @@ const LOCAL_HERO = String.raw`
       loading="eager"
       decoding="async"
     />
-    <h1 class="pts-hero__title" aria-label="СТВОРЮЙ. РОСТИ. ЗАРОБЛЯЙ.">
-      <span>СТВОРЮЙ.</span>
-      <span>РОСТИ.</span>
-      <span>ЗАРОБЛЯЙ.</span>
-    </h1>
     <img
       class="pts-hero__magnolia"
       src="/site/images/3f61b04bf5f0c093.webp"
@@ -42,6 +38,11 @@ const LOCAL_HERO = String.raw`
       loading="eager"
       decoding="async"
     />
+    <h1 class="pts-hero__title" aria-label="СТВОРЮЙ. РОСТИ. ЗАРОБЛЯЙ.">
+      <span>СТВОРЮЙ.</span>
+      <span>РОСТИ.</span>
+      <span>ЗАРОБЛЯЙ.</span>
+    </h1>
     <p class="pts-hero__subtitle">I help designers make more money<br />and get their flowers.</p>
   </div>
 </header>`;
@@ -53,10 +54,13 @@ export default function Page() {
     : sourceHtml;
 
   return (
-    <div
-      id="site-host"
-      suppressHydrationWarning
-      dangerouslySetInnerHTML={{ __html: siteHtml }}
-    />
+    <>
+      <div
+        id="site-host"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{ __html: siteHtml }}
+      />
+      <HeroParallax />
+    </>
   );
 }
