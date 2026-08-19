@@ -13,8 +13,6 @@ export async function GET() {
       "florist-hero.webp",
     );
 
-    // The asset was previously committed as Base64 text instead of raw binary.
-    // Decode it here and serve the real WebP bytes to the browser.
     const encoded = (await readFile(filePath, "utf8")).trim();
     const image = Buffer.from(encoded, "base64");
 
@@ -22,7 +20,7 @@ export async function GET() {
       status: 200,
       headers: {
         "content-type": "image/webp",
-        "cache-control": "public, max-age=31536000, immutable",
+        "cache-control": "no-store, max-age=0",
       },
     });
   } catch (error) {
