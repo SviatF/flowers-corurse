@@ -1,5 +1,5 @@
 Traceback (most recent call last):
-  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/rebuild_clean_selfhost_run.py", line 28, in <module>
+  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/rebuild_clean_selfhost_retry.py", line 80, in <module>
     build.main()
   File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/rebuild_clean_selfhost.py", line 408, in main
     localized, mirrored = mirror_runtime(custom)
@@ -7,22 +7,5 @@ Traceback (most recent call last):
   File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/rebuild_clean_selfhost.py", line 357, in mirror_runtime
     raise RuntimeError("Failed runtime resources:\n" + "\n".join(failures))
 RuntimeError: Failed runtime resources:
-https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2 :: <urlopen error [Errno 104] Connection reset by peer>
-https://framerusercontent.com/assets/otTaNuNpVK4RbdlT7zDDdKvQBA.woff2 :: <urlopen error [Errno 104] Connection reset by peer>
-https://framerusercontent.com/images/pzGRRJjTHc2e75KcUbV2YShPD6k.png?width=380& :: <urlopen error [Errno 104] Connection reset by peer>
-https://framerusercontent.com/images/g0FO3EqHnoXXVZfSwZwjLmvc0.png?width=1676& :: <urlopen error [Errno 104] Connection reset by peer>
-https://framerusercontent.com/images/iJxl8k4nU1JIx9y5cZ0OJgDMg.png?scale-down-to=512& :: <urlopen error [Errno 104] Connection reset by peer>
-https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/Tg3L0tM2f.C0bOCrQy.mjs :: <urlopen error [Errno 104] Connection reset by peer>
-https://framerusercontent.com/sites/4MPXIbGvh3LCXvmIeOSkpX/CustomBlogOverviewStyling.BBuo1Ldt.mjs :: <urlopen error [Errno 104] Connection reset by peer>
-https://framerusercontent.com/images/iJxl8k4nU1JIx9y5cZ0OJgDMg.png?scale-down-to=512&width=1023&height=1023 :: <urlopen error [Errno 104] Connection reset by peer>
-https://framerusercontent.com/images/vk1krUDqfOi4jSlnGHMvtNNtuG8.png?scale-down-to=1024&width=1200&height=1200 :: <urlopen error [Errno 104] Connection reset by peer>
-https://framerusercontent.com/images/a5TI5tK2RresM9keFVWNjThqAYc.webp?scale-down-to=1024&width=3060&height=1415 :: <urlopen error [Errno 104] Connection reset by peer>
-https://framerusercontent.com/images/xjWTt03RVDpfdPzyel0csxMcNU.png?width=324&height=180 :: <urlopen error [Errno 104] Connection reset by peer>
-https://framerusercontent.com/images/BZcrpXuxs1Fhqa1qlhbe2HKEPIQ.webp?scale-down-to=1024&width=3072&height=1536 :: <urlopen error [Errno 104] Connection reset by peer>
-https://framerusercontent.com/images/g0FO3EqHnoXXVZfSwZwjLmvc0.png?width=1676&height=693 :: <urlopen error [Errno 104] Connection reset by peer>
-https://framerusercontent.com/images/0HQ65WLEtAEuiddUrZyFPHhk.png?width=2912&height=1632 :: <urlopen error [Errno 104] Connection reset by peer>
-https://framerusercontent.com/assets/5iNlQ9vWy985rE7DxnOJd0vSGik.png :: <urlopen error [Errno 104] Connection reset by peer>
-https://framerusercontent.com/modules/ju8TqAduufCaScL3E39X/1qaO4k0Gm85ETpYGQMkb/codemirror_lang_html.js :: <urlopen error [Errno 104] Connection reset by peer>
-https://framerusercontent.com/modules/5zoYeQMBj7mQSJHBwKwK/TQ66G8Txluip9fr7Uu05/codemirror_legacy_modes_mode_shell.js :: <urlopen error [Errno 104] Connection reset by peer>
-https://framerusercontent.com/modules/U1yN0J68cl89oK5n38AY/loekreJ0mgm54vilDrb5/codemirror_legacy_modes_mode_swift.js :: <urlopen error [Errno 104] Connection reset by peer>
-https://framerusercontent.com/modules/GrkjcC7Ol5LkBvrp44De/6z7UMqAq3iGnlCYUf9GL/lezer_html.js :: <urlopen error [Errno 104] Connection reset by peer>
+https://framerusercontent.com/modules/SWAtenub3goqbKHfvwGg/9qswdehoMhlafVrcNUjB/styles.css :: download failed after retries: HTTP Error 404: Not Found
+https://framerusercontent.com/modules/SWAtenub3goqbKHfvwGg/1dCB1yMDMTFvIuREJ6ud/styles.css :: download failed after retries: HTTP Error 404: Not Found
