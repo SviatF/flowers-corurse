@@ -75,4 +75,4 @@ jobs:
           grep -q 'Флористичний бізнес від А до Я' public/snapshot/reference.html
           grep -q '2999 €' public/snapshot/reference.html
           test -s public/snapshot/CLEAN_SELFHOST_REPORT.txt
-          test -d public/vendor/framerusercontent.com
+          test -d public/vendor/framer
