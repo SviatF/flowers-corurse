@@ -10,8 +10,8 @@
   position: relative;
   z-index: 20;
   width: 100%;
-  height: 138svh;
-  min-height: 900px;
+  height: 158svh;
+  min-height: 980px;
   background: #000;
   overflow: visible;
   isolation: isolate;
@@ -66,10 +66,10 @@
 .pts-hero__pink {
   position: absolute;
   left: 50%;
-  bottom: calc(26vh - 56vw);
+  bottom: calc(30vh - 29vw);
   z-index: 5;
   display: block;
-  width: 112vw;
+  width: 58vw;
   max-width: none;
   height: auto;
   transform: translate3d(-50%, var(--pink-y), 0);
@@ -83,7 +83,7 @@
 .pts-hero__magnolia {
   position: absolute;
   left: 50%;
-  bottom: calc(28vh - 78.75vw);
+  bottom: calc(31vh - 78.75vw);
   z-index: 6;
   display: block;
   width: 118vw;
@@ -99,7 +99,7 @@
 /* Text is deliberately above every visual/floral layer. */
 .pts-hero__title {
   position: absolute;
-  top: 61%;
+  top: 64%;
   left: 50%;
   z-index: 10;
   width: min(94vw, 1560px);
@@ -152,8 +152,8 @@
 
 @media (max-width: 1199px) {
   .pts-hero {
-    height: 132svh;
-    min-height: 820px;
+    height: 150svh;
+    min-height: 900px;
   }
 
   .pts-hero__stage {
@@ -165,17 +165,17 @@
   }
 
   .pts-hero__pink {
-    width: 118vw;
-    bottom: calc(27vh - 59vw);
+    width: 62vw;
+    bottom: calc(30vh - 31vw);
   }
 
   .pts-hero__magnolia {
     width: 124vw;
-    bottom: calc(29vh - 82.75vw);
+    bottom: calc(32vh - 82.75vw);
   }
 
   .pts-hero__title {
-    top: 62%;
+    top: 65%;
     width: 98vw;
     font-size: clamp(58px, 9vw, 118px);
     line-height: .83;
@@ -184,8 +184,8 @@
 
 @media (max-width: 809px) {
   .pts-hero {
-    height: 126svh;
-    min-height: 720px;
+    height: 142svh;
+    min-height: 780px;
   }
 
   .pts-hero__stage {
@@ -198,17 +198,17 @@
   }
 
   .pts-hero__pink {
-    width: 124vw;
-    bottom: calc(27vh - 62vw);
+    width: 68vw;
+    bottom: calc(29vh - 34vw);
   }
 
   .pts-hero__magnolia {
     width: 130vw;
-    bottom: calc(30vh - 86.75vw);
+    bottom: calc(33vh - 86.75vw);
   }
 
   .pts-hero__title {
-    top: 63%;
+    top: 66%;
     width: 108vw;
     font-size: clamp(42px, 11.7vw, 76px);
     line-height: .84;
