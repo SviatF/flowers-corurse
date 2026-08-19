@@ -1,119 +1,88 @@
 (() => {
   const TARGET = "hIvMq00Eiq5eJzxlzt69EooL6Cg.jpg";
-  const PARTS = [
-    "/assets/florist-hero.b64.1",
-    "/assets/florist-hero.b64.2",
-    "/assets/florist-hero.b64.3",
-  ];
-
-  let replacementUrl = null;
-  let loading = null;
+  const REPLACEMENT = "/assets/florist-hero.webp";
   let applying = false;
 
-  async function getReplacementUrl() {
-    if (replacementUrl) return replacementUrl;
-    if (!loading) {
-      loading = Promise.all(
-        PARTS.map((url) =>
-          fetch(url, { cache: "force-cache" }).then((r) => {
-            if (!r.ok) throw new Error(`Failed to load ${url}`);
-            return r.text();
-          }),
-        ),
-      ).then((parts) => {
-        const b64 = parts.join("").replace(/\s+/g, "");
-        const binary = atob(b64);
-        const bytes = new Uint8Array(binary.length);
-        for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
-        replacementUrl = URL.createObjectURL(
-          new Blob([bytes], { type: "image/webp" }),
-        );
-        return replacementUrl;
-      });
-    }
-    return loading;
-  }
-
-  function isTarget(value) {
+  function hasTarget(value) {
     return typeof value === "string" && value.includes(TARGET);
   }
 
-  async function replaceHeroPortrait() {
+  function replaceTargetInValue(value) {
+    if (!hasTarget(value)) return value;
+    return value.replace(
+      /https:\/\/framerusercontent\.com\/images\/hIvMq00Eiq5eJzxlzt69EooL6Cg\.jpg(?:\?[^\s\"'<>)]*)?/gi,
+      REPLACEMENT,
+    );
+  }
+
+  function applyHeroOverride() {
     if (applying) return;
     applying = true;
 
     try {
-      const url = await getReplacementUrl();
+      // Replace every direct DOM attribute Framer may regenerate.
+      document.querySelectorAll("*").forEach((el) => {
+        if (!(el instanceof HTMLElement || el instanceof SVGElement)) return;
 
-      // Framer may render the portrait as a normal img/picture.
-      document.querySelectorAll("img").forEach((img) => {
-        const src = img.getAttribute("src") || "";
-        const srcset = img.getAttribute("srcset") || "";
-        const original = img.dataset.originalDanPortrait || "";
-
-        if (!isTarget(src) && !isTarget(srcset) && !isTarget(original)) return;
-
-        if (!img.dataset.originalDanPortrait) {
-          img.dataset.originalDanPortrait = src || srcset;
+        for (const attr of Array.from(el.attributes || [])) {
+          if (!hasTarget(attr.value)) continue;
+          const next = replaceTargetInValue(attr.value);
+          if (next !== attr.value) el.setAttribute(attr.name, next);
         }
 
-        img.setAttribute("src", url);
+        // Catch the generated Framer background layer even when the URL comes
+        // from a stylesheet rather than an inline style attribute.
+        if (el instanceof HTMLElement) {
+          let bg = "";
+          try {
+            bg = getComputedStyle(el).backgroundImage || "";
+          } catch (_) {}
+
+          if (hasTarget(bg)) {
+            el.style.setProperty(
+              "background-image",
+              `url(\"${REPLACEMENT}\")`,
+              "important",
+            );
+            el.style.setProperty("background-size", "cover", "important");
+            el.style.setProperty("background-position", "center center", "important");
+            el.style.setProperty("background-repeat", "no-repeat", "important");
+          }
+        }
+      });
+
+      // Framer can recreate <source> nodes during hydration. Force any picture
+      // containing the old portrait to use the local hero only.
+      document.querySelectorAll("picture").forEach((picture) => {
+        const img = picture.querySelector("img");
+        if (!img) return;
+
+        const src = img.getAttribute("src") || "";
+        const srcset = img.getAttribute("srcset") || "";
+        const pictureHtml = picture.innerHTML || "";
+        if (!hasTarget(src) && !hasTarget(srcset) && !hasTarget(pictureHtml)) return;
+
+        picture.querySelectorAll("source").forEach((source) => {
+          source.removeAttribute("srcset");
+          source.removeAttribute("src");
+        });
+        img.setAttribute("src", REPLACEMENT);
         img.removeAttribute("srcset");
         img.setAttribute("alt", "Флористка з букетом білих троянд");
         img.style.setProperty("object-fit", "cover", "important");
         img.style.setProperty("object-position", "center center", "important");
-
-        const picture = img.closest("picture");
-        if (picture) {
-          picture.querySelectorAll("source").forEach((source) => {
-            source.removeAttribute("srcset");
-            source.removeAttribute("src");
-          });
-        }
       });
-
-      // The large hero portrait on Dan Mall is also rendered by Framer as a
-      // CSS background layer. Check computed styles so this works even when
-      // the URL comes from Framer's generated stylesheet rather than inline CSS.
-      document.querySelectorAll("body *").forEach((el) => {
-        if (!(el instanceof HTMLElement)) return;
-
-        const inlineBackground = el.style.backgroundImage || "";
-        let computedBackground = "";
-        try {
-          computedBackground = getComputedStyle(el).backgroundImage || "";
-        } catch (_) {}
-
-        const original = el.dataset.originalDanPortraitBackground || "";
-        const matches =
-          isTarget(inlineBackground) ||
-          isTarget(computedBackground) ||
-          isTarget(original);
-
-        if (!matches) return;
-
-        if (!el.dataset.originalDanPortraitBackground) {
-          el.dataset.originalDanPortraitBackground =
-            inlineBackground || computedBackground || TARGET;
-        }
-
-        el.style.setProperty("background-image", `url("${url}")`, "important");
-        el.style.setProperty("background-size", "cover", "important");
-        el.style.setProperty("background-position", "center center", "important");
-        el.style.setProperty("background-repeat", "no-repeat", "important");
-      });
-    } catch (error) {
-      console.error("[floral-image-overrides]", error);
     } finally {
       applying = false;
     }
   }
 
-  const scheduleReplacement = () => requestAnimationFrame(replaceHeroPortrait);
+  const schedule = () => requestAnimationFrame(applyHeroOverride);
 
-  replaceHeroPortrait();
+  // Run immediately and keep watching while Framer hydrates/re-renders.
+  applyHeroOverride();
 
-  const observer = new MutationObserver(scheduleReplacement);
+  const observer = new MutationObserver(schedule);
   observer.observe(document.documentElement, {
     childList: true,
     subtree: true,
@@ -121,9 +90,11 @@
     attributeFilter: ["src", "srcset", "style", "class"],
   });
 
-  [50, 150, 350, 700, 1200, 2000, 3500, 6000].forEach((delay) =>
-    setTimeout(replaceHeroPortrait, delay),
+  [0, 50, 100, 200, 400, 700, 1000, 1500, 2500, 4000, 6000, 9000].forEach(
+    (delay) => setTimeout(applyHeroOverride, delay),
   );
 
-  window.addEventListener("load", replaceHeroPortrait, { once: true });
+  const interval = setInterval(applyHeroOverride, 250);
+  setTimeout(() => clearInterval(interval), 12000);
+  window.addEventListener("load", applyHeroOverride, { once: true });
 })();
