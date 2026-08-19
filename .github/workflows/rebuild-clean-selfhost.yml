@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/rebuild_clean_selfhost.py'
+      - 'scripts/rebuild_clean_selfhost_run.py'
       - '.github/workflows/rebuild-clean-selfhost.yml'
   workflow_dispatch:
 
@@ -35,7 +36,7 @@ jobs:
       - name: Rebuild from clean source and self-host runtime
         run: |
           set +e
-          python scripts/rebuild_clean_selfhost.py > public/snapshot/CLEAN_REBUILD_LOG.txt 2>&1
+          python scripts/rebuild_clean_selfhost_run.py > public/snapshot/CLEAN_REBUILD_LOG.txt 2>&1
           code=$?
           echo "$code" > public/snapshot/CLEAN_REBUILD_EXIT_CODE.txt
           cat public/snapshot/CLEAN_REBUILD_LOG.txt
