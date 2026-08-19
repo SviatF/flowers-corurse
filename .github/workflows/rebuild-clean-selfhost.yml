@@ -1,0 +1,72 @@
+name: Rebuild clean fully self-hosted site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/rebuild_clean_selfhost.py'
+      - '.github/workflows/rebuild-clean-selfhost.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install parser
+        run: python -m pip install beautifulsoup4
+
+      - name: Rebuild from clean source and self-host runtime
+        run: |
+          set +e
+          python scripts/rebuild_clean_selfhost.py > public/snapshot/CLEAN_REBUILD_LOG.txt 2>&1
+          code=$?
+          echo "$code" > public/snapshot/CLEAN_REBUILD_EXIT_CODE.txt
+          cat public/snapshot/CLEAN_REBUILD_LOG.txt
+          exit 0
+
+      - name: Commit successful build or diagnostic log
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          git add public/snapshot/CLEAN_REBUILD_LOG.txt public/snapshot/CLEAN_REBUILD_EXIT_CODE.txt
+          [ -f public/snapshot/CLEAN_SELFHOST_REPORT.txt ] && git add public/snapshot/CLEAN_SELFHOST_REPORT.txt || true
+
+          if [ "$(cat public/snapshot/CLEAN_REBUILD_EXIT_CODE.txt)" = "0" ]; then
+            git add public/snapshot/reference.html
+            git add -A public/vendor
+            git commit -m 'Rebuild clean fully self-hosted course site'
+          else
+            git commit -m 'Capture clean self-host rebuild diagnostics'
+          fi
+          git push origin HEAD:main
+
+      - name: Verify success
+        run: |
+          set -euo pipefail
+          test "$(cat public/snapshot/CLEAN_REBUILD_EXIT_CODE.txt)" = "0"
+          ! grep -q 'siteНАВИЧКАdata' public/snapshot/reference.html
+          ! grep -E -q 'danmall\.com|framerusercontent\.com|fonts\.gstatic\.com|fonts\.googleapis\.com|events\.framer\.com' public/snapshot/reference.html
+          grep -q '/assets/hero-wordmark.svg' public/snapshot/reference.html
+          grep -q '/assets/flowers/pink-orchid-layer.webp' public/snapshot/reference.html
+          grep -q '/assets/flowers/white-magnolia-layer.webp' public/snapshot/reference.html
+          grep -q 'ГРОШІ НА КВІТАХ' public/snapshot/reference.html
+          grep -q 'Флорист від нуля до результату' public/snapshot/reference.html
+          grep -q 'Флористичний бізнес від А до Я' public/snapshot/reference.html
+          grep -q '2999 €' public/snapshot/reference.html
+          test -s public/snapshot/CLEAN_SELFHOST_REPORT.txt
+          test -d public/vendor/framerusercontent.com
