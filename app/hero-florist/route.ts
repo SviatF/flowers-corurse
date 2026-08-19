@@ -6,15 +6,8 @@ export const dynamic = "force-dynamic";
 
 export async function GET() {
   try {
-    const filePath = path.join(
-      process.cwd(),
-      "public",
-      "assets",
-      "florist-hero.webp",
-    );
-
-    const encoded = (await readFile(filePath, "utf8")).trim();
-    const image = Buffer.from(encoded, "base64");
+    const filePath = path.join(process.cwd(), "public", "assets", "hero-current.webp");
+    const image = await readFile(filePath);
 
     return new Response(image, {
       status: 200,
