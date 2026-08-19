@@ -8,20 +8,23 @@
   --subtitle-y: 0px;
 
   position: relative;
+  z-index: 20;
   width: 100%;
   height: 138svh;
   min-height: 900px;
   background: #000;
+  overflow: visible;
   isolation: isolate;
 }
 
 .pts-hero__stage {
   position: sticky;
   top: 0;
+  z-index: 21;
   width: 100%;
   height: 100svh;
   min-height: 720px;
-  overflow: hidden;
+  overflow: visible;
   background: #000;
 }
 
@@ -57,8 +60,8 @@
 
 /*
  * Full source artwork is preserved: no fixed-height crop and no object-fit: cover.
- * Most of each image sits below the viewport so the flowers naturally rise from
- * the bottom instead of being cut by a horizontal rectangle.
+ * The images are allowed to overflow below the sticky stage so petals are never
+ * clipped by the hero boundary or covered by the following black section.
  */
 .pts-hero__pink {
   position: absolute;
@@ -139,6 +142,12 @@
   text-shadow: 0 2px 18px rgba(0,0,0,.52);
   pointer-events: none;
   will-change: transform;
+}
+
+/* Keep immediate sections below the hero underneath the overflowing flowers. */
+.pts-hero + * {
+  position: relative;
+  z-index: 0;
 }
 
 @media (max-width: 1199px) {
