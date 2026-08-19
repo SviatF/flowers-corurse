@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/selfhost_runtime.py'
+      - 'scripts/selfhost_runtime_run.py'
       - '.github/workflows/selfhost-runtime.yml'
   workflow_dispatch:
 
@@ -31,7 +32,7 @@ jobs:
       - name: Mirror Framer runtime, fonts and media locally
         run: |
           set +e
-          python scripts/selfhost_runtime.py > public/snapshot/SELFHOST_LOG.txt 2>&1
+          python scripts/selfhost_runtime_run.py > public/snapshot/SELFHOST_LOG.txt 2>&1
           code=$?
           echo "$code" > public/snapshot/SELFHOST_EXIT_CODE.txt
           cat public/snapshot/SELFHOST_LOG.txt
