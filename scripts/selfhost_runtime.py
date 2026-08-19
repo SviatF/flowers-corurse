@@ -61,7 +61,11 @@ def local_target(url: str) -> tuple[Path, str]:
     host = p.netloc.lower()
     rel = Path((p.path or "/index").lstrip("/"))
     if not rel.name:
-        rel = rel / "index"
+        rel = rel / "__index"
+    elif not rel.suffix:
+        # Keep extensionless endpoints as a file inside their own directory so
+        # /fonts can coexist with /fonts/SomeFont.woff2.
+        rel = rel / "__index"
     if p.query:
         digest = hashlib.sha1(p.query.encode()).hexdigest()[:10]
         if rel.suffix:
