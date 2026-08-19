@@ -55,20 +55,23 @@
   pointer-events: none;
 }
 
-/* Floral layers are deliberately restricted to the bottom quarter of the hero. */
+/*
+ * Full source artwork is preserved: no fixed-height crop and no object-fit: cover.
+ * Most of each image sits below the viewport so the flowers naturally rise from
+ * the bottom instead of being cut by a horizontal rectangle.
+ */
 .pts-hero__pink {
   position: absolute;
   left: 50%;
-  bottom: -3vh;
-  z-index: 3;
+  bottom: calc(26vh - 56vw);
+  z-index: 5;
   display: block;
-  width: 104vw;
-  height: 27vh;
-  object-fit: cover;
-  object-position: center 52%;
-  transform: translate3d(-50%, var(--pink-y), 0) scale(1.015);
+  width: 112vw;
+  max-width: none;
+  height: auto;
+  transform: translate3d(-50%, var(--pink-y), 0);
   transform-origin: center bottom;
-  opacity: .96;
+  opacity: .97;
   pointer-events: none;
   user-select: none;
   will-change: transform;
@@ -77,13 +80,12 @@
 .pts-hero__magnolia {
   position: absolute;
   left: 50%;
-  bottom: -6vh;
-  z-index: 4;
+  bottom: calc(28vh - 78.75vw);
+  z-index: 6;
   display: block;
-  width: 100vw;
-  height: 30vh;
-  object-fit: cover;
-  object-position: center 50%;
+  width: 118vw;
+  max-width: none;
+  height: auto;
   transform: translate3d(-50%, var(--magnolia-y), 0);
   transform-origin: center bottom;
   pointer-events: none;
@@ -91,12 +93,12 @@
   will-change: transform;
 }
 
-/* Title is always above both flower layers. */
+/* Text is deliberately above every visual/floral layer. */
 .pts-hero__title {
   position: absolute;
-  top: 50%;
+  top: 61%;
   left: 50%;
-  z-index: 6;
+  z-index: 10;
   width: min(94vw, 1560px);
   margin: 0;
   transform: translate3d(-50%, calc(-50% + var(--title-y)), 0);
@@ -109,7 +111,7 @@
   line-height: .82;
   letter-spacing: -.068em;
   white-space: nowrap;
-  text-shadow: 0 2px 24px rgba(0,0,0,.16);
+  text-shadow: 0 2px 24px rgba(0,0,0,.18);
   pointer-events: none;
   will-change: transform;
 }
@@ -123,8 +125,8 @@
 .pts-hero__subtitle {
   position: absolute;
   left: 50%;
-  bottom: clamp(24px, 4.3vh, 52px);
-  z-index: 7;
+  bottom: clamp(18px, 3vh, 38px);
+  z-index: 11;
   width: min(82vw, 790px);
   margin: 0;
   transform: translate3d(-50%, var(--subtitle-y), 0);
@@ -134,7 +136,7 @@
   font-size: clamp(22px, 2vw, 38px);
   font-style: italic;
   line-height: 1.12;
-  text-shadow: 0 2px 18px rgba(0,0,0,.48);
+  text-shadow: 0 2px 18px rgba(0,0,0,.52);
   pointer-events: none;
   will-change: transform;
 }
@@ -154,19 +156,17 @@
   }
 
   .pts-hero__pink {
-    bottom: -2.5vh;
-    width: 108vw;
-    height: 25vh;
+    width: 118vw;
+    bottom: calc(27vh - 59vw);
   }
 
   .pts-hero__magnolia {
-    bottom: -5vh;
-    width: 105vw;
-    height: 28vh;
+    width: 124vw;
+    bottom: calc(29vh - 82.75vw);
   }
 
   .pts-hero__title {
-    top: 50%;
+    top: 62%;
     width: 98vw;
     font-size: clamp(58px, 9vw, 118px);
     line-height: .83;
@@ -189,21 +189,17 @@
   }
 
   .pts-hero__pink {
-    bottom: -2vh;
-    width: 116vw;
-    height: 23vh;
-    object-position: center 50%;
+    width: 124vw;
+    bottom: calc(27vh - 62vw);
   }
 
   .pts-hero__magnolia {
-    bottom: -4vh;
-    width: 112vw;
-    height: 25vh;
-    object-position: center 50%;
+    width: 130vw;
+    bottom: calc(30vh - 86.75vw);
   }
 
   .pts-hero__title {
-    top: 49%;
+    top: 63%;
     width: 108vw;
     font-size: clamp(42px, 11.7vw, 76px);
     line-height: .84;
@@ -215,7 +211,7 @@
   }
 
   .pts-hero__subtitle {
-    bottom: 18px;
+    bottom: 14px;
     width: 90vw;
     font-size: clamp(18px, 4.8vw, 27px);
   }
