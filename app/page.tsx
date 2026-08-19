@@ -248,7 +248,7 @@ export default function HomePage() {
           <motion.span className="local-label" {...reveal}>ГОТОВА ДО НАСТУПНОГО РІВНЯ?</motion.span>
           <motion.h2 {...reveal}>Обери програму, яка відповідає твоїй точці зараз.</motion.h2>
           <motion.div className="local-cta-actions" {...reveal}>
-            <a href="mailto:hello@floraleducation.com">Написати нам →</a>
+            <a href="#programs">Переглянути програми →</a>
             <span>Від 199 €</span>
           </motion.div>
         </div>
@@ -260,7 +260,7 @@ export default function HomePage() {
           <div className="local-footer-links">
             <a href="#programs"><span>01</span>Програми</a>
             <a href="#learning"><span>02</span>Що ти отримаєш</a>
-            <a href="#contact"><span>03</span>Контакт</a>
+            <a href="#contact"><span>03</span>Обрати формат</a>
           </div>
           <div className="local-footer-bottom">
             <span>© 2026 Floral Education</span>
