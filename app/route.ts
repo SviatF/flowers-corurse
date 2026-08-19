@@ -53,9 +53,10 @@ export async function GET(request: NextRequest) {
 
   const runtime = [
     `<script src="${origin}/floral-image-overrides.js?v=20260819-1"></script>`,
-    `<script src="${origin}/floral-copy-core.js"></script>`,
-    `<script src="${origin}/floral-copy-results.js"></script>`,
-    `<script src="${origin}/floral-copy-footer.js"></script>`,
+    `<script src="${origin}/floral-copy-core.js?v=20260819-2"></script>`,
+    `<script src="${origin}/floral-copy-results.js?v=20260819-2"></script>`,
+    `<script src="${origin}/floral-copy-footer.js?v=20260819-2"></script>`,
+    `<script src="${origin}/floral-course-cleanup.js?v=20260819-1"></script>`,
   ].join("");
 
   html = html.includes("</body>")
@@ -73,7 +74,7 @@ export async function GET(request: NextRequest) {
       "content-type": "text/html; charset=utf-8",
       "cache-control": "no-store, max-age=0",
       "x-reference-source": "danmall.com",
-      "x-project-copy": "floral-runtime-v11-direct-img-hero",
+      "x-project-copy": "floral-runtime-v12-course-clean",
     },
   });
 }
