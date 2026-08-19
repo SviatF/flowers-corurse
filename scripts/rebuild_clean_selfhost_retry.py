@@ -11,6 +11,7 @@ import rebuild_clean_selfhost as build
 
 
 ORIGINAL_CLEAN_URL = build.clean_url
+ORIGINAL_MIRROR_RUNTIME = build.mirror_runtime
 
 
 def clean_url(value: str) -> str:
@@ -78,6 +79,48 @@ def download(url: str) -> tuple[bytes, str]:
     raise RuntimeError(f"download failed after retries: {last_error}")
 
 
+def force_local_urls(text: str) -> str:
+    replacements = (
+        ("https://framerusercontent.com", "/vendor/framerusercontent.com"),
+        ("https:\\/\\/framerusercontent.com", "/vendor/framerusercontent.com"),
+        ("https://fonts.gstatic.com", "/vendor/fonts.gstatic.com"),
+        ("https:\\/\\/fonts.gstatic.com", "/vendor/fonts.gstatic.com"),
+        ("https://fonts.googleapis.com", "/vendor/fonts.googleapis.com"),
+        ("https:\\/\\/fonts.googleapis.com", "/vendor/fonts.googleapis.com"),
+        ("https://events.framer.com", ""),
+        ("https:\\/\\/events.framer.com", ""),
+        ("https://www.danmall.com", "/"),
+        ("https://danmall.com", "/"),
+        ("https:\\/\\/www.danmall.com", "/"),
+        ("https:\\/\\/danmall.com", "/"),
+    )
+    for old, new in replacements:
+        text = text.replace(old, new)
+    return text
+
+
+def mirror_runtime(source: str) -> tuple[str, list[str]]:
+    localized, mirrored = ORIGINAL_MIRROR_RUNTIME(source)
+    localized = force_local_urls(localized)
+
+    # Any absolute CDN URL left inside mirrored JS/CSS is rewritten to the
+    # corresponding local /vendor tree. Query strings remain valid on static
+    # files and are ignored by the local file server when appropriate.
+    for path in build.VENDOR_BUILD.rglob("*"):
+        if not path.is_file() or path.suffix.lower() not in build.TEXT_SUFFIXES:
+            continue
+        try:
+            text = path.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            continue
+        updated = force_local_urls(text)
+        if updated != text:
+            path.write_text(updated, encoding="utf-8")
+
+    return localized, mirrored
+
+
 build.clean_url = clean_url
 build.download = download
+build.mirror_runtime = mirror_runtime
 build.main()
