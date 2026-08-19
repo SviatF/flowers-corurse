@@ -36,6 +36,9 @@
     style.textContent = `
       [data-floral-hero-word] {
         position: relative !important;
+        color: transparent !important;
+        -webkit-text-fill-color: transparent !important;
+        text-shadow: none !important;
       }
       [data-floral-hero-word] *:not(.floral-hero-replacement) {
         color: transparent !important;
@@ -121,11 +124,6 @@
 
   function installReplacement(candidate, label, text) {
     const element = candidate.element;
-    if (element.getAttribute("data-floral-hero-word") === label) {
-      const existing = element.querySelector(":scope > .floral-hero-replacement");
-      if (existing) return existing;
-    }
-
     element.setAttribute("data-floral-hero-word", label);
 
     let replacement = element.querySelector(":scope > .floral-hero-replacement");
