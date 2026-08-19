@@ -94,7 +94,7 @@ export async function GET(request: NextRequest) {
     `<script src="${origin}/floral-copy-results.js?v=20260819-5"></script>`,
     `<script src="${origin}/floral-copy-footer.js?v=20260819-5"></script>`,
     `<script src="${origin}/floral-programs-nav.js?v=20260819-5"></script>`,
-    `<script src="${origin}/floral-hero-title.js?v=20260819-5"></script>`,
+    `<script src="${origin}/floral-hero-title.js?v=20260819-6"></script>`,
     `<script src="${origin}/floral-course-cleanup.js?v=20260819-5"></script>`,
   ].join("");
 
@@ -108,7 +108,7 @@ export async function GET(request: NextRequest) {
       "content-type": "text/html; charset=utf-8",
       "cache-control": "no-store, max-age=0",
       "x-reference-source": "local-snapshot",
-      "x-project-copy": "floral-runtime-v20-all-course-customizations",
+      "x-project-copy": "floral-runtime-v21-text-only-hero-title",
     },
   });
 }
