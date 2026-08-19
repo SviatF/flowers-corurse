@@ -1,5 +1,5 @@
 (() => {
-  const REPLACEMENT = "/hero-florist?v=20260819-1";
+  const REPLACEMENT = "/hero-florist?v=20260819-2";
   const HERO_SELECTOR =
     '[data-framer-background-image-wrapper="true"] > img[width="2000"][height="1333"]';
   let applying = false;
