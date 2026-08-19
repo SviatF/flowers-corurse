@@ -1,11 +1,8 @@
 Traceback (most recent call last):
-  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/rebuild_clean_selfhost_retry.py", line 80, in <module>
+  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/rebuild_clean_selfhost_retry.py", line 83, in <module>
     build.main()
-  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/rebuild_clean_selfhost.py", line 408, in main
-    localized, mirrored = mirror_runtime(custom)
-                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/rebuild_clean_selfhost.py", line 357, in mirror_runtime
-    raise RuntimeError("Failed runtime resources:\n" + "\n".join(failures))
-RuntimeError: Failed runtime resources:
-https://framerusercontent.com/modules/SWAtenub3goqbKHfvwGg/9qswdehoMhlafVrcNUjB/styles.css :: download failed after retries: HTTP Error 404: Not Found
-https://framerusercontent.com/modules/SWAtenub3goqbKHfvwGg/1dCB1yMDMTFvIuREJ6ud/styles.css :: download failed after retries: HTTP Error 404: Not Found
+  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/rebuild_clean_selfhost.py", line 409, in main
+    verify(localized)
+  File "/home/runner/work/flowers-corurse/flowers-corurse/scripts/rebuild_clean_selfhost.py", line 389, in verify
+    raise RuntimeError("Forbidden HTML references remain: " + ", ".join(hits))
+RuntimeError: Forbidden HTML references remain: danmall.com, framerusercontent.com, fonts.gstatic.com
