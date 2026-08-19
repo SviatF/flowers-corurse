@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
-// Deployment sync trigger: 2026-08-19 15:13
+// Deployment sync trigger: 2026-08-19 15:19
 export const metadata: Metadata = {
   title: "Floral Education — створи професію та квітковий бізнес",
   description:
