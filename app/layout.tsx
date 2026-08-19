@@ -2,10 +2,21 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: 'Dan Mall Helps Designers Make More Money & Get Their Flowers',
-  description: 'I help designers make more money and get their flowers through better pricing, leadership, and a career you love. 28 years of lessons. Join 70k+ readers.',
+  title: "Floral Education — створи професію та квітковий бізнес",
+  description:
+    "Три рівні навчання з флористики: професія флориста, запуск квіткового бізнесу та персональне VIP-наставництво.",
+  openGraph: {
+    title: "Floral Education — Створюй. Рости. Заробляй.",
+    description:
+      "Перетвори любов до квітів на професію, стиль і власний бізнес.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  return <html lang="en"><body>{children}</body></html>;
+  return (
+    <html lang="uk">
+      <body>{children}</body>
+    </html>
+  );
 }
