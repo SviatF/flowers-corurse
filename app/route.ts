@@ -44,15 +44,14 @@ export async function GET(request: NextRequest) {
   }
 
   const origin = request.nextUrl.origin;
-  const heroUrl = `${origin}/hero-florist?v=20260819-1`;
+  const heroUrl = `${origin}/hero-florist?v=20260819-2`;
   let html = injectBase(await upstream.text());
   html = injectHeroOverrideCss(html);
 
-  // Replace the original Dan Mall hero URL before the page reaches the browser.
   html = html.replace(DAN_HERO_ASSET_PATTERN, heroUrl);
 
   const runtime = [
-    `<script src="${origin}/floral-image-overrides.js?v=20260819-1"></script>`,
+    `<script src="${origin}/floral-image-overrides.js?v=20260819-2"></script>`,
     `<script src="${origin}/floral-copy-core.js?v=20260819-2"></script>`,
     `<script src="${origin}/floral-copy-results.js?v=20260819-2"></script>`,
     `<script src="${origin}/floral-copy-footer.js?v=20260819-2"></script>`,
@@ -74,7 +73,7 @@ export async function GET(request: NextRequest) {
       "content-type": "text/html; charset=utf-8",
       "cache-control": "no-store, max-age=0",
       "x-reference-source": "danmall.com",
-      "x-project-copy": "floral-runtime-v12-course-clean",
+      "x-project-copy": "floral-runtime-v13-exact-uploaded-hero",
     },
   });
 }
