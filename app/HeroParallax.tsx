@@ -15,12 +15,12 @@ export default function HeroParallax() {
     );
 
     if (businessImage) {
-      businessImage.src = "/course-image-business";
+      businessImage.src = "/course-business-hq.webp";
       businessImage.alt = "Флористичний бізнес — робота над власним квітковим брендом";
     }
 
     if (vipImage) {
-      vipImage.src = "/course-image-vip";
+      vipImage.src = "/course-vip-hq.webp";
       vipImage.alt = "VIP-наставництво — персональна робота над квітковим бізнесом";
     }
 
