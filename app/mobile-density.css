@@ -1,0 +1,172 @@
+@media (max-width: 809px) {
+  .luxury-site .philosophy,
+  .luxury-site .programs,
+  .luxury-site .results,
+  .luxury-site .audience,
+  .luxury-site .vip,
+  .luxury-site .final-cta {
+    padding-top: 56px !important;
+    padding-bottom: 62px !important;
+  }
+
+  .luxury-site .philosophy {
+    padding-top: 92px !important;
+  }
+
+  .luxury-site .philosophy__grid,
+  .luxury-site .audience__grid,
+  .luxury-site .vip__grid {
+    gap: 34px !important;
+  }
+
+  .luxury-site .philosophy__copy h2 {
+    margin: 22px 0 24px !important;
+  }
+
+  .luxury-site .philosophy__copy .serif-lead {
+    margin-bottom: 18px !important;
+  }
+
+  .luxury-site .editorial-photo__frame {
+    height: 68vw !important;
+    min-height: 0 !important;
+  }
+
+  .luxury-site .editorial-photo figcaption {
+    margin-top: 14px !important;
+  }
+
+  .luxury-site .programs__head {
+    gap: 14px !important;
+    margin-bottom: 32px !important;
+  }
+
+  .luxury-site .course-stack {
+    gap: 14px !important;
+  }
+
+  .luxury-site .course-scene,
+  .luxury-site .course-visual {
+    min-height: 0 !important;
+  }
+
+  .luxury-site .course-scene__copy {
+    padding: 36px 22px 40px !important;
+  }
+
+  .luxury-site .course-scene__meta {
+    margin-bottom: 24px !important;
+  }
+
+  .luxury-site .course-scene__lead {
+    margin: 20px 0 22px !important;
+    font-size: 20px !important;
+  }
+
+  .luxury-site .course-points {
+    margin-bottom: 28px !important;
+  }
+
+  .luxury-site .course-visual {
+    height: 62vw !important;
+  }
+
+  .luxury-site .visual-break,
+  .luxury-site .visual-break__content {
+    min-height: 62vh !important;
+  }
+
+  .luxury-site .visual-break__content {
+    padding-bottom: 42px !important;
+  }
+
+  .luxury-site .results__head {
+    gap: 18px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .luxury-site .result-item {
+    min-height: 0 !important;
+    padding: 20px 0 24px !important;
+  }
+
+  .luxury-site .result-item__index {
+    margin-bottom: 20px !important;
+  }
+
+  .luxury-site .business {
+    padding: 0 !important;
+  }
+
+  .luxury-site .business__grid {
+    min-height: 0 !important;
+  }
+
+  .luxury-site .business__photo {
+    height: 66vw !important;
+  }
+
+  .luxury-site .business__copy {
+    padding: 48px 20px 54px !important;
+  }
+
+  .luxury-site .business__copy h2 {
+    margin: 24px 0 26px !important;
+  }
+
+  .luxury-site .business__copy > p,
+  .luxury-site .formula {
+    margin-bottom: 26px !important;
+  }
+
+  .luxury-site .audience-row {
+    min-height: 88px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+
+  .luxury-site .audience-row > p {
+    font-size: 19px !important;
+  }
+
+  .luxury-site .vip__portrait {
+    height: 72vw !important;
+  }
+
+  .luxury-site .vip__copy h2 {
+    margin: 24px 0 28px !important;
+  }
+
+  .luxury-site .final-cta {
+    min-height: 0 !important;
+  }
+
+  .luxury-site .final-cta__inner {
+    min-height: 0 !important;
+    padding: 72px 0 !important;
+  }
+
+  .luxury-site .footer__inner {
+    min-height: 82px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .luxury-site .philosophy,
+  .luxury-site .programs,
+  .luxury-site .results,
+  .luxury-site .audience,
+  .luxury-site .vip,
+  .luxury-site .final-cta {
+    padding-top: 48px !important;
+    padding-bottom: 52px !important;
+  }
+
+  .luxury-site .philosophy { padding-top: 84px !important; }
+  .luxury-site .editorial-photo__frame { height: 64vw !important; }
+  .luxury-site .course-visual { height: 58vw !important; }
+  .luxury-site .business__photo { height: 62vw !important; }
+  .luxury-site .vip__portrait { height: 68vw !important; }
+  .luxury-site .visual-break,
+  .luxury-site .visual-break__content { min-height: 58vh !important; }
+}
