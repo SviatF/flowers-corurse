@@ -1,38 +1,68 @@
-/* Normal-flow hero: keep the visual depth, remove the pinned/sticky scroll section. */
+/* Compact normal-flow hero + floral section transition.
+   This file intentionally overrides the older hero measurements from hero.css/courses.css. */
+
 .luxury-site .pts-hero {
-  height: 108svh !important;
-  min-height: 760px !important;
+  position: relative !important;
+  height: 78svh !important;
+  min-height: 680px !important;
   overflow: visible !important;
+  z-index: 12 !important;
 }
 
 .luxury-site .pts-hero__stage {
   position: relative !important;
   top: auto !important;
-  height: 108svh !important;
-  min-height: 760px !important;
+  height: 78svh !important;
+  min-height: 680px !important;
   overflow: visible !important;
+}
+
+/* Let the flowers bridge the black hero and the ivory philosophy section. */
+.luxury-site .pts-hero__pink {
+  left: -4vw !important;
+  bottom: -8vw !important;
+  width: 44vw !important;
+  z-index: 8 !important;
+}
+
+.luxury-site .pts-hero__magnolia {
+  left: auto !important;
+  right: -9vw !important;
+  bottom: -15vw !important;
+  width: 68vw !important;
+  z-index: 9 !important;
+}
+
+.luxury-site .pts-hero + .philosophy {
+  position: relative !important;
+  z-index: 1 !important;
 }
 
 @media (max-width: 1199px) {
   .luxury-site .pts-hero,
   .luxury-site .pts-hero__stage {
-    height: 106svh !important;
-    min-height: 740px !important;
+    height: 80svh !important;
+    min-height: 650px !important;
+  }
+
+  .luxury-site .pts-hero__pink {
+    left: -8vw !important;
+    bottom: -10vw !important;
+    width: 52vw !important;
+  }
+
+  .luxury-site .pts-hero__magnolia {
+    right: -14vw !important;
+    bottom: -18vw !important;
+    width: 78vw !important;
   }
 }
 
 @media (max-width: 809px) {
-  .luxury-site .pts-hero {
-    height: 112svh !important;
-    min-height: 760px !important;
-    overflow: visible !important;
-  }
-
+  .luxury-site .pts-hero,
   .luxury-site .pts-hero__stage {
-    position: relative !important;
-    top: auto !important;
-    height: 112svh !important;
-    min-height: 760px !important;
+    height: 78svh !important;
+    min-height: 620px !important;
     overflow: visible !important;
   }
 
@@ -50,59 +80,104 @@
     font-size: 9px !important;
   }
 
+  /* Center the entire hero message on mobile. */
   .luxury-site .pts-hero__eyebrow {
-    top: 12.5% !important;
-    left: 5.5vw !important;
+    top: 14% !important;
+    left: 50% !important;
+    width: 90vw !important;
+    transform: translateX(-50%) !important;
+    text-align: center !important;
   }
 
   .luxury-site .pts-hero__title {
-    top: 44% !important;
-    left: 5.5vw !important;
-    width: 89vw !important;
-    font-size: clamp(48px, 13.2vw, 62px) !important;
-    line-height: .84 !important;
+    top: 47% !important;
+    left: 50% !important;
+    width: 92vw !important;
+    transform: translate3d(-50%, calc(-50% + var(--title-y)), 0) !important;
+    text-align: center !important;
+    font-size: clamp(44px, 12.4vw, 58px) !important;
+    line-height: .86 !important;
     letter-spacing: -.055em !important;
   }
 
+  .luxury-site .pts-hero__title span {
+    transform: none !important;
+  }
+
   .luxury-site .pts-hero__subtitle {
-    left: 5.5vw !important;
-    bottom: 11.5vh !important;
-    width: 88vw !important;
-    font-size: clamp(20px, 5.2vw, 27px) !important;
-    line-height: 1.13 !important;
+    left: 50% !important;
+    bottom: 16vh !important;
+    width: 86vw !important;
+    transform: translate3d(-50%, var(--subtitle-y), 0) !important;
+    text-align: center !important;
+    font-size: clamp(18px, 4.7vw, 24px) !important;
+    line-height: 1.14 !important;
   }
 
   .luxury-site .pts-hero__scroll {
-    left: 5.5vw !important;
-    bottom: 3.2vh !important;
+    left: 50% !important;
+    bottom: 7vh !important;
+    transform: translateX(-50%) !important;
   }
 
+  /* Bigger mobile transition florals: clearly sit across black → ivory. */
   .luxury-site .pts-hero__pink {
-    left: -15vw !important;
-    bottom: -5vw !important;
-    width: 58vw !important;
+    left: 12% !important;
+    bottom: -15vw !important;
+    width: 84vw !important;
+    transform: translate3d(-50%, var(--pink-y), 0) rotate(2deg) !important;
   }
 
   .luxury-site .pts-hero__magnolia {
-    right: -26vw !important;
-    bottom: -12vw !important;
-    width: 78vw !important;
+    left: 76% !important;
+    right: auto !important;
+    bottom: -26vw !important;
+    width: 116vw !important;
+    transform: translate3d(-50%, var(--magnolia-y), 0) rotate(-3deg) !important;
+  }
+
+  /* Reserve breathing room for the flowers that overlap the ivory section. */
+  .luxury-site .philosophy {
+    padding-top: 175px !important;
   }
 }
 
 @media (max-width: 430px) {
   .luxury-site .pts-hero,
   .luxury-site .pts-hero__stage {
-    height: 108svh !important;
-    min-height: 720px !important;
+    height: 76svh !important;
+    min-height: 590px !important;
+  }
+
+  .luxury-site .pts-hero__eyebrow {
+    top: 13% !important;
   }
 
   .luxury-site .pts-hero__title {
-    top: 43% !important;
-    font-size: clamp(46px, 13vw, 58px) !important;
+    top: 46% !important;
+    font-size: clamp(42px, 12.2vw, 54px) !important;
   }
 
   .luxury-site .pts-hero__subtitle {
-    bottom: 11vh !important;
+    bottom: 16vh !important;
+    width: 88vw !important;
+  }
+
+  .luxury-site .pts-hero__scroll {
+    bottom: 6.5vh !important;
+  }
+
+  .luxury-site .pts-hero__pink {
+    bottom: -17vw !important;
+    width: 90vw !important;
+  }
+
+  .luxury-site .pts-hero__magnolia {
+    bottom: -30vw !important;
+    width: 124vw !important;
+  }
+
+  .luxury-site .philosophy {
+    padding-top: 165px !important;
   }
 }
