@@ -1,0 +1,82 @@
+@media (max-width: 809px) {
+  .luxury-site .pts-hero {
+    height: 112svh !important;
+    min-height: 760px !important;
+    overflow: visible !important;
+  }
+
+  .luxury-site .pts-hero__stage {
+    height: 100svh !important;
+    min-height: 680px !important;
+    overflow: visible !important;
+  }
+
+  .site-nav {
+    grid-template-columns: 1fr auto !important;
+    padding: 22px 20px !important;
+  }
+
+  .site-nav__links {
+    display: none !important;
+  }
+
+  .site-nav__brand,
+  .site-nav__cta {
+    font-size: 9px !important;
+  }
+
+  .luxury-site .pts-hero__eyebrow {
+    top: 12.5% !important;
+    left: 5.5vw !important;
+  }
+
+  .luxury-site .pts-hero__title {
+    top: 44% !important;
+    left: 5.5vw !important;
+    width: 89vw !important;
+    font-size: clamp(48px, 13.2vw, 62px) !important;
+    line-height: .84 !important;
+    letter-spacing: -.055em !important;
+  }
+
+  .luxury-site .pts-hero__subtitle {
+    left: 5.5vw !important;
+    bottom: 11.5vh !important;
+    width: 88vw !important;
+    font-size: clamp(20px, 5.2vw, 27px) !important;
+    line-height: 1.13 !important;
+  }
+
+  .luxury-site .pts-hero__scroll {
+    left: 5.5vw !important;
+    bottom: 3.2vh !important;
+  }
+
+  .luxury-site .pts-hero__pink {
+    left: -15vw !important;
+    bottom: -5vw !important;
+    width: 58vw !important;
+  }
+
+  .luxury-site .pts-hero__magnolia {
+    right: -26vw !important;
+    bottom: -12vw !important;
+    width: 78vw !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .luxury-site .pts-hero {
+    height: 108svh !important;
+    min-height: 720px !important;
+  }
+
+  .luxury-site .pts-hero__title {
+    top: 43% !important;
+    font-size: clamp(46px, 13vw, 58px) !important;
+  }
+
+  .luxury-site .pts-hero__subtitle {
+    bottom: 11vh !important;
+  }
+}
