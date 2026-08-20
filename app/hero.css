@@ -276,3 +276,59 @@
     --subtitle-y: 0px !important;
   }
 }
+
+/* Final hero calibration for the luxury layout.
+   courses.css intentionally keeps the art direction, while these rules prevent
+   the floral artwork from being hard-clipped at the fold. */
+.luxury-site .pts-hero {
+  height: 150svh !important;
+  min-height: 980px !important;
+  overflow: visible !important;
+}
+
+.luxury-site .pts-hero__stage {
+  overflow: visible !important;
+}
+
+.luxury-site .pts-hero__pink {
+  bottom: -12vw !important;
+}
+
+.luxury-site .pts-hero__magnolia {
+  bottom: -22vw !important;
+}
+
+.luxury-site .pts-hero + .philosophy {
+  position: relative;
+  z-index: 0;
+}
+
+@media (max-width: 1199px) {
+  .luxury-site .pts-hero {
+    height: 148svh !important;
+    min-height: 900px !important;
+  }
+
+  .luxury-site .pts-hero__pink {
+    bottom: -14vw !important;
+  }
+
+  .luxury-site .pts-hero__magnolia {
+    bottom: -25vw !important;
+  }
+}
+
+@media (max-width: 809px) {
+  .luxury-site .pts-hero {
+    height: 144svh !important;
+    min-height: 800px !important;
+  }
+
+  .luxury-site .pts-hero__pink {
+    bottom: -20vw !important;
+  }
+
+  .luxury-site .pts-hero__magnolia {
+    bottom: -34vw !important;
+  }
+}
