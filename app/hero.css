@@ -20,7 +20,7 @@
    This removes the old empty tail and the render seam between them. */
 .luxury-site .pts-hero,
 .luxury-site .pts-hero__stage {
-  height: 88svh !important;
+  height: 100svh !important;
   min-height: 760px !important;
   background: #090807 !important;
   border: 0 !important;
@@ -211,7 +211,7 @@
 @media (max-width: 1199px) {
   .luxury-site .pts-hero,
   .luxury-site .pts-hero__stage {
-    height: 86svh !important;
+    height: 100svh !important;
     min-height: 700px !important;
   }
 
@@ -229,10 +229,10 @@
 }
 
 @media (max-width: 809px) {
-  /* Direct mobile source value: current compact hero + exactly 30px more height. */
+  /* Mobile is 15% taller than the previous compact source value. */
   .luxury-site .pts-hero,
   .luxury-site .pts-hero__stage {
-    height: calc(78svh + 30px) !important;
+    height: calc(90svh + 35px) !important;
     min-height: 650px !important;
     max-height: none !important;
   }
@@ -311,7 +311,7 @@
 @media (max-width: 430px) {
   .luxury-site .pts-hero,
   .luxury-site .pts-hero__stage {
-    height: calc(76svh + 30px) !important;
+    height: calc(87svh + 35px) !important;
     min-height: 620px !important;
   }
 
