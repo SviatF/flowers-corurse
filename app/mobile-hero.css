@@ -3,8 +3,8 @@
 
 .luxury-site .pts-hero {
   position: relative !important;
-  height: 78svh !important;
-  min-height: 680px !important;
+  height: 70svh !important;
+  min-height: 610px !important;
   overflow: visible !important;
   z-index: 12 !important;
 }
@@ -12,8 +12,8 @@
 .luxury-site .pts-hero__stage {
   position: relative !important;
   top: auto !important;
-  height: 78svh !important;
-  min-height: 680px !important;
+  height: 70svh !important;
+  min-height: 610px !important;
   overflow: visible !important;
 }
 
@@ -48,8 +48,8 @@
 @media (max-width: 1199px) {
   .luxury-site .pts-hero,
   .luxury-site .pts-hero__stage {
-    height: 80svh !important;
-    min-height: 650px !important;
+    height: 72svh !important;
+    min-height: 585px !important;
   }
 
   .luxury-site .pts-hero__pink {
@@ -68,8 +68,8 @@
 @media (max-width: 809px) {
   .luxury-site .pts-hero,
   .luxury-site .pts-hero__stage {
-    height: 78svh !important;
-    min-height: 620px !important;
+    height: 70svh !important;
+    min-height: 560px !important;
     overflow: visible !important;
   }
 
@@ -152,8 +152,8 @@
 @media (max-width: 430px) {
   .luxury-site .pts-hero,
   .luxury-site .pts-hero__stage {
-    height: 76svh !important;
-    min-height: 590px !important;
+    height: 68svh !important;
+    min-height: 530px !important;
   }
 
   .luxury-site .pts-hero__eyebrow {
