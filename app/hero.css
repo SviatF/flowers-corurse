@@ -20,8 +20,8 @@
    This removes the old empty tail and the render seam between them. */
 .luxury-site .pts-hero,
 .luxury-site .pts-hero__stage {
-  height: 78svh !important;
-  min-height: 680px !important;
+  height: 88svh !important;
+  min-height: 760px !important;
   background: #090807 !important;
   border: 0 !important;
   outline: 0 !important;
@@ -211,8 +211,8 @@
 @media (max-width: 1199px) {
   .luxury-site .pts-hero,
   .luxury-site .pts-hero__stage {
-    height: 80svh !important;
-    min-height: 650px !important;
+    height: 86svh !important;
+    min-height: 700px !important;
   }
 
   .luxury-site .pts-hero__pink {
