@@ -8,6 +8,8 @@
   overflow: visible !important;
   z-index: 12 !important;
   background: #090807 !important;
+  /* Cover the 1px subpixel seam where the ivory section begins. */
+  box-shadow: 0 2px 0 #090807 !important;
 }
 
 .luxury-site .pts-hero__stage {
@@ -27,6 +29,18 @@
 .luxury-site .pts-hero__stage::after {
   content: none !important;
   display: none !important;
+}
+
+/* Premium hairline belongs under the navigation, not through the hero. */
+.site-nav::after {
+  content: "";
+  position: absolute;
+  left: 42px;
+  right: 42px;
+  bottom: 0;
+  height: 1px;
+  background: rgba(255,255,255,.20);
+  pointer-events: none;
 }
 
 /* Give the desktop hero copy a little more breathing room below the headline. */
@@ -88,6 +102,11 @@
   .site-nav {
     grid-template-columns: 1fr auto !important;
     padding: 22px 20px !important;
+  }
+
+  .site-nav::after {
+    left: 20px;
+    right: 20px;
   }
 
   .site-nav__links {
