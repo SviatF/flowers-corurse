@@ -1,3 +1,26 @@
+/* Normal-flow hero: keep the visual depth, remove the pinned/sticky scroll section. */
+.luxury-site .pts-hero {
+  height: 108svh !important;
+  min-height: 760px !important;
+  overflow: visible !important;
+}
+
+.luxury-site .pts-hero__stage {
+  position: relative !important;
+  top: auto !important;
+  height: 108svh !important;
+  min-height: 760px !important;
+  overflow: visible !important;
+}
+
+@media (max-width: 1199px) {
+  .luxury-site .pts-hero,
+  .luxury-site .pts-hero__stage {
+    height: 106svh !important;
+    min-height: 740px !important;
+  }
+}
+
 @media (max-width: 809px) {
   .luxury-site .pts-hero {
     height: 112svh !important;
@@ -6,8 +29,10 @@
   }
 
   .luxury-site .pts-hero__stage {
-    height: 100svh !important;
-    min-height: 680px !important;
+    position: relative !important;
+    top: auto !important;
+    height: 112svh !important;
+    min-height: 760px !important;
     overflow: visible !important;
   }
 
@@ -66,7 +91,8 @@
 }
 
 @media (max-width: 430px) {
-  .luxury-site .pts-hero {
+  .luxury-site .pts-hero,
+  .luxury-site .pts-hero__stage {
     height: 108svh !important;
     min-height: 720px !important;
   }
