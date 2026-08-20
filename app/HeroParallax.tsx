@@ -20,7 +20,7 @@ export default function HeroParallax() {
     }
 
     if (vipImage) {
-      vipImage.src = "/course-vip.avif";
+      vipImage.src = "/course-image-vip";
       vipImage.alt = "VIP-наставництво — персональна робота над квітковим бізнесом";
     }
 
