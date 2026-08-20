@@ -3,18 +3,43 @@
 
 .luxury-site .pts-hero {
   position: relative !important;
-  height: 70svh !important;
-  min-height: 610px !important;
+  height: 78svh !important;
+  min-height: 680px !important;
   overflow: visible !important;
   z-index: 12 !important;
+  background: #090807 !important;
 }
 
 .luxury-site .pts-hero__stage {
   position: relative !important;
   top: auto !important;
-  height: 70svh !important;
-  min-height: 610px !important;
+  height: 78svh !important;
+  min-height: 680px !important;
   overflow: visible !important;
+  background: #090807 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Remove any render seam/pseudo-line inside the hero. */
+.luxury-site .pts-hero__stage::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* Shorten only the visible black canvas without moving hero content.
+   The ivory transition starts under the flowers while all copy keeps its coordinates. */
+.luxury-site .pts-hero__stage::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 9svh;
+  z-index: 7;
+  background: #f2eee7;
+  pointer-events: none;
 }
 
 /* Give the desktop hero copy a little more breathing room below the headline. */
@@ -48,8 +73,12 @@
 @media (max-width: 1199px) {
   .luxury-site .pts-hero,
   .luxury-site .pts-hero__stage {
-    height: 72svh !important;
-    min-height: 585px !important;
+    height: 80svh !important;
+    min-height: 650px !important;
+  }
+
+  .luxury-site .pts-hero__stage::after {
+    height: 8svh;
   }
 
   .luxury-site .pts-hero__pink {
@@ -68,9 +97,13 @@
 @media (max-width: 809px) {
   .luxury-site .pts-hero,
   .luxury-site .pts-hero__stage {
-    height: 70svh !important;
-    min-height: 560px !important;
+    height: 78svh !important;
+    min-height: 620px !important;
     overflow: visible !important;
+  }
+
+  .luxury-site .pts-hero__stage::after {
+    height: 8svh;
   }
 
   .site-nav {
@@ -142,18 +175,17 @@
     width: 116vw !important;
     transform: translate3d(-50%, var(--magnolia-y), 0) rotate(-3deg) !important;
   }
-
-  /* Reserve breathing room for the flowers that overlap the ivory section. */
-  .luxury-site .philosophy {
-    padding-top: 175px !important;
-  }
 }
 
 @media (max-width: 430px) {
   .luxury-site .pts-hero,
   .luxury-site .pts-hero__stage {
-    height: 68svh !important;
-    min-height: 530px !important;
+    height: 76svh !important;
+    min-height: 590px !important;
+  }
+
+  .luxury-site .pts-hero__stage::after {
+    height: 7svh;
   }
 
   .luxury-site .pts-hero__eyebrow {
@@ -183,8 +215,95 @@
     bottom: -30vw !important;
     width: 124vw !important;
   }
+}
 
+/* Slightly denser site rhythm: reduce only vertical whitespace / section height.
+   Typography, grids and element composition stay unchanged. */
+.luxury-site .philosophy {
+  padding-top: 150px !important;
+  padding-bottom: 170px !important;
+}
+
+.luxury-site .programs {
+  padding-top: 150px !important;
+  padding-bottom: 170px !important;
+}
+
+.luxury-site .results {
+  padding-top: 150px !important;
+  padding-bottom: 165px !important;
+}
+
+.luxury-site .business {
+  padding-top: 125px !important;
+  padding-bottom: 125px !important;
+}
+
+.luxury-site .audience {
+  padding-top: 145px !important;
+  padding-bottom: 145px !important;
+}
+
+.luxury-site .vip {
+  padding-top: 140px !important;
+  padding-bottom: 140px !important;
+}
+
+.luxury-site .final-cta {
+  padding-top: 130px !important;
+  padding-bottom: 130px !important;
+}
+
+.luxury-site .course-scene,
+.luxury-site .course-visual {
+  min-height: 600px !important;
+}
+
+.luxury-site .visual-break,
+.luxury-site .visual-break__content {
+  min-height: 92vh !important;
+}
+
+.luxury-site .business__grid {
+  min-height: 750px !important;
+}
+
+.luxury-site .result-item {
+  min-height: 285px !important;
+}
+
+@media (max-width: 809px) {
   .luxury-site .philosophy {
-    padding-top: 165px !important;
+    padding-top: 150px !important;
+    padding-bottom: 105px !important;
+  }
+
+  .luxury-site .programs,
+  .luxury-site .results,
+  .luxury-site .audience,
+  .luxury-site .vip,
+  .luxury-site .final-cta {
+    padding-top: 100px !important;
+    padding-bottom: 110px !important;
+  }
+
+  .luxury-site .business {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+  }
+
+  .luxury-site .course-scene,
+  .luxury-site .course-visual,
+  .luxury-site .business__grid {
+    min-height: 0 !important;
+  }
+
+  .luxury-site .visual-break,
+  .luxury-site .visual-break__content {
+    min-height: 82vh !important;
+  }
+
+  .luxury-site .result-item {
+    min-height: 235px !important;
   }
 }
