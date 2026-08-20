@@ -17,6 +17,13 @@
   overflow: visible !important;
 }
 
+/* Give the desktop hero copy a little more breathing room below the headline. */
+@media (min-width: 810px) {
+  .luxury-site .pts-hero__subtitle {
+    bottom: 12vh !important;
+  }
+}
+
 /* Let the flowers bridge the black hero and the ivory philosophy section. */
 .luxury-site .pts-hero__pink {
   left: -4vw !important;
