@@ -7,6 +7,25 @@ export default function HeroParallax() {
     const hero = document.querySelector<HTMLElement>(".pts-hero");
     if (!hero) return;
 
+    // Replace the repeated hero portrait inside the last two program cards
+    // with the dedicated locally-served course visuals.
+    const businessImage = document.querySelector<HTMLImageElement>(
+      ".course-scene--business .course-visual--photo img",
+    );
+    const vipImage = document.querySelector<HTMLImageElement>(
+      ".course-scene--vip .course-visual--portrait img",
+    );
+
+    if (businessImage) {
+      businessImage.src = "/course-image-business";
+      businessImage.alt = "Флористичний бізнес — робота над власним квітковим брендом";
+    }
+
+    if (vipImage) {
+      vipImage.src = "/course-image-vip";
+      vipImage.alt = "VIP-наставництво — персональна робота над квітковим бізнесом";
+    }
+
     let frame = 0;
 
     const update = () => {
