@@ -139,7 +139,7 @@
 
 .pts-hero__title {
   position: absolute;
-  top: 45%;
+  top: 43.5%;
   left: 6vw;
   z-index: 10;
   width: min(49vw, 760px);
@@ -167,7 +167,7 @@
 .pts-hero__subtitle {
   position: absolute;
   left: 6vw;
-  bottom: 16vh;
+  bottom: 18vh;
   z-index: 11;
   width: min(38vw, 570px);
   margin: 0;
@@ -186,7 +186,7 @@
 .pts-hero__scroll {
   position: absolute;
   left: 6vw;
-  bottom: 10vh;
+  bottom: 12vh;
   z-index: 14;
   padding-bottom: 5px;
   border-bottom: 1px solid rgba(255,255,255,.72);
@@ -261,7 +261,7 @@
   }
 
   .luxury-site .pts-hero__title {
-    top: 41% !important;
+    top: 39.5% !important;
     left: 50% !important;
     width: 92vw !important;
     transform: translate3d(-50%, calc(-50% + var(--title-y)), 0) !important;
@@ -277,7 +277,7 @@
 
   .luxury-site .pts-hero__subtitle {
     left: 50% !important;
-    bottom: 17% !important;
+    bottom: 19% !important;
     width: 86vw !important;
     transform: translate3d(-50%, var(--subtitle-y), 0) !important;
     text-align: center !important;
@@ -287,7 +287,7 @@
 
   .luxury-site .pts-hero__scroll {
     left: 50% !important;
-    bottom: 8% !important;
+    bottom: 10% !important;
     transform: translateX(-50%) !important;
     font-size: 8px !important;
   }
