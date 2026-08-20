@@ -22,24 +22,11 @@
   box-shadow: none !important;
 }
 
-/* Remove any render seam/pseudo-line inside the hero. */
-.luxury-site .pts-hero__stage::before {
+/* No artificial divider / band inside the hero. */
+.luxury-site .pts-hero__stage::before,
+.luxury-site .pts-hero__stage::after {
   content: none !important;
   display: none !important;
-}
-
-/* Shorten only the visible black canvas without moving hero content.
-   The ivory transition starts under the flowers while all copy keeps its coordinates. */
-.luxury-site .pts-hero__stage::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 9svh;
-  z-index: 7;
-  background: #f2eee7;
-  pointer-events: none;
 }
 
 /* Give the desktop hero copy a little more breathing room below the headline. */
@@ -77,10 +64,6 @@
     min-height: 650px !important;
   }
 
-  .luxury-site .pts-hero__stage::after {
-    height: 8svh;
-  }
-
   .luxury-site .pts-hero__pink {
     left: -8vw !important;
     bottom: -10vw !important;
@@ -100,10 +83,6 @@
     height: 78svh !important;
     min-height: 620px !important;
     overflow: visible !important;
-  }
-
-  .luxury-site .pts-hero__stage::after {
-    height: 8svh;
   }
 
   .site-nav {
@@ -184,10 +163,6 @@
     min-height: 590px !important;
   }
 
-  .luxury-site .pts-hero__stage::after {
-    height: 7svh;
-  }
-
   .luxury-site .pts-hero__eyebrow {
     top: 13% !important;
   }
@@ -217,65 +192,66 @@
   }
 }
 
-/* Slightly denser site rhythm: reduce only vertical whitespace / section height.
-   Typography, grids and element composition stay unchanged. */
+/* Clearly denser site rhythm. Only vertical whitespace/heights are reduced;
+   typography, grids and internal element positioning stay unchanged. */
 .luxury-site .philosophy {
-  padding-top: 150px !important;
-  padding-bottom: 170px !important;
+  padding-top: 132px !important;
+  padding-bottom: 138px !important;
 }
 
 .luxury-site .programs {
-  padding-top: 150px !important;
-  padding-bottom: 170px !important;
-}
-
-.luxury-site .results {
-  padding-top: 150px !important;
-  padding-bottom: 165px !important;
-}
-
-.luxury-site .business {
   padding-top: 125px !important;
-  padding-bottom: 125px !important;
-}
-
-.luxury-site .audience {
-  padding-top: 145px !important;
-  padding-bottom: 145px !important;
-}
-
-.luxury-site .vip {
-  padding-top: 140px !important;
   padding-bottom: 140px !important;
 }
 
+.luxury-site .results {
+  padding-top: 122px !important;
+  padding-bottom: 135px !important;
+}
+
+.luxury-site .business {
+  padding-top: 96px !important;
+  padding-bottom: 96px !important;
+}
+
+.luxury-site .audience {
+  padding-top: 118px !important;
+  padding-bottom: 120px !important;
+}
+
+.luxury-site .vip {
+  padding-top: 112px !important;
+  padding-bottom: 112px !important;
+}
+
 .luxury-site .final-cta {
-  padding-top: 130px !important;
-  padding-bottom: 130px !important;
+  padding-top: 105px !important;
+  padding-bottom: 105px !important;
 }
 
 .luxury-site .course-scene,
 .luxury-site .course-visual {
-  min-height: 600px !important;
+  min-height: 540px !important;
 }
 
 .luxury-site .visual-break,
 .luxury-site .visual-break__content {
-  min-height: 92vh !important;
+  min-height: 78vh !important;
 }
 
 .luxury-site .business__grid {
-  min-height: 750px !important;
+  min-height: 680px !important;
 }
 
 .luxury-site .result-item {
-  min-height: 285px !important;
+  min-height: 250px !important;
 }
 
 @media (max-width: 809px) {
+  /* Keep enough top room for the large floral overlap, but compact everything else. */
   .luxury-site .philosophy {
-    padding-top: 150px !important;
-    padding-bottom: 105px !important;
+    padding-top: 128px !important;
+    padding-bottom: 82px !important;
   }
 
   .luxury-site .programs,
@@ -283,13 +259,13 @@
   .luxury-site .audience,
   .luxury-site .vip,
   .luxury-site .final-cta {
-    padding-top: 100px !important;
-    padding-bottom: 110px !important;
+    padding-top: 78px !important;
+    padding-bottom: 86px !important;
   }
 
   .luxury-site .business {
-    padding-top: 90px !important;
-    padding-bottom: 90px !important;
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
   }
 
   .luxury-site .course-scene,
@@ -300,10 +276,10 @@
 
   .luxury-site .visual-break,
   .luxury-site .visual-break__content {
-    min-height: 82vh !important;
+    min-height: 72vh !important;
   }
 
   .luxury-site .result-item {
-    min-height: 235px !important;
+    min-height: 205px !important;
   }
 }
