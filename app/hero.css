@@ -10,6 +10,7 @@
   position: relative;
   z-index: 20;
   width: 100%;
+  margin-bottom: -2px;
   background: #090807;
   overflow: visible;
   isolation: isolate;
@@ -200,9 +201,11 @@
 
 .pts-hero__scroll:hover { opacity: .55; }
 
-.pts-hero + * {
+.pts-hero + .philosophy {
   position: relative;
   z-index: 0;
+  margin-top: -2px;
+  border-top: 0;
 }
 
 @media (max-width: 1199px) {
