@@ -7,8 +7,6 @@ export default function HeroParallax() {
     const hero = document.querySelector<HTMLElement>(".pts-hero");
     if (!hero) return;
 
-    // Replace the repeated hero portrait inside the last two program cards
-    // with the dedicated locally-served course visuals.
     const businessImage = document.querySelector<HTMLImageElement>(
       ".course-scene--business .course-visual--photo img",
     );
@@ -22,7 +20,7 @@ export default function HeroParallax() {
     }
 
     if (vipImage) {
-      vipImage.src = "/course-image-vip";
+      vipImage.src = "/course-vip.avif";
       vipImage.alt = "VIP-наставництво — персональна робота над квітковим бізнесом";
     }
 
@@ -37,7 +35,6 @@ export default function HeroParallax() {
       const scrolled = Math.min(travel, Math.max(0, -rect.top));
       const progress = scrolled / travel;
 
-      // Real local scroll parallax. No network requests or external runtime.
       hero.style.setProperty("--portrait-y", `${Math.round(progress * -viewport * 0.018)}px`);
       hero.style.setProperty("--title-y", `${Math.round(progress * viewport * 0.024)}px`);
       hero.style.setProperty("--pink-y", `${Math.round(progress * viewport * 0.018)}px`);
