@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
+// Deploy trigger after Vercel Pro upgrade: 2026-08-20
 export const metadata: Metadata = {
   title: "Floral Education — створи професію та квітковий бізнес",
   description:
