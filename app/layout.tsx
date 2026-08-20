@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import "./mobile-hero.css";
-import "./mobile-density.css";
 
-// Deployment sync trigger: 2026-08-20 01:11
 export const metadata: Metadata = {
   title: "Floral Education — створи професію та квітковий бізнес",
   description:
