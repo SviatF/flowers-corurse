@@ -1,18 +1,17 @@
 @media (max-width: 809px) {
-  /* Force the actual hero wrapper to be compact. High specificity prevents
-     the legacy 128svh mobile rule in courses.css from winning. */
+  /* Force the actual hero wrapper to stay compact while giving it a touch more air. */
   html body main.luxury-site > header#top.pts-hero,
   html body main.luxury-site > header#top.pts-hero > .pts-hero__stage {
-    height: 60svh !important;
-    min-height: 520px !important;
-    max-height: 650px !important;
+    height: 64svh !important;
+    min-height: 540px !important;
+    max-height: 680px !important;
   }
 
   html body main.luxury-site > header#top.pts-hero {
     overflow: visible !important;
   }
 
-  /* Keep the centered hero composition, just inside the shorter wrapper. */
+  /* Keep the centered hero composition in the same relative positions. */
   html body main.luxury-site .pts-hero__eyebrow {
     top: 12% !important;
   }
@@ -185,9 +184,9 @@
 @media (max-width: 430px) {
   html body main.luxury-site > header#top.pts-hero,
   html body main.luxury-site > header#top.pts-hero > .pts-hero__stage {
-    height: 58svh !important;
-    min-height: 500px !important;
-    max-height: 610px !important;
+    height: 62svh !important;
+    min-height: 520px !important;
+    max-height: 640px !important;
   }
 
   html body main.luxury-site .philosophy,
